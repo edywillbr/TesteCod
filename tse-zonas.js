@@ -1,8 +1,9 @@
 // Votos de um candidato por zona eleitoral do DF, com a abrangência de cada zona (TRE-DF).
 // Uso: node tse-zonas.js
+// A abrangência é lida das páginas de cada zona no site do TRE-DF.
 
-// Abrangência das zonas conforme as páginas "Zonas Eleitorais" do site do TRE-DF.
-const abrangencia = {
+// Texto de reserva, usado só quando não for possível ler a página da zona no site do TRE-DF.
+const abrangenciaReserva = {
   1: "Asa Sul, Vila Telebrasília, Setor Hoteleiro Sul, Setor de Clubes Sul, Setor Policial Sul, Setor de Múltiplas Atividades Sul e Setor de Autarquias Sul",
   2: "Paranoá, Itapoã, Lago Norte, Varjão, Taquari, Granja do Torto e núcleos rurais da região",
   3: "Taguatinga Norte (CNL, QNJ, QNL, EQNL, EQNM e QNM 34 a 42, Setor de Desenvolvimento Econômico e Setor de Indústrias Gráficas de Taguatinga Norte) e Núcleo Rural de Taguatinga Norte",
@@ -24,7 +25,78 @@ const abrangencia = {
   21: "Recanto das Emas, Samambaia (Quadras 500 e QR 317) e Núcleo Rural Monjolo",
 };
 
-(async () => {
+const baseTre =
+  "https://www.tre-df.jus.br/servicos-eleitorais/zonas-eleitorais";
+
+// Endereço padrão das páginas; a 14ª usa "14a-...-telefone", por isso as variações.
+function urlsDaZona(zona) {
+  return [
+    `${baseTre}/${zona}o-zona-eleitoral-endereco-e-telefones`,
+    `${baseTre}/${zona}a-zona-eleitoral-endereco-e-telefone`,
+    `${baseTre}/${zona}a-zona-eleitoral-endereco-e-telefones`,
+    `${baseTre}/${zona}o-zona-eleitoral-endereco-e-telefone`,
+  ];
+}
+
+function htmlParaTexto(html) {
+  return html
+    .replace(/<(script|style|noscript)[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/(p|div|li|h[1-6]|tr|td|strong|b)>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(n))
+    .replace(/[ \t]+/g, " ");
+}
+
+// Pega o texto que vem depois de "Abrangência" até o próximo rótulo da página.
+function extrairAbrangencia(html) {
+  const texto = htmlParaTexto(html);
+  const inicio = texto.search(/abrang[êe]ncia/i);
+  if (inicio < 0) return null;
+
+  const linhas = texto
+    .slice(inicio)
+    .replace(/^abrang[êe]ncia\s*:?/i, "")
+    .split("\n")
+    .map(l => l.trim());
+
+  const rotulo =
+    /^(endere[çc]o|telefone|exclusivo|whats ?app|e-?mail|chefe|ju[ií]z|hor[áa]rio|atendimento|compartilhe|voltar|mapa|cep)\b/i;
+
+  const partes = [];
+  for (const linha of linhas) {
+    if (!linha) continue;
+    if (rotulo.test(linha)) break;
+    partes.push(linha.replace(/^:\s*/, ""));
+    if (partes.join(" ").length > 3000) break;
+  }
+
+  const resultado = partes.join(" ").replace(/\s+/g, " ").trim();
+  return resultado || null;
+}
+
+async function buscarAbrangencia(zona) {
+  for (const url of urlsDaZona(zona)) {
+    try {
+      const resposta = await fetch(url, { cache: "no-store" });
+      if (!resposta.ok) continue;
+      const texto = extrairAbrangencia(await resposta.text());
+      if (texto) return texto;
+    } catch {
+      // tenta a próxima variação do endereço
+    }
+  }
+  console.warn(`Zona ${zona}: abrangência não lida do site do TRE-DF, usando texto de reserva`);
+  return abrangenciaReserva[zona] || "";
+}
+
+module.exports = { extrairAbrangencia };
+
+if (require.main === module) (async () => {
 
   const zonas = [
     1, 2, 3, 4, 5, 6, 8, 9, 10, 11,
@@ -94,7 +166,7 @@ const abrangencia = {
         eleitores
           ? Number((votos / eleitores * 100).toFixed(1))
           : 0,
-      abrangencia: abrangencia[zona] || ""
+      abrangencia: await buscarAbrangencia(zona)
     });
 
     // pequena pausa para não gerar requisições desnecessariamente rápidas
