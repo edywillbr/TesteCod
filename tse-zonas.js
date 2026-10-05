@@ -1,6 +1,7 @@
 // Votos de um candidato por zona eleitoral do DF, com a abrangência de cada zona (TRE-DF).
 // Uso: node tse-zonas.js [numero] [--csv arquivo.csv]
 //   numero: número do candidato (padrão: 2200); também aceita --numero 2200
+//   --numero2022: número usado em 2022, se for diferente (precisa ser do mesmo cargo)
 //   O cargo vem do tamanho do número: 4 dígitos = Deputado Federal, 5 dígitos = Deputado Distrital.
 // A abrangência é lida das páginas de cada zona no site do TRE-DF.
 // Os números de 2022 vêm de dados/votos-2022-df.csv e dados/aptos-2022-df.csv, extraídos dos
@@ -171,7 +172,7 @@ if (require.main === module) (async () => {
 
   const posicional = process.argv
     .slice(2)
-    .find((a, i, args) => /^\d+$/.test(a) && args[i - 1] !== "--numero");
+    .find((a, i, args) => /^\d+$/.test(a) && !String(args[i - 1]).startsWith("--numero"));
   const numero = String(argumento("--numero", posicional || "2200")).trim();
 
   const cargos = { 4: { codigo: 6, nome: "Deputado Federal" }, 5: { codigo: 8, nome: "Deputado Distrital" } };
@@ -184,12 +185,18 @@ if (require.main === module) (async () => {
   console.log(`Candidato ${numero} — ${cargo.nome}`);
   const c = String(codigoCargo).padStart(4, "0");
 
-  const dados2022 = carregar2022(numero, codigoCargo);
+  const numero2022 = String(argumento("--numero2022", numero)).trim();
+  if (cargos[numero2022.length]?.codigo !== codigoCargo) {
+    console.error(`O número de 2022 (${numero2022}) precisa ser do mesmo cargo (mesma quantidade de dígitos).`);
+    process.exit(1);
+  }
+
+  const dados2022 = carregar2022(numero2022, codigoCargo);
   const cand2022 = dados2022.candidato;
   if (cand2022) {
-    console.log(`2022: ${cand2022.nome_urna}/${cand2022.partido} — ${cand2022.situacao}`);
+    console.log(`2022 (nº ${numero2022}): ${cand2022.nome_urna}/${cand2022.partido} — ${cand2022.situacao}`);
   } else {
-    console.log(`2022: nenhum candidato com o número ${numero} para ${cargo.nome}`);
+    console.log(`2022: nenhum candidato com o número ${numero2022} para ${cargo.nome}`);
   }
 
   const zonas = [
@@ -301,9 +308,10 @@ if (require.main === module) (async () => {
       `(variação: ${totalVotos - totalVotos2022 >= 0 ? "+" : ""}${totalVotos - totalVotos2022}, ` +
       `${decimal(variacao(totalVotos, totalVotos2022))}%)`
     );
-    if (nome2026 && nome2026 !== cand2022.nome_urna) {
+    const semAcento = t => t.normalize("NFD").replace(/[^A-Za-z]/g, "").toUpperCase();
+    if (nome2026 && semAcento(nome2026) !== semAcento(cand2022.nome_urna)) {
       console.warn(
-        `Atenção: em 2022 o número ${numero} era de ${cand2022.nome_urna}/${cand2022.partido}, ` +
+        `Atenção: em 2022 o número ${numero2022} era de ${cand2022.nome_urna}/${cand2022.partido}, ` +
         `não de ${nome2026}. A comparação é entre candidatos diferentes.`
       );
     }
