@@ -1,5 +1,5 @@
 // Votos de um candidato por zona eleitoral do DF, com a abrangência de cada zona (TRE-DF).
-// Uso: node tse-zonas.js
+// Uso: node tse-zonas.js [--csv arquivo.csv]
 // A abrangência é lida das páginas de cada zona no site do TRE-DF.
 
 // Texto de reserva, usado só quando não for possível ler a página da zona no site do TRE-DF.
@@ -94,6 +94,25 @@ async function buscarAbrangencia(zona) {
   return abrangenciaReserva[zona] || "";
 }
 
+// CSV com ";" e vírgula decimal, para abrir direto no Excel em português.
+function salvarCsv(arquivo, linhas, totalVotos) {
+  const campo = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
+  const cabecalho = ["Zona", "Candidato/Sigla", "Votos", "Eleitores aptos", "% dos aptos", "Abrangência"];
+  const corpo = linhas.map(l => [
+    l.zona,
+    campo(l.candidato),
+    l.votos,
+    l.eleitores_aptos,
+    l.percentual_aptos.toFixed(1).replace(".", ","),
+    campo(l.abrangencia),
+  ].join(";"));
+  const rodape = ["TOTAL", "", totalVotos, "", "", ""].join(";");
+  require("fs").writeFileSync(
+    arquivo,
+    "\uFEFF" + [cabecalho.join(";"), ...corpo, rodape].join("\r\n") + "\r\n"
+  );
+}
+
 module.exports = { extrairAbrangencia };
 
 if (require.main === module) (async () => {
@@ -181,10 +200,16 @@ if (require.main === module) (async () => {
 
   console.table(resultado);
 
-  console.log(
-    "TOTAL DE VOTOS:",
-    resultado.reduce((soma, x) => soma + x.votos, 0)
-  );
+  const totalVotos = resultado.reduce((soma, x) => soma + x.votos, 0);
+
+  console.log("TOTAL DE VOTOS:", totalVotos);
+
+  const iCsv = process.argv.indexOf("--csv");
+  if (iCsv >= 0) {
+    const arquivo = process.argv[iCsv + 1] || "resultado-zonas.csv";
+    salvarCsv(arquivo, resultado, totalVotos);
+    console.log("CSV salvo em", arquivo);
+  }
 
   return resultado;
 
