@@ -1,7 +1,7 @@
 // Votos de um candidato por zona eleitoral do DF, com a abrangência de cada zona (TRE-DF).
-// Uso: node tse-zonas.js [--numero 2200] [--cargo 6] [--csv arquivo.csv]
-//   --cargo: 6 = Deputado Federal, 8 = Deputado Distrital (padrão: 6)
-//   --numero: número do candidato (padrão: 2200)
+// Uso: node tse-zonas.js [numero] [--csv arquivo.csv]
+//   numero: número do candidato (padrão: 2200); também aceita --numero 2200
+//   O cargo vem do tamanho do número: 4 dígitos = Deputado Federal, 5 dígitos = Deputado Distrital.
 // A abrangência é lida das páginas de cada zona no site do TRE-DF.
 
 // Texto de reserva, usado só quando não for possível ler a página da zona no site do TRE-DF.
@@ -124,8 +124,19 @@ function argumento(nome, padrao) {
 
 if (require.main === module) (async () => {
 
-  const numero = String(argumento("--numero", "2200"));
-  const codigoCargo = Number(argumento("--cargo", "6"));
+  const posicional = process.argv
+    .slice(2)
+    .find((a, i, args) => /^\d+$/.test(a) && args[i - 1] !== "--numero");
+  const numero = String(argumento("--numero", posicional || "2200")).trim();
+
+  const cargos = { 4: { codigo: 6, nome: "Deputado Federal" }, 5: { codigo: 8, nome: "Deputado Distrital" } };
+  const cargo = /^\d+$/.test(numero) ? cargos[numero.length] : null;
+  if (!cargo) {
+    console.error(`Número inválido: "${numero}". Use 4 dígitos (Deputado Federal) ou 5 dígitos (Deputado Distrital).`);
+    process.exit(1);
+  }
+  const codigoCargo = cargo.codigo;
+  console.log(`Candidato ${numero} — ${cargo.nome}`);
   const c = String(codigoCargo).padStart(4, "0");
 
   const zonas = [
