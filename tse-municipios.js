@@ -1,5 +1,9 @@
 // Votos de um candidato por município de um estado em 2026, comparados com 2022.
-// Uso: node tse-municipios.js <numero2026> [--uf am] [--numero2022 4455] [--csv arquivo.csv]
+// Uso: node tse-municipios.js <numero2026> [--uf am] [--numero2022 4455 | --sem2022] [--zonas MANAUS] [--csv arquivo.csv]
+//   --sem2022: só 2026, sem a comparação com 2022.
+//   --zonas: segunda tabela com os votos por zona eleitoral do município indicado e a abrangência
+//            de cada zona (bairros dos locais de votação, de dados/bairros-zona-2026-<uf>.csv, extraído
+//            de eleitorado_local_votacao_2026 do Portal de Dados Abertos do TSE).
 //   O cargo vem do tamanho do número: 4 dígitos = Deputado Federal, 5 dígitos = Deputado Estadual.
 //
 // Fontes:
@@ -75,12 +79,26 @@ const variacao = (atual, anterior) => (anterior ? Number(((atual / anterior - 1)
 const decimal = (v, casas = 2) => (v == null ? "" : Number(v).toFixed(casas).replace(".", ","));
 const campo = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
 
+const normalizar = t => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  .toUpperCase().replace(/[^A-Z0-9]+/g, " ").trim();
+
+const minusculas = new Set(["DE", "DA", "DO", "DAS", "DOS", "E"]);
+const nomeProprio = t => String(t || "").toLowerCase().split(" ")
+  .map((p, i) => (/^(i|ii|iii|iv|v|vi)$/.test(p) ? p.toUpperCase()
+    : i > 0 && minusculas.has(p.toUpperCase()) ? p : p.charAt(0).toUpperCase() + p.slice(1)))
+  .join(" ");
+
+function salvarCsv(arquivo, cabecalho, linhas) {
+  fs.writeFileSync(arquivo, "\uFEFF" + [cabecalho.join(";"), ...linhas].join("\r\n") + "\r\n");
+  console.log("CSV salvo em", arquivo);
+}
+
 (async () => {
   const numero = process.argv.slice(2).find((a, i, args) => /^\d+$/.test(a) && !String(args[i - 1]).startsWith("--"));
   const uf = String(argumento("--uf", "am")).toLowerCase();
   const cargo = numero ? cargos[numero.length] : null;
   if (!cargo) {
-    console.error("Uso: node tse-municipios.js <numero2026> [--uf am] [--numero2022 4455] [--csv arquivo.csv]");
+    console.error("Uso: node tse-municipios.js <numero2026> [--uf am] [--numero2022 4455 | --sem2022] [--zonas MANAUS] [--csv arquivo.csv]");
     console.error("Número com 4 dígitos (Deputado Federal) ou 5 dígitos (Deputado Estadual).");
     process.exit(1);
   }
@@ -104,9 +122,10 @@ const campo = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
   const candEstado = acharCandidato(totalEstado, cargo.codigo, numero);
 
   // 2022
-  const votos2022 = lerCsvLocal(`votos-2022-${uf}-municipio.csv`)
+  const sem2022 = process.argv.includes("--sem2022");
+  const votos2022 = sem2022 ? [] : lerCsvLocal(`votos-2022-${uf}-municipio.csv`)
     .filter(r => Number(r.cargo) === cargo.codigo && r.numero === numero2022);
-  const aptos2022 = Object.fromEntries(lerCsvLocal(`aptos-2022-${uf}-municipio.csv`)
+  const aptos2022 = sem2022 ? {} : Object.fromEntries(lerCsvLocal(`aptos-2022-${uf}-municipio.csv`)
     .filter(r => Number(r.cargo) === cargo.codigo)
     .map(r => [Number(r.municipio), Number(r.aptos)]));
   const cand2022 = votos2022[0] || null;
@@ -130,11 +149,13 @@ const campo = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
       votos_2026: votos,
       aptos_2026: aptos,
       pct_aptos_2026: pct(votos, aptos),
-      votos_2022: v22,
-      aptos_2022: a22,
-      pct_aptos_2022: v22 != null && a22 ? pct(v22, a22) : null,
-      variacao_votos: v22 != null ? votos - v22 : null,
-      variacao_pct: v22 != null ? variacao(votos, v22) : null,
+      ...(sem2022 ? {} : {
+        votos_2022: v22,
+        aptos_2022: a22,
+        pct_aptos_2022: v22 != null && a22 ? pct(v22, a22) : null,
+        variacao_votos: v22 != null ? votos - v22 : null,
+        variacao_pct: v22 != null ? variacao(votos, v22) : null,
+      }),
       _nome: cand ? `${cand.nmu}/${cand.sg}` : null,
       _secoes: dados.s?.pst,
     };
@@ -154,7 +175,7 @@ const campo = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
 
   console.log(`Candidato ${numero} — ${cargo.nome} — ${estado.ds || uf.toUpperCase()} (${resultado.length} municípios)`);
   console.log(`2026: ${nome2026 || "não encontrado"}${candEstado?.st ? ` — ${candEstado.st}` : ""}`);
-  console.log(cand2022
+  if (!sem2022) console.log(cand2022
     ? `2022 (nº ${numero2022}): ${cand2022.nome_urna}/${cand2022.partido} — ${cand2022.situacao}`
     : `2022: nenhum candidato com o número ${numero2022}`);
   if (totalEstado?.s?.pst && totalEstado.s.pst !== "100,00") {
@@ -171,19 +192,70 @@ const campo = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
     console.warn(`Atenção: soma dos municípios (${t.votos26}) diferente do total do estado (${candEstado.vap}).`);
   }
 
-  if (process.argv.includes("--csv")) {
-    const arquivo = argumento("--csv", `resultado-municipios-${uf}-${numero}.csv`);
+  const arquivo = process.argv.includes("--csv")
+    ? argumento("--csv", `resultado-municipios-${uf}-${numero}.csv`)
+    : null;
+
+  if (arquivo) {
     const cabecalho = ["Município", "Votos 2026", "Eleitores aptos 2026", "% dos aptos 2026",
-      "Votos 2022", "Eleitores aptos 2022", "% dos aptos 2022", "Variação de votos", "Variação %"];
+      ...(sem2022 ? [] : ["Votos 2022", "Eleitores aptos 2022", "% dos aptos 2022", "Variação de votos", "Variação %"])];
     const linhas = resultado.map(r => [
       campo(r.municipio), r.votos_2026, r.aptos_2026, decimal(r.pct_aptos_2026),
-      r.votos_2022 ?? "", r.aptos_2022 ?? "", decimal(r.pct_aptos_2022),
-      r.variacao_votos ?? "", decimal(r.variacao_pct, 1),
+      ...(sem2022 ? [] : [r.votos_2022 ?? "", r.aptos_2022 ?? "", decimal(r.pct_aptos_2022),
+        r.variacao_votos ?? "", decimal(r.variacao_pct, 1)]),
     ].join(";"));
     linhas.push(["TOTAL", t.votos26, t.aptos26, decimal(pct(t.votos26, t.aptos26)),
-      cand2022 ? t.votos22 : "", t.aptos22 || "", cand2022 ? decimal(pct(t.votos22, t.aptos22)) : "",
-      cand2022 ? t.votos26 - t.votos22 : "", cand2022 ? decimal(variacao(t.votos26, t.votos22), 1) : ""].join(";"));
-    fs.writeFileSync(arquivo, "﻿" + [cabecalho.join(";"), ...linhas].join("\r\n") + "\r\n");
-    console.log("CSV salvo em", arquivo);
+      ...(sem2022 ? [] : [cand2022 ? t.votos22 : "", t.aptos22 || "", cand2022 ? decimal(pct(t.votos22, t.aptos22)) : "",
+        cand2022 ? t.votos26 - t.votos22 : "", cand2022 ? decimal(variacao(t.votos26, t.votos22), 1) : ""])].join(";"));
+    salvarCsv(arquivo, cabecalho, linhas);
+  }
+
+  // votos por zona eleitoral de um município, com a abrangência (bairros) de cada zona
+  const nomeZonas = argumento("--zonas", null);
+  if (nomeZonas) {
+    const alvo = normalizar(nomeZonas);
+    const mu = estado.mu.find(m => normalizar(m.nm) === alvo || Number(m.cd) === Number(nomeZonas));
+    if (!mu) {
+      console.error(`Município "${nomeZonas}" não encontrado em ${uf.toUpperCase()}.`);
+      process.exit(1);
+    }
+
+    const bairros = lerCsvLocal(`bairros-zona-2026-${uf}.csv`).filter(r => Number(r.municipio) === Number(mu.cd));
+    const abrangencia = zona => bairros
+      .filter(r => Number(r.zona) === zona)
+      .sort((a, b) => Number(b.eleitores) - Number(a.eleitores))
+      .map(r => nomeProprio(r.bairro))
+      .join(", ");
+
+    const zonas = await emParalelo(mu.z, 6, async z => {
+      const dados = await buscarJson(`${base}/dados/${uf}/${uf}${mu.cd}-z${z}-c${c}-e00${ELEICAO}-u.json`);
+      if (!dados) {
+        console.warn(`Erro na zona ${Number(z)}`);
+        return null;
+      }
+      const cand = acharCandidato(dados, cargo.codigo, numero);
+      const votos = Number(cand?.vap || 0);
+      const aptos = Number(dados.e?.te || 0);
+      return { zona: Number(z), votos, aptos, pct_aptos: pct(votos, aptos), abrangencia: abrangencia(Number(z)) };
+    });
+
+    const porZona = zonas.filter(Boolean).sort((a, b) => b.votos - a.votos);
+    const totalZonas = porZona.reduce((s, z) => s + z.votos, 0);
+    const aptosZonas = porZona.reduce((s, z) => s + z.aptos, 0);
+    porZona.forEach(z => { z.pct_do_municipio = pct(z.votos, totalZonas); });
+    const votosMun = resultado.find(r => r.municipio === mu.nm)?.votos_2026;
+
+    console.log(`\nVOTOS POR ZONA ELEITORAL — ${mu.nm} (${porZona.length} zonas)`);
+    console.table(porZona.map(({ abrangencia, ...z }) => ({ ...z, abrangencia: abrangencia.slice(0, 60) })));
+    console.log(`TOTAL ${mu.nm}: ${totalZonas} votos` +
+      (votosMun != null ? (votosMun === totalZonas ? " (confere com o total do município)" : ` (DIFERENTE do município: ${votosMun})`) : ""));
+
+    if (arquivo) {
+      const arqZonas = arquivo.replace(/\.csv$/i, "") + `-zonas-${normalizar(mu.nm).toLowerCase().replace(/ /g, "-")}.csv`;
+      salvarCsv(arqZonas,
+        ["Zona", "Votos 2026", "Eleitores aptos 2026", "% dos aptos 2026", `% dos votos em ${nomeProprio(mu.nm)}`, "Abrangência (bairros)"],
+        [...porZona.map(z => [z.zona, z.votos, z.aptos, decimal(z.pct_aptos), decimal(z.pct_do_municipio), campo(z.abrangencia)].join(";")),
+         ["TOTAL", totalZonas, aptosZonas, decimal(pct(totalZonas, aptosZonas)), "100,00", ""].join(";")]);
+    }
   }
 })();
