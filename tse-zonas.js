@@ -1,5 +1,7 @@
 // Votos de um candidato por zona eleitoral do DF, com a abrangência de cada zona (TRE-DF).
-// Uso: node tse-zonas.js [--csv arquivo.csv]
+// Uso: node tse-zonas.js [--numero 2200] [--cargo 6] [--csv arquivo.csv]
+//   --cargo: 6 = Deputado Federal, 8 = Deputado Distrital (padrão: 6)
+//   --numero: número do candidato (padrão: 2200)
 // A abrangência é lida das páginas de cada zona no site do TRE-DF.
 
 // Texto de reserva, usado só quando não for possível ler a página da zona no site do TRE-DF.
@@ -115,7 +117,16 @@ function salvarCsv(arquivo, linhas, totalVotos) {
 
 module.exports = { extrairAbrangencia };
 
+function argumento(nome, padrao) {
+  const i = process.argv.indexOf(nome);
+  return i >= 0 && process.argv[i + 1] ? process.argv[i + 1] : padrao;
+}
+
 if (require.main === module) (async () => {
+
+  const numero = String(argumento("--numero", "2200"));
+  const codigoCargo = Number(argumento("--cargo", "6"));
+  const c = String(codigoCargo).padStart(4, "0");
 
   const zonas = [
     1, 2, 3, 4, 5, 6, 8, 9, 10, 11,
@@ -132,7 +143,7 @@ if (require.main === module) (async () => {
     const z = String(zona).padStart(4, "0");
 
     const url =
-      `${base}/df97012-z${z}-c0006-e006259-u.json`;
+      `${base}/df97012-z${z}-c${c}-e006259-u.json`;
 
     const resposta = await fetch(url, { cache: "no-store" });
 
@@ -148,7 +159,7 @@ if (require.main === module) (async () => {
 
     for (const cargo of (dados.carg || [])) {
 
-      if (Number(cargo.cd) !== 6) continue;
+      if (Number(cargo.cd) !== codigoCargo) continue;
 
       for (const agrupamento of (cargo.agr || [])) {
 
@@ -156,7 +167,7 @@ if (require.main === module) (async () => {
 
           for (const cand of (par.cand || [])) {
 
-            if (String(cand.n) === "2200") {
+            if (String(cand.n) === numero) {
               candidato = cand;
               partido = par.sg;
               break;
@@ -204,9 +215,8 @@ if (require.main === module) (async () => {
 
   console.log("TOTAL DE VOTOS:", totalVotos);
 
-  const iCsv = process.argv.indexOf("--csv");
-  if (iCsv >= 0) {
-    const arquivo = process.argv[iCsv + 1] || "resultado-zonas.csv";
+  if (process.argv.includes("--csv")) {
+    const arquivo = argumento("--csv", `resultado-zonas-${numero}.csv`);
     salvarCsv(arquivo, resultado, totalVotos);
     console.log("CSV salvo em", arquivo);
   }
