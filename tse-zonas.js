@@ -3,6 +3,9 @@
 //   numero: número do candidato (padrão: 2200); também aceita --numero 2200
 //   O cargo vem do tamanho do número: 4 dígitos = Deputado Federal, 5 dígitos = Deputado Distrital.
 // A abrangência é lida das páginas de cada zona no site do TRE-DF.
+// Os números de 2022 vêm de dados/votos-2022-df.csv e dados/aptos-2022-df.csv, extraídos dos
+// arquivos votacao_candidato_munzona_2022 e detalhe_votacao_munzona_2022 do Portal de Dados
+// Abertos do TSE (https://dadosabertos.tse.jus.br).
 
 // Texto de reserva, usado só quando não for possível ler a página da zona no site do TRE-DF.
 const abrangenciaReserva = {
@@ -96,23 +99,65 @@ async function buscarAbrangencia(zona) {
   return abrangenciaReserva[zona] || "";
 }
 
+function lerCsvLocal(nome) {
+  const caminho = require("path").join(__dirname, "dados", nome);
+  const [cabecalho, ...linhas] = require("fs").readFileSync(caminho, "utf8").trim().split(/\r?\n/);
+  const colunas = cabecalho.split(";");
+  return linhas.map(l => {
+    const valores = l.split(";");
+    return Object.fromEntries(colunas.map((c, i) => [c, valores[i]]));
+  });
+}
+
+// Votos e eleitores aptos de 2022 por zona, para o mesmo número e cargo.
+function carregar2022(numero, codigoCargo) {
+  const votos = lerCsvLocal("votos-2022-df.csv")
+    .filter(r => r.numero === numero && Number(r.cargo) === codigoCargo);
+  const aptos = lerCsvLocal("aptos-2022-df.csv")
+    .filter(r => Number(r.cargo) === codigoCargo);
+  return {
+    candidato: votos.length ? votos[0] : null,
+    votosPorZona: Object.fromEntries(votos.map(r => [Number(r.zona), Number(r.votos)])),
+    aptosPorZona: Object.fromEntries(aptos.map(r => [Number(r.zona), Number(r.aptos)])),
+  };
+}
+
+const decimal = (v, casas = 1) => (v == null ? "" : v.toFixed(casas).replace(".", ","));
+
 // CSV com ";" e vírgula decimal, para abrir direto no Excel em português.
-function salvarCsv(arquivo, linhas, totalVotos) {
+function salvarCsv(arquivo, linhas, totalVotos, totalVotos2022) {
   const campo = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
-  const cabecalho = ["Zona", "Candidato/Sigla", "Votos", "Eleitores aptos", "% dos aptos", "Abrangência"];
+  const cabecalho = [
+    "Zona", "Candidato/Sigla", "Votos 2026", "Eleitores aptos 2026", "% dos aptos 2026",
+    "Votos 2022", "Eleitores aptos 2022", "% dos aptos 2022", "Variação de votos", "Variação %",
+    "Abrangência",
+  ];
   const corpo = linhas.map(l => [
     l.zona,
     campo(l.candidato),
     l.votos,
     l.eleitores_aptos,
-    l.percentual_aptos.toFixed(1).replace(".", ","),
+    decimal(l.percentual_aptos),
+    l.votos_2022 ?? "",
+    l.eleitores_aptos_2022 ?? "",
+    decimal(l.percentual_aptos_2022),
+    l.variacao_votos ?? "",
+    decimal(l.variacao_percentual),
     campo(l.abrangencia),
   ].join(";"));
-  const rodape = ["TOTAL", "", totalVotos, "", "", ""].join(";");
+  const rodape = [
+    "TOTAL", "", totalVotos, "", "", totalVotos2022 ?? "", "", "",
+    totalVotos2022 != null ? totalVotos - totalVotos2022 : "",
+    decimal(variacao(totalVotos, totalVotos2022)), "",
+  ].join(";");
   require("fs").writeFileSync(
     arquivo,
     "\uFEFF" + [cabecalho.join(";"), ...corpo, rodape].join("\r\n") + "\r\n"
   );
+}
+
+function variacao(atual, anterior) {
+  return anterior ? Number(((atual / anterior - 1) * 100).toFixed(1)) : null;
 }
 
 module.exports = { extrairAbrangencia };
@@ -138,6 +183,14 @@ if (require.main === module) (async () => {
   const codigoCargo = cargo.codigo;
   console.log(`Candidato ${numero} — ${cargo.nome}`);
   const c = String(codigoCargo).padStart(4, "0");
+
+  const dados2022 = carregar2022(numero, codigoCargo);
+  const cand2022 = dados2022.candidato;
+  if (cand2022) {
+    console.log(`2022: ${cand2022.nome_urna}/${cand2022.partido} — ${cand2022.situacao}`);
+  } else {
+    console.log(`2022: nenhum candidato com o número ${numero} para ${cargo.nome}`);
+  }
 
   const zonas = [
     1, 2, 3, 4, 5, 6, 8, 9, 10, 11,
@@ -198,6 +251,9 @@ if (require.main === module) (async () => {
     const votos = Number(candidato?.vap || 0);
     const eleitores = Number(dados.e?.te || 0);
 
+    const votos2022 = cand2022 ? (dados2022.votosPorZona[zona] || 0) : null;
+    const eleitores2022 = dados2022.aptosPorZona[zona] ?? null;
+
     resultado.push({
       zona: zona,
       candidato: candidato ? `${candidato.nmu}/${partido}` : null,
@@ -207,6 +263,14 @@ if (require.main === module) (async () => {
         eleitores
           ? Number((votos / eleitores * 100).toFixed(1))
           : 0,
+      votos_2022: votos2022,
+      eleitores_aptos_2022: eleitores2022,
+      percentual_aptos_2022:
+        votos2022 != null && eleitores2022
+          ? Number((votos2022 / eleitores2022 * 100).toFixed(1))
+          : null,
+      variacao_votos: votos2022 != null ? votos - votos2022 : null,
+      variacao_percentual: votos2022 != null ? variacao(votos, votos2022) : null,
       abrangencia: await buscarAbrangencia(zona)
     });
 
@@ -224,11 +288,30 @@ if (require.main === module) (async () => {
 
   const totalVotos = resultado.reduce((soma, x) => soma + x.votos, 0);
 
-  console.log("TOTAL DE VOTOS:", totalVotos);
+  console.log("TOTAL DE VOTOS 2026:", totalVotos);
+
+  const totalVotos2022 = cand2022
+    ? resultado.reduce((soma, x) => soma + x.votos_2022, 0)
+    : null;
+
+  if (cand2022) {
+    const nome2026 = resultado.find(x => x.candidato)?.candidato.split("/")[0];
+    console.log(
+      "TOTAL DE VOTOS 2022:", totalVotos2022,
+      `(variação: ${totalVotos - totalVotos2022 >= 0 ? "+" : ""}${totalVotos - totalVotos2022}, ` +
+      `${decimal(variacao(totalVotos, totalVotos2022))}%)`
+    );
+    if (nome2026 && nome2026 !== cand2022.nome_urna) {
+      console.warn(
+        `Atenção: em 2022 o número ${numero} era de ${cand2022.nome_urna}/${cand2022.partido}, ` +
+        `não de ${nome2026}. A comparação é entre candidatos diferentes.`
+      );
+    }
+  }
 
   if (process.argv.includes("--csv")) {
     const arquivo = argumento("--csv", `resultado-zonas-${numero}.csv`);
-    salvarCsv(arquivo, resultado, totalVotos);
+    salvarCsv(arquivo, resultado, totalVotos, totalVotos2022);
     console.log("CSV salvo em", arquivo);
   }
 
