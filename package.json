@@ -1,0 +1,11 @@
+{
+  "name": "testecod",
+  "version": "1.0.0",
+  "description": "Exemplo de execução JavaScript que apresenta um retorno de dados",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "json": "node index.js --json"
+  },
+  "license": "MIT"
+}
