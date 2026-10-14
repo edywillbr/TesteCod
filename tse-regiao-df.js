@@ -1,6 +1,7 @@
 // Votos de um candidato por região, bairro e local de votação em zonas eleitorais do DF,
 // 2026 (boletins de urna de cada seção) comparado com 2022 (votação por seção).
-// Uso: node tse-regiao-df.js <numero2026> --zonas 4,17 [--numero2022 33456] [--csv prefixo]
+// Uso: node tse-regiao-df.js <numero2026> --zonas 4,17 [--numero2022 33456 | --sem2022] [--csv prefixo]
+//   --sem2022: só 2026, sem a comparação com 2022.
 //   O cargo vem do tamanho do número: 4 dígitos = Deputado Federal, 5 dígitos = Deputado Distrital.
 //   Percentuais sobre os eleitores aptos.
 //
@@ -36,7 +37,7 @@ const variacao = (a, b) => (b ? Number(((a / b - 1) * 100).toFixed(1)) : null);
   const prefixo = argumento("--csv", null);
   const cargo = numero ? cargos[numero.length] : null;
   if (!cargo || !zonas.length || cargos[String(numero2022).length]?.codigo !== cargo?.codigo) {
-    console.error("Uso: node tse-regiao-df.js <numero2026> --zonas 4,17 [--numero2022 33456] [--csv prefixo]");
+    console.error("Uso: node tse-regiao-df.js <numero2026> --zonas 4,17 [--numero2022 33456 | --sem2022] [--csv prefixo]");
     process.exit(1);
   }
 
@@ -77,14 +78,15 @@ const variacao = (a, b) => (b ? Number(((a / b - 1) * 100).toFixed(1)) : null);
   const secoes26 = lidas.filter(Boolean);
 
   // 2022: votação por seção
+  const sem2022 = process.argv.includes("--sem2022");
   const votos22 = new Map();
-  for (const r of lerCsvLocal("votos-secao-2022-df.csv")) {
+  for (const r of sem2022 ? [] : lerCsvLocal("votos-secao-2022-df.csv")) {
     if (zonas.includes(Number(r.zona)) && Number(r.cargo) === cargo.codigo && r.numero === String(numero2022)) {
       const k = `${Number(r.zona)}-${Number(r.secao)}`;
       votos22.set(k, (votos22.get(k) || 0) + Number(r.votos));
     }
   }
-  const secoes22 = lerCsvLocal("secoes-2022-df.csv")
+  const secoes22 = sem2022 ? [] : lerCsvLocal("secoes-2022-df.csv")
     .filter(r => zonas.includes(Number(r.zona)) && Number(r.cargo) === cargo.codigo)
     .map(r => ({ zona: Number(r.zona), secao: Number(r.secao), local: Number(r.local), aptos: Number(r.aptos),
                  votos: votos22.get(`${Number(r.zona)}-${Number(r.secao)}`) || 0 }));
@@ -102,11 +104,12 @@ const variacao = (a, b) => (b ? Number(((a / b - 1) * 100).toFixed(1)) : null);
     const s26 = secoes26.filter(s => s.zona === zona).reduce((t, s) => t + s.votos, 0);
     const s22 = secoes22.filter(s => s.zona === zona).reduce((t, s) => t + s.votos, 0);
     const o22 = Number(totais22.find(r => Number(r.zona) === zona)?.votos || 0);
-    console.log(`  Zona ${zona}: 2026 ${s26} (TSE ${oficial}${s26 === oficial ? ", confere" : ", DIFERENTE"}) | ` +
-      `2022 ${s22} (TSE ${o22}${s22 === o22 ? ", confere" : ", DIFERENTE"})`);
+    console.log(`  Zona ${zona}: 2026 ${s26} (TSE ${oficial}${s26 === oficial ? ", confere" : ", DIFERENTE"})` +
+      (sem2022 ? "" : ` | 2022 ${s22} (TSE ${o22}${s22 === o22 ? ", confere" : ", DIFERENTE"})`));
   }
   const cand22 = totais22[0];
-  console.log(`2026: ${nome26} | 2022 (nº ${numero2022}): ${cand22 ? `${cand22.nome_urna}/${cand22.partido}` : "não encontrado"}`);
+  console.log(`2026: ${nome26}` +
+    (sem2022 ? "" : ` | 2022 (nº ${numero2022}): ${cand22 ? `${cand22.nome_urna}/${cand22.partido}` : "não encontrado"}`));
   if (erros) console.warn(`Atenção: ${erros} seção(ões) com erro na leitura do boletim.`);
 
   // agrupamentos
@@ -129,17 +132,20 @@ const variacao = (a, b) => (b ? Number(((a / b - 1) * 100).toFixed(1)) : null);
 
   const ordem = [...new Set([...zonas.map(z => regiaoZona.get(z) || `Zona ${z}`), ...regiaoLocal.values()])];
   const ordenar = (x, y) => ordem.indexOf(x.regiao) - ordem.indexOf(y.regiao) || y.v26 - x.v26 || y.v22 - x.v22;
+  const total26 = secoes26.reduce((t, s) => t + s.votos, 0);
   const metricas = g => ({
     aptos_2026: g.a26, votos_2026: g.v26, pct_2026: pct(g.v26, g.a26),
-    aptos_2022: g.a22, votos_2022: g.v22, pct_2022: pct(g.v22, g.a22),
-    variacao: g.v26 - g.v22, variacao_pct: variacao(g.v26, g.v22),
+    ...(sem2022 ? { pct_dos_votos: pct(g.v26, total26) } : {
+      aptos_2022: g.a22, votos_2022: g.v22, pct_2022: pct(g.v22, g.a22),
+      variacao: g.v26 - g.v22, variacao_pct: variacao(g.v26, g.v22),
+    }),
   });
 
   const porRegiao = agrupar("regiao").sort(ordenar).map(g => ({ regiao: g.regiao, ...metricas(g) }));
   const porBairro = agrupar("bairro").sort(ordenar).map(g => ({ regiao: g.regiao, bairro: g.bairro, ...metricas(g) }));
   const porLocal = agrupar("local").sort(ordenar).map(g => ({
     regiao: g.regiao, bairro: g.bairro, local: g.local, nome_local: g.nome_local,
-    secoes_2026: g.s26, secoes_2022: g.s22, ...metricas(g),
+    secoes_2026: g.s26, ...(sem2022 ? {} : { secoes_2022: g.s22 }), ...metricas(g),
   }));
   const total = metricas(agrupar("regiao").reduce((t, g) => {
     for (const k of ["a26", "v26", "a22", "v22"]) t[k] += g[k];
@@ -150,19 +156,26 @@ const variacao = (a, b) => (b ? Number(((a / b - 1) * 100).toFixed(1)) : null);
   console.table(porRegiao);
   console.log("\nPOR BAIRRO");
   console.table(porBairro);
-  console.log(`TOTAL: 2026 ${total.votos_2026} | 2022 ${total.votos_2022} | variação ${total.variacao} (${decimal(total.variacao_pct, 1)}%)`);
+  console.log(`TOTAL: 2026 ${total.votos_2026} (${decimal(total.pct_2026)}% dos aptos)` +
+    (sem2022 ? "" : ` | 2022 ${total.votos_2022} | variação ${total.variacao} (${decimal(total.variacao_pct, 1)}%)`));
 
   if (prefixo) {
-    const cab = ["Eleitores aptos 2026", "Votos 2026", "% aptos 2026", "Eleitores aptos 2022", "Votos 2022", "% aptos 2022",
-      "Variação de votos", "Variação %"];
-    const vals = m => [m.aptos_2026, m.votos_2026, decimal(m.pct_2026), m.aptos_2022, m.votos_2022, decimal(m.pct_2022),
-      m.variacao, decimal(m.variacao_pct, 1)];
+    const cab = sem2022
+      ? ["Eleitores aptos 2026", "Votos 2026", "% aptos 2026", "% dos votos do candidato na área"]
+      : ["Eleitores aptos 2026", "Votos 2026", "% aptos 2026", "Eleitores aptos 2022", "Votos 2022", "% aptos 2022",
+        "Variação de votos", "Variação %"];
+    const vals = m => sem2022
+      ? [m.aptos_2026, m.votos_2026, decimal(m.pct_2026), decimal(m.pct_dos_votos)]
+      : [m.aptos_2026, m.votos_2026, decimal(m.pct_2026), m.aptos_2022, m.votos_2022, decimal(m.pct_2022),
+        m.variacao, decimal(m.variacao_pct, 1)];
+    const colSecoes = sem2022 ? ["Seções"] : ["Seções 2026", "Seções 2022"];
     salvarCsv(`${prefixo}-regioes.csv`, ["Região", ...cab],
       [...porRegiao.map(r => [campo(r.regiao), ...vals(r)].join(";")), ["TOTAL", ...vals(total)].join(";")]);
     salvarCsv(`${prefixo}-bairros.csv`, ["Região", "Bairro", ...cab],
       [...porBairro.map(r => [campo(r.regiao), campo(r.bairro), ...vals(r)].join(";")), ["TOTAL", "", ...vals(total)].join(";")]);
-    salvarCsv(`${prefixo}-locais.csv`, ["Região", "Bairro", "Nº local", "Local de votação", "Seções 2026", "Seções 2022", ...cab],
-      [...porLocal.map(r => [campo(r.regiao), campo(r.bairro), r.local, campo(r.nome_local), r.secoes_2026, r.secoes_2022, ...vals(r)].join(";")),
-       ["TOTAL", "", "", "", "", "", ...vals(total)].join(";")]);
+    salvarCsv(`${prefixo}-locais.csv`, ["Região", "Bairro", "Nº local", "Local de votação", ...colSecoes, ...cab],
+      [...porLocal.map(r => [campo(r.regiao), campo(r.bairro), r.local, campo(r.nome_local),
+        r.secoes_2026, ...(sem2022 ? [] : [r.secoes_2022]), ...vals(r)].join(";")),
+       ["TOTAL", "", "", "", ...colSecoes.map(() => ""), ...vals(total)].join(";")]);
   }
 })();
