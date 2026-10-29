@@ -107,21 +107,31 @@ void updateWeather() {
   WiFiClientSecure client;
   client.setInsecure();  // simplificação: não valida o certificado
   HTTPClient http;
-  if (!http.begin(client, url)) return;
+  http.useHTTP10(true);  // evita resposta "chunked", que o ArduinoJson não lê pelo stream
+  http.setTimeout(10000);
+  if (!http.begin(client, url)) {
+    Serial.println("Clima: falha no http.begin");
+    return;
+  }
 
   int status = http.GET();
   if (status == 200) {
     JsonDocument doc;
-    if (!deserializeJson(doc, http.getStream())) {
+    DeserializationError err = deserializeJson(doc, http.getStream());
+    if (err) {
+      Serial.printf("Clima: JSON invalido (%s)\n", err.c_str());
+    } else {
       weather.temp     = doc["current"]["temperature_2m"];
       weather.humidity = doc["current"]["relative_humidity_2m"];
       weather.code     = doc["current"]["weather_code"];
       weather.tmax     = doc["daily"]["temperature_2m_max"][0];
       weather.tmin     = doc["daily"]["temperature_2m_min"][0];
       weather.valid    = true;
+      Serial.printf("Clima: %.1f C, umid %d%%, codigo %d\n",
+                    weather.temp, weather.humidity, weather.code);
     }
   } else {
-    Serial.printf("Clima: HTTP %d\n", status);
+    Serial.printf("Clima: HTTP %d (%s)\n", status, http.errorToString(status).c_str());
   }
   http.end();
 }
@@ -232,7 +242,9 @@ void loop() {
     while (digitalRead(BTN_KEY) == LOW) delay(10);  // espera soltar o botão
   }
 
-  if (forceFull || millis() - lastWeatherMs > WEATHER_INTERVAL_MS) {
+  // Sem dados ainda: tenta de novo a cada 1 min em vez de esperar 15 min
+  uint32_t interval = weather.valid ? WEATHER_INTERVAL_MS : 60UL * 1000UL;
+  if (forceFull || millis() - lastWeatherMs > interval) {
     updateWeather();
     lastWeatherMs = millis();
   }
