@@ -222,7 +222,7 @@ void setup() {
 
   SPI.begin(EPD_SCK, -1, EPD_MOSI, EPD_CS);
   display.init(115200, true, 2, false);  // reset curto (2 ms) recomendado p/ módulos WeAct
-  display.setRotation(0);                // 0..3 conforme a montagem na luminária
+  display.setRotation(2);                // 180°: display montado de cabeça para baixo na moldura
   display.setTextColor(GxEPD_BLACK);
 
   connectWiFi();
