@@ -25,8 +25,12 @@
 #include <Fonts/FreeSansBold24pt7b.h>
 
 // ---------- Configuração ----------
-const char* WIFI_SSID = "SUA_REDE";
-const char* WIFI_PASS = "SUA_SENHA";
+// Rede Wi-Fi fica em secrets.h (fora do Git): copie secrets.example.h para secrets.h
+#if __has_include("secrets.h")
+#include "secrets.h"
+#else
+#error "Crie o arquivo secrets.h (copie secrets.example.h) com o nome e a senha do Wi-Fi"
+#endif
 
 // Fuso horário POSIX. Brasília/SP/RJ/DF: "<-03>3"  |  Manaus: "<-04>4"
 const char* TZ_INFO = "<-03>3";
@@ -199,9 +203,26 @@ void drawScreen(const struct tm& t) {
   printCentered(weatherText(weather.code), 178);
 }
 
+// Tela mostrada quando ainda não há hora (Wi-Fi/NTP falhou)
+void drawStatus() {
+  char buf[40];
+  display.setFont(&FreeSansBold9pt7b);
+  printCentered("Sem hora", 60);
+  display.setFont(&FreeSans9pt7b);
+  if (WiFi.status() == WL_CONNECTED) {
+    printCentered("Wi-Fi OK", 100);
+    printCentered("aguardando NTP", 125);
+  } else {
+    printCentered("Wi-Fi sem conexao", 100);
+    snprintf(buf, sizeof(buf), "%.20s", WIFI_SSID);
+    printCentered(buf, 125);
+  }
+}
+
 void render(bool full) {
   struct tm t;
-  if (!getLocalTime(&t, 100)) return;
+  bool hasTime = getLocalTime(&t, 100);
+  Serial.printf("Tela: %s, %s\n", full ? "completa" : "parcial", hasTime ? "com hora" : "SEM hora");
 
   if (full) display.setFullWindow();
   else      display.setPartialWindow(0, 0, display.width(), display.height());
@@ -209,15 +230,18 @@ void render(bool full) {
   display.firstPage();
   do {
     display.fillScreen(GxEPD_WHITE);
-    drawScreen(t);
+    if (hasTime) drawScreen(t);
+    else         drawStatus();
   } while (display.nextPage());
 
-  lastMinute = t.tm_min;
+  if (hasTime) lastMinute = t.tm_min;
 }
 
 // ---------- Setup / loop ----------
 void setup() {
   Serial.begin(115200);
+  delay(2000);  // dá tempo de abrir o Monitor Serial (USB nativa)
+  Serial.println("\n== Relogio e-paper ==");
   pinMode(BTN_KEY, INPUT_PULLUP);
 
   SPI.begin(EPD_SCK, -1, EPD_MOSI, EPD_CS);
@@ -230,6 +254,7 @@ void setup() {
 
   struct tm t;
   for (int i = 0; i < 20 && !getLocalTime(&t, 500); i++) {}
+  Serial.println(getLocalTime(&t, 100) ? "NTP: OK" : "NTP: falhou");
 
   updateWeather();
   lastWeatherMs = millis();

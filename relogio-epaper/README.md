@@ -32,7 +32,9 @@ Fonte USB 5V ──► USB-C JRC-C009 ──  V ──► pino 5V/VIN da placa
 
 1. Bibliotecas: **GxEPD2**, **Adafruit GFX**, **ArduinoJson** (7.x).
 2. Placa: **ESP32S3 Dev Module**. Flash Size 16MB, PSRAM **OPI PSRAM**, USB CDC On Boot **Enabled**.
-3. Edite `WIFI_SSID`, `WIFI_PASS`, `TZ_INFO`, `LATITUDE`, `LONGITUDE` no início do sketch.
+3. Na pasta `relogio_epaper/`, copie `secrets.example.h` para `secrets.h` e preencha o Wi-Fi.
+   O `secrets.h` fica fora do Git, então baixar uma versão nova do código não apaga a senha.
+   Ajuste `TZ_INFO`, `LATITUDE` e `LONGITUDE` no início do sketch.
 4. Grave o código. O botão **IO45 KEY** força uma atualização completa (tela + clima).
 
 ## Layout (200×200)
@@ -48,3 +50,9 @@ Fonte USB 5V ──► USB-C JRC-C009 ──  V ──► pino 5V/VIN da placa
 │       Parc. nublado      │
 └──────────────────────────┘
 ```
+
+## Teste do display
+
+`teste_display/teste_display.ino` é um sketch mínimo, sem Wi-Fi, para conferir a fiação.
+Ele desenha uma moldura, "TESTE OK" e um contador que sobe a cada 5 s.
+O Monitor Serial (115200) mostra cada atualização e o estado do pino BUSY.
