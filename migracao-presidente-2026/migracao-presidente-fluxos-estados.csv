@@ -1,0 +1,929 @@
+﻿UF;Origem (1º turno);Destino (2º turno);Votos estimados;% da origem
+BR;"Lula";"Lula";53271347;98,9
+BR;"Lula";"Flávio Bolsonaro";0;0,0
+BR;"Lula";"Branco/Nulo";89278;0,2
+BR;"Lula";"Abstenção";518914;1,0
+BR;"Flávio Bolsonaro";"Lula";110487;0,2
+BR;"Flávio Bolsonaro";"Flávio Bolsonaro";55433052;98,8
+BR;"Flávio Bolsonaro";"Branco/Nulo";186705;0,3
+BR;"Flávio Bolsonaro";"Abstenção";374258;0,7
+BR;"Augusto Cury";"Lula";1840349;53,4
+BR;"Augusto Cury";"Flávio Bolsonaro";954073;27,7
+BR;"Augusto Cury";"Branco/Nulo";516462;15,0
+BR;"Augusto Cury";"Abstenção";137686;4,0
+BR;"Renan Santos";"Lula";1079377;40,3
+BR;"Renan Santos";"Flávio Bolsonaro";920367;34,4
+BR;"Renan Santos";"Branco/Nulo";444932;16,6
+BR;"Renan Santos";"Abstenção";231212;8,6
+BR;"Ronaldo Caiado";"Lula";854401;32,8
+BR;"Ronaldo Caiado";"Flávio Bolsonaro";1351967;51,9
+BR;"Ronaldo Caiado";"Branco/Nulo";300208;11,5
+BR;"Ronaldo Caiado";"Abstenção";98572;3,8
+BR;"Outros candidatos";"Lula";179250;30,3
+BR;"Outros candidatos";"Flávio Bolsonaro";307134;51,8
+BR;"Outros candidatos";"Branco/Nulo";78544;13,3
+BR;"Outros candidatos";"Abstenção";27461;4,6
+BR;"Branco/Nulo";"Lula";3711593;62,2
+BR;"Branco/Nulo";"Flávio Bolsonaro";73150;1,2
+BR;"Branco/Nulo";"Branco/Nulo";2155095;36,1
+BR;"Branco/Nulo";"Abstenção";29963;0,5
+BR;"Abstenção";"Lula";3209548;9,6
+BR;"Abstenção";"Flávio Bolsonaro";786233;2,3
+BR;"Abstenção";"Branco/Nulo";382570;1,1
+BR;"Abstenção";"Abstenção";29091317;86,9
+AC;"Lula";"Lula";113524;84,2
+AC;"Lula";"Flávio Bolsonaro";0;0,0
+AC;"Lula";"Branco/Nulo";4223;3,1
+AC;"Lula";"Abstenção";17023;12,6
+AC;"Flávio Bolsonaro";"Lula";8419;2,8
+AC;"Flávio Bolsonaro";"Flávio Bolsonaro";265532;87,7
+AC;"Flávio Bolsonaro";"Branco/Nulo";9099;3,0
+AC;"Flávio Bolsonaro";"Abstenção";19757;6,5
+AC;"Augusto Cury";"Lula";5485;40,6
+AC;"Augusto Cury";"Flávio Bolsonaro";8038;59,4
+AC;"Augusto Cury";"Branco/Nulo";0;0,0
+AC;"Augusto Cury";"Abstenção";0;0,0
+AC;"Renan Santos";"Lula";4171;52,3
+AC;"Renan Santos";"Flávio Bolsonaro";3809;47,7
+AC;"Renan Santos";"Branco/Nulo";0;0,0
+AC;"Renan Santos";"Abstenção";0;0,0
+AC;"Ronaldo Caiado";"Lula";1990;23,2
+AC;"Ronaldo Caiado";"Flávio Bolsonaro";6604;76,8
+AC;"Ronaldo Caiado";"Branco/Nulo";0;0,0
+AC;"Ronaldo Caiado";"Abstenção";0;0,0
+AC;"Outros candidatos";"Lula";684;48,3
+AC;"Outros candidatos";"Flávio Bolsonaro";731;51,7
+AC;"Outros candidatos";"Branco/Nulo";0;0,0
+AC;"Outros candidatos";"Abstenção";0;0,0
+AC;"Branco/Nulo";"Lula";8136;42,3
+AC;"Branco/Nulo";"Flávio Bolsonaro";3013;15,7
+AC;"Branco/Nulo";"Branco/Nulo";8092;42,1
+AC;"Branco/Nulo";"Abstenção";0;0,0
+AC;"Abstenção";"Lula";2111;1,7
+AC;"Abstenção";"Flávio Bolsonaro";0;0,0
+AC;"Abstenção";"Branco/Nulo";13;0,0
+AC;"Abstenção";"Abstenção";123288;98,3
+AL;"Lula";"Lula";962075;96,6
+AL;"Lula";"Flávio Bolsonaro";0;0,0
+AL;"Lula";"Branco/Nulo";0;0,0
+AL;"Lula";"Abstenção";33384;3,4
+AL;"Flávio Bolsonaro";"Lula";0;0,0
+AL;"Flávio Bolsonaro";"Flávio Bolsonaro";715073;97,2
+AL;"Flávio Bolsonaro";"Branco/Nulo";5694;0,8
+AL;"Flávio Bolsonaro";"Abstenção";14951;2,0
+AL;"Augusto Cury";"Lula";29953;70,6
+AL;"Augusto Cury";"Flávio Bolsonaro";6801;16,0
+AL;"Augusto Cury";"Branco/Nulo";5673;13,4
+AL;"Augusto Cury";"Abstenção";0;0,0
+AL;"Renan Santos";"Lula";14374;53,5
+AL;"Renan Santos";"Flávio Bolsonaro";7451;27,8
+AL;"Renan Santos";"Branco/Nulo";5026;18,7
+AL;"Renan Santos";"Abstenção";0;0,0
+AL;"Ronaldo Caiado";"Lula";2008;14,1
+AL;"Ronaldo Caiado";"Flávio Bolsonaro";12190;85,9
+AL;"Ronaldo Caiado";"Branco/Nulo";0;0,0
+AL;"Ronaldo Caiado";"Abstenção";0;0,0
+AL;"Outros candidatos";"Lula";1547;36,2
+AL;"Outros candidatos";"Flávio Bolsonaro";2639;61,7
+AL;"Outros candidatos";"Branco/Nulo";90;2,1
+AL;"Outros candidatos";"Abstenção";0;0,0
+AL;"Branco/Nulo";"Lula";80028;67,0
+AL;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+AL;"Branco/Nulo";"Branco/Nulo";29964;25,1
+AL;"Branco/Nulo";"Abstenção";9507;8,0
+AL;"Abstenção";"Lula";62656;12,4
+AL;"Abstenção";"Flávio Bolsonaro";0;0,0
+AL;"Abstenção";"Branco/Nulo";8426;1,7
+AL;"Abstenção";"Abstenção";432616;85,9
+AM;"Lula";"Lula";990464;94,6
+AM;"Lula";"Flávio Bolsonaro";0;0,0
+AM;"Lula";"Branco/Nulo";14003;1,3
+AM;"Lula";"Abstenção";42529;4,1
+AM;"Flávio Bolsonaro";"Lula";35005;3,6
+AM;"Flávio Bolsonaro";"Flávio Bolsonaro";926204;94,8
+AM;"Flávio Bolsonaro";"Branco/Nulo";15555;1,6
+AM;"Flávio Bolsonaro";"Abstenção";0;0,0
+AM;"Augusto Cury";"Lula";47133;60,8
+AM;"Augusto Cury";"Flávio Bolsonaro";27411;35,4
+AM;"Augusto Cury";"Branco/Nulo";2987;3,9
+AM;"Augusto Cury";"Abstenção";0;0,0
+AM;"Renan Santos";"Lula";23066;65,1
+AM;"Renan Santos";"Flávio Bolsonaro";9246;26,1
+AM;"Renan Santos";"Branco/Nulo";3099;8,8
+AM;"Renan Santos";"Abstenção";0;0,0
+AM;"Ronaldo Caiado";"Lula";18036;63,7
+AM;"Ronaldo Caiado";"Flávio Bolsonaro";7250;25,6
+AM;"Ronaldo Caiado";"Branco/Nulo";3024;10,7
+AM;"Ronaldo Caiado";"Abstenção";0;0,0
+AM;"Outros candidatos";"Lula";716;12,3
+AM;"Outros candidatos";"Flávio Bolsonaro";5117;87,7
+AM;"Outros candidatos";"Branco/Nulo";0;0,0
+AM;"Outros candidatos";"Abstenção";0;0,0
+AM;"Branco/Nulo";"Lula";31343;49,2
+AM;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+AM;"Branco/Nulo";"Branco/Nulo";32361;50,8
+AM;"Branco/Nulo";"Abstenção";0;0,0
+AM;"Abstenção";"Lula";0;0,0
+AM;"Abstenção";"Flávio Bolsonaro";0;0,0
+AM;"Abstenção";"Branco/Nulo";0;0,0
+AM;"Abstenção";"Abstenção";564062;100,0
+AP;"Lula";"Lula";171473;80,7
+AP;"Lula";"Flávio Bolsonaro";0;0,0
+AP;"Lula";"Branco/Nulo";0;0,0
+AP;"Lula";"Abstenção";41030;19,3
+AP;"Flávio Bolsonaro";"Lula";16880;8,0
+AP;"Flávio Bolsonaro";"Flávio Bolsonaro";184022;86,7
+AP;"Flávio Bolsonaro";"Branco/Nulo";5877;2,8
+AP;"Flávio Bolsonaro";"Abstenção";5499;2,6
+AP;"Augusto Cury";"Lula";12636;66,3
+AP;"Augusto Cury";"Flávio Bolsonaro";6183;32,4
+AP;"Augusto Cury";"Branco/Nulo";238;1,2
+AP;"Augusto Cury";"Abstenção";0;0,0
+AP;"Renan Santos";"Lula";6286;55,4
+AP;"Renan Santos";"Flávio Bolsonaro";4564;40,2
+AP;"Renan Santos";"Branco/Nulo";492;4,3
+AP;"Renan Santos";"Abstenção";0;0,0
+AP;"Ronaldo Caiado";"Lula";5092;61,3
+AP;"Ronaldo Caiado";"Flávio Bolsonaro";3212;38,7
+AP;"Ronaldo Caiado";"Branco/Nulo";0;0,0
+AP;"Ronaldo Caiado";"Abstenção";0;0,0
+AP;"Outros candidatos";"Lula";672;48,3
+AP;"Outros candidatos";"Flávio Bolsonaro";719;51,7
+AP;"Outros candidatos";"Branco/Nulo";0;0,0
+AP;"Outros candidatos";"Abstenção";0;0,0
+AP;"Branco/Nulo";"Lula";9959;85,2
+AP;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+AP;"Branco/Nulo";"Branco/Nulo";1728;14,8
+AP;"Branco/Nulo";"Abstenção";0;0,0
+AP;"Abstenção";"Lula";0;0,0
+AP;"Abstenção";"Flávio Bolsonaro";0;0,0
+AP;"Abstenção";"Branco/Nulo";0;0,0
+AP;"Abstenção";"Abstenção";100426;100,0
+BA;"Lula";"Lula";5616662;99,2
+BA;"Lula";"Flávio Bolsonaro";0;0,0
+BA;"Lula";"Branco/Nulo";40296;0,7
+BA;"Lula";"Abstenção";7814;0,1
+BA;"Flávio Bolsonaro";"Lula";0;0,0
+BA;"Flávio Bolsonaro";"Flávio Bolsonaro";2405722;98,5
+BA;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+BA;"Flávio Bolsonaro";"Abstenção";36863;1,5
+BA;"Augusto Cury";"Lula";114725;58,7
+BA;"Augusto Cury";"Flávio Bolsonaro";52508;26,9
+BA;"Augusto Cury";"Branco/Nulo";28218;14,4
+BA;"Augusto Cury";"Abstenção";0;0,0
+BA;"Renan Santos";"Lula";60827;51,8
+BA;"Renan Santos";"Flávio Bolsonaro";39435;33,6
+BA;"Renan Santos";"Branco/Nulo";17256;14,7
+BA;"Renan Santos";"Abstenção";0;0,0
+BA;"Ronaldo Caiado";"Lula";85627;69,8
+BA;"Ronaldo Caiado";"Flávio Bolsonaro";31438;25,6
+BA;"Ronaldo Caiado";"Branco/Nulo";5640;4,6
+BA;"Ronaldo Caiado";"Abstenção";0;0,0
+BA;"Outros candidatos";"Lula";8288;47,3
+BA;"Outros candidatos";"Flávio Bolsonaro";6482;37,0
+BA;"Outros candidatos";"Branco/Nulo";2743;15,7
+BA;"Outros candidatos";"Abstenção";0;0,0
+BA;"Branco/Nulo";"Lula";318430;64,6
+BA;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+BA;"Branco/Nulo";"Branco/Nulo";174629;35,4
+BA;"Branco/Nulo";"Abstenção";0;0,0
+BA;"Abstenção";"Lula";280620;12,4
+BA;"Abstenção";"Flávio Bolsonaro";73144;3,2
+BA;"Abstenção";"Branco/Nulo";59243;2,6
+BA;"Abstenção";"Abstenção";1846144;81,7
+CE;"Lula";"Lula";3506480;98,6
+CE;"Lula";"Flávio Bolsonaro";0;0,0
+CE;"Lula";"Branco/Nulo";0;0,0
+CE;"Lula";"Abstenção";48783;1,4
+CE;"Flávio Bolsonaro";"Lula";16689;0,9
+CE;"Flávio Bolsonaro";"Flávio Bolsonaro";1715186;97,6
+CE;"Flávio Bolsonaro";"Branco/Nulo";18035;1,0
+CE;"Flávio Bolsonaro";"Abstenção";6940;0,4
+CE;"Augusto Cury";"Lula";90494;64,4
+CE;"Augusto Cury";"Flávio Bolsonaro";30597;21,8
+CE;"Augusto Cury";"Branco/Nulo";19434;13,8
+CE;"Augusto Cury";"Abstenção";0;0,0
+CE;"Renan Santos";"Lula";49965;46,4
+CE;"Renan Santos";"Flávio Bolsonaro";34637;32,2
+CE;"Renan Santos";"Branco/Nulo";18699;17,4
+CE;"Renan Santos";"Abstenção";4286;4,0
+CE;"Ronaldo Caiado";"Lula";15099;33,1
+CE;"Ronaldo Caiado";"Flávio Bolsonaro";27237;59,7
+CE;"Ronaldo Caiado";"Branco/Nulo";3268;7,2
+CE;"Ronaldo Caiado";"Abstenção";0;0,0
+CE;"Outros candidatos";"Lula";3818;31,4
+CE;"Outros candidatos";"Flávio Bolsonaro";8126;66,8
+CE;"Outros candidatos";"Branco/Nulo";219;1,8
+CE;"Outros candidatos";"Abstenção";0;0,0
+CE;"Branco/Nulo";"Lula";199510;68,2
+CE;"Branco/Nulo";"Flávio Bolsonaro";3701;1,3
+CE;"Branco/Nulo";"Branco/Nulo";89269;30,5
+CE;"Branco/Nulo";"Abstenção";0;0,0
+CE;"Abstenção";"Lula";154084;14,2
+CE;"Abstenção";"Flávio Bolsonaro";0;0,0
+CE;"Abstenção";"Branco/Nulo";20318;1,9
+CE;"Abstenção";"Abstenção";911672;83,9
+DF;"Lula";"Lula";667773;98,8
+DF;"Lula";"Flávio Bolsonaro";0;0,0
+DF;"Lula";"Branco/Nulo";3088;0,5
+DF;"Lula";"Abstenção";4767;0,7
+DF;"Flávio Bolsonaro";"Lula";0;0,0
+DF;"Flávio Bolsonaro";"Flávio Bolsonaro";891827;98,0
+DF;"Flávio Bolsonaro";"Branco/Nulo";5623;0,6
+DF;"Flávio Bolsonaro";"Abstenção";12166;1,3
+DF;"Augusto Cury";"Lula";23341;50,8
+DF;"Augusto Cury";"Flávio Bolsonaro";14538;31,6
+DF;"Augusto Cury";"Branco/Nulo";5024;10,9
+DF;"Augusto Cury";"Abstenção";3076;6,7
+DF;"Renan Santos";"Lula";13720;29,4
+DF;"Renan Santos";"Flávio Bolsonaro";18087;38,7
+DF;"Renan Santos";"Branco/Nulo";5757;12,3
+DF;"Renan Santos";"Abstenção";9150;19,6
+DF;"Ronaldo Caiado";"Lula";32185;37,8
+DF;"Ronaldo Caiado";"Flávio Bolsonaro";40941;48,1
+DF;"Ronaldo Caiado";"Branco/Nulo";11174;13,1
+DF;"Ronaldo Caiado";"Abstenção";777;0,9
+DF;"Outros candidatos";"Lula";444;4,5
+DF;"Outros candidatos";"Flávio Bolsonaro";6921;70,2
+DF;"Outros candidatos";"Branco/Nulo";895;9,1
+DF;"Outros candidatos";"Abstenção";1593;16,2
+DF;"Branco/Nulo";"Lula";31801;54,3
+DF;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+DF;"Branco/Nulo";"Branco/Nulo";26730;45,7
+DF;"Branco/Nulo";"Abstenção";0;0,0
+DF;"Abstenção";"Lula";55714;13,1
+DF;"Abstenção";"Flávio Bolsonaro";6936;1,6
+DF;"Abstenção";"Branco/Nulo";5204;1,2
+DF;"Abstenção";"Abstenção";359071;84,1
+ES;"Lula";"Lula";845449;99,5
+ES;"Lula";"Flávio Bolsonaro";0;0,0
+ES;"Lula";"Branco/Nulo";4579;0,5
+ES;"Lula";"Abstenção";0;0,0
+ES;"Flávio Bolsonaro";"Lula";0;0,0
+ES;"Flávio Bolsonaro";"Flávio Bolsonaro";1223945;99,3
+ES;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+ES;"Flávio Bolsonaro";"Abstenção";9249;0,7
+ES;"Augusto Cury";"Lula";36008;55,3
+ES;"Augusto Cury";"Flávio Bolsonaro";17766;27,3
+ES;"Augusto Cury";"Branco/Nulo";8395;12,9
+ES;"Augusto Cury";"Abstenção";2952;4,5
+ES;"Renan Santos";"Lula";28075;52,7
+ES;"Renan Santos";"Flávio Bolsonaro";17239;32,4
+ES;"Renan Santos";"Branco/Nulo";1127;2,1
+ES;"Renan Santos";"Abstenção";6796;12,8
+ES;"Ronaldo Caiado";"Lula";11381;29,1
+ES;"Ronaldo Caiado";"Flávio Bolsonaro";20347;52,0
+ES;"Ronaldo Caiado";"Branco/Nulo";7369;18,8
+ES;"Ronaldo Caiado";"Abstenção";0;0,0
+ES;"Outros candidatos";"Lula";3836;36,5
+ES;"Outros candidatos";"Flávio Bolsonaro";5577;53,0
+ES;"Outros candidatos";"Branco/Nulo";1110;10,5
+ES;"Outros candidatos";"Abstenção";0;0,0
+ES;"Branco/Nulo";"Lula";37907;37,5
+ES;"Branco/Nulo";"Flávio Bolsonaro";819;0,8
+ES;"Branco/Nulo";"Branco/Nulo";61843;61,2
+ES;"Branco/Nulo";"Abstenção";514;0,5
+ES;"Abstenção";"Lula";39354;6,2
+ES;"Abstenção";"Flávio Bolsonaro";8869;1,4
+ES;"Abstenção";"Branco/Nulo";28328;4,4
+ES;"Abstenção";"Abstenção";562817;88,0
+GO;"Lula";"Lula";1188880;100,0
+GO;"Lula";"Flávio Bolsonaro";0;0,0
+GO;"Lula";"Branco/Nulo";0;0,0
+GO;"Lula";"Abstenção";0;0,0
+GO;"Flávio Bolsonaro";"Lula";0;0,0
+GO;"Flávio Bolsonaro";"Flávio Bolsonaro";2051888;100,0
+GO;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+GO;"Flávio Bolsonaro";"Abstenção";0;0,0
+GO;"Augusto Cury";"Lula";22457;41,7
+GO;"Augusto Cury";"Flávio Bolsonaro";21331;39,6
+GO;"Augusto Cury";"Branco/Nulo";10061;18,7
+GO;"Augusto Cury";"Abstenção";0;0,0
+GO;"Renan Santos";"Lula";20383;37,7
+GO;"Renan Santos";"Flávio Bolsonaro";21058;38,9
+GO;"Renan Santos";"Branco/Nulo";12183;22,5
+GO;"Renan Santos";"Abstenção";480;0,9
+GO;"Ronaldo Caiado";"Lula";165128;35,0
+GO;"Ronaldo Caiado";"Flávio Bolsonaro";239806;50,8
+GO;"Ronaldo Caiado";"Branco/Nulo";38692;8,2
+GO;"Ronaldo Caiado";"Abstenção";28414;6,0
+GO;"Outros candidatos";"Lula";1932;27,0
+GO;"Outros candidatos";"Flávio Bolsonaro";3715;51,8
+GO;"Outros candidatos";"Branco/Nulo";1519;21,2
+GO;"Outros candidatos";"Abstenção";0;0,0
+GO;"Branco/Nulo";"Lula";90876;63,3
+GO;"Branco/Nulo";"Flávio Bolsonaro";7629;5,3
+GO;"Branco/Nulo";"Branco/Nulo";45151;31,4
+GO;"Branco/Nulo";"Abstenção";0;0,0
+GO;"Abstenção";"Lula";95961;8,7
+GO;"Abstenção";"Flávio Bolsonaro";0;0,0
+GO;"Abstenção";"Branco/Nulo";8789;0,8
+GO;"Abstenção";"Abstenção";1004253;90,6
+MA;"Lula";"Lula";2463275;96,0
+MA;"Lula";"Flávio Bolsonaro";0;0,0
+MA;"Lula";"Branco/Nulo";278;0,0
+MA;"Lula";"Abstenção";102748;4,0
+MA;"Flávio Bolsonaro";"Lula";11485;0,9
+MA;"Flávio Bolsonaro";"Flávio Bolsonaro";1193442;96,3
+MA;"Flávio Bolsonaro";"Branco/Nulo";20901;1,7
+MA;"Flávio Bolsonaro";"Abstenção";13212;1,1
+MA;"Augusto Cury";"Lula";50677;59,7
+MA;"Augusto Cury";"Flávio Bolsonaro";8720;10,3
+MA;"Augusto Cury";"Branco/Nulo";15353;18,1
+MA;"Augusto Cury";"Abstenção";10081;11,9
+MA;"Renan Santos";"Lula";32681;54,1
+MA;"Renan Santos";"Flávio Bolsonaro";15408;25,5
+MA;"Renan Santos";"Branco/Nulo";11530;19,1
+MA;"Renan Santos";"Abstenção";768;1,3
+MA;"Ronaldo Caiado";"Lula";32106;64,0
+MA;"Ronaldo Caiado";"Flávio Bolsonaro";9995;19,9
+MA;"Ronaldo Caiado";"Branco/Nulo";8054;16,1
+MA;"Ronaldo Caiado";"Abstenção";0;0,0
+MA;"Outros candidatos";"Lula";7586;75,3
+MA;"Outros candidatos";"Flávio Bolsonaro";2421;24,0
+MA;"Outros candidatos";"Branco/Nulo";64;0,6
+MA;"Outros candidatos";"Abstenção";0;0,0
+MA;"Branco/Nulo";"Lula";121856;81,5
+MA;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+MA;"Branco/Nulo";"Branco/Nulo";27703;18,5
+MA;"Branco/Nulo";"Abstenção";0;0,0
+MA;"Abstenção";"Lula";88602;8,7
+MA;"Abstenção";"Flávio Bolsonaro";0;0,0
+MA;"Abstenção";"Branco/Nulo";5688;0,6
+MA;"Abstenção";"Abstenção";928482;90,8
+MG;"Lula";"Lula";5188936;100,0
+MG;"Lula";"Flávio Bolsonaro";0;0,0
+MG;"Lula";"Branco/Nulo";0;0,0
+MG;"Lula";"Abstenção";0;0,0
+MG;"Flávio Bolsonaro";"Lula";0;0,0
+MG;"Flávio Bolsonaro";"Flávio Bolsonaro";5777548;100,0
+MG;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+MG;"Flávio Bolsonaro";"Abstenção";0;0,0
+MG;"Augusto Cury";"Lula";241418;58,9
+MG;"Augusto Cury";"Flávio Bolsonaro";89251;21,8
+MG;"Augusto Cury";"Branco/Nulo";64015;15,6
+MG;"Augusto Cury";"Abstenção";15054;3,7
+MG;"Renan Santos";"Lula";102237;41,4
+MG;"Renan Santos";"Flávio Bolsonaro";84335;34,1
+MG;"Renan Santos";"Branco/Nulo";47397;19,2
+MG;"Renan Santos";"Abstenção";13240;5,4
+MG;"Ronaldo Caiado";"Lula";100800;43,7
+MG;"Ronaldo Caiado";"Flávio Bolsonaro";106718;46,3
+MG;"Ronaldo Caiado";"Branco/Nulo";22905;9,9
+MG;"Ronaldo Caiado";"Abstenção";0;0,0
+MG;"Outros candidatos";"Lula";28551;23,2
+MG;"Outros candidatos";"Flávio Bolsonaro";78843;64,1
+MG;"Outros candidatos";"Branco/Nulo";15549;12,6
+MG;"Outros candidatos";"Abstenção";0;0,0
+MG;"Branco/Nulo";"Lula";403300;61,1
+MG;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+MG;"Branco/Nulo";"Branco/Nulo";257178;38,9
+MG;"Branco/Nulo";"Abstenção";0;0,0
+MG;"Abstenção";"Lula";285946;7,7
+MG;"Abstenção";"Flávio Bolsonaro";105179;2,8
+MG;"Abstenção";"Branco/Nulo";44279;1,2
+MG;"Abstenção";"Abstenção";3299693;88,3
+MS;"Lula";"Lula";516855;100,0
+MS;"Lula";"Flávio Bolsonaro";0;0,0
+MS;"Lula";"Branco/Nulo";0;0,0
+MS;"Lula";"Abstenção";0;0,0
+MS;"Flávio Bolsonaro";"Lula";0;0,0
+MS;"Flávio Bolsonaro";"Flávio Bolsonaro";863855;98,9
+MS;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+MS;"Flávio Bolsonaro";"Abstenção";9496;1,1
+MS;"Augusto Cury";"Lula";14407;36,8
+MS;"Augusto Cury";"Flávio Bolsonaro";18530;47,3
+MS;"Augusto Cury";"Branco/Nulo";6211;15,9
+MS;"Augusto Cury";"Abstenção";0;0,0
+MS;"Renan Santos";"Lula";8515;26,7
+MS;"Renan Santos";"Flávio Bolsonaro";15533;48,8
+MS;"Renan Santos";"Branco/Nulo";6482;20,4
+MS;"Renan Santos";"Abstenção";1318;4,1
+MS;"Ronaldo Caiado";"Lula";2733;11,7
+MS;"Ronaldo Caiado";"Flávio Bolsonaro";11227;48,2
+MS;"Ronaldo Caiado";"Branco/Nulo";3116;13,4
+MS;"Ronaldo Caiado";"Abstenção";6215;26,7
+MS;"Outros candidatos";"Lula";2013;34,3
+MS;"Outros candidatos";"Flávio Bolsonaro";3022;51,6
+MS;"Outros candidatos";"Branco/Nulo";827;14,1
+MS;"Outros candidatos";"Abstenção";0;0,0
+MS;"Branco/Nulo";"Lula";28202;55,4
+MS;"Branco/Nulo";"Flávio Bolsonaro";4051;8,0
+MS;"Branco/Nulo";"Branco/Nulo";18613;36,6
+MS;"Branco/Nulo";"Abstenção";0;0,0
+MS;"Abstenção";"Lula";56246;11,6
+MS;"Abstenção";"Flávio Bolsonaro";11672;2,4
+MS;"Abstenção";"Branco/Nulo";2345;0,5
+MS;"Abstenção";"Abstenção";412947;85,5
+MT;"Lula";"Lula";580354;99,8
+MT;"Lula";"Flávio Bolsonaro";0;0,0
+MT;"Lula";"Branco/Nulo";0;0,0
+MT;"Lula";"Abstenção";1327;0,2
+MT;"Flávio Bolsonaro";"Lula";0;0,0
+MT;"Flávio Bolsonaro";"Flávio Bolsonaro";1298581;100,0
+MT;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+MT;"Flávio Bolsonaro";"Abstenção";0;0,0
+MT;"Augusto Cury";"Lula";23382;58,4
+MT;"Augusto Cury";"Flávio Bolsonaro";8339;20,8
+MT;"Augusto Cury";"Branco/Nulo";7023;17,5
+MT;"Augusto Cury";"Abstenção";1275;3,2
+MT;"Renan Santos";"Lula";9624;29,0
+MT;"Renan Santos";"Flávio Bolsonaro";19027;57,4
+MT;"Renan Santos";"Branco/Nulo";4519;13,6
+MT;"Renan Santos";"Abstenção";0;0,0
+MT;"Ronaldo Caiado";"Lula";13697;41,4
+MT;"Ronaldo Caiado";"Flávio Bolsonaro";3473;10,5
+MT;"Ronaldo Caiado";"Branco/Nulo";3790;11,5
+MT;"Ronaldo Caiado";"Abstenção";12119;36,6
+MT;"Outros candidatos";"Lula";4720;68,9
+MT;"Outros candidatos";"Flávio Bolsonaro";1654;24,1
+MT;"Outros candidatos";"Branco/Nulo";479;7,0
+MT;"Outros candidatos";"Abstenção";0;0,0
+MT;"Branco/Nulo";"Lula";35357;60,2
+MT;"Branco/Nulo";"Flávio Bolsonaro";2337;4,0
+MT;"Branco/Nulo";"Branco/Nulo";19149;32,6
+MT;"Branco/Nulo";"Abstenção";1907;3,2
+MT;"Abstenção";"Lula";27012;4,6
+MT;"Abstenção";"Flávio Bolsonaro";17648;3,0
+MT;"Abstenção";"Branco/Nulo";5107;0,9
+MT;"Abstenção";"Abstenção";535901;91,5
+PA;"Lula";"Lula";2317199;95,5
+PA;"Lula";"Flávio Bolsonaro";0;0,0
+PA;"Lula";"Branco/Nulo";0;0,0
+PA;"Lula";"Abstenção";110038;4,5
+PA;"Flávio Bolsonaro";"Lula";0;0,0
+PA;"Flávio Bolsonaro";"Flávio Bolsonaro";2133379;98,6
+PA;"Flávio Bolsonaro";"Branco/Nulo";30577;1,4
+PA;"Flávio Bolsonaro";"Abstenção";0;0,0
+PA;"Augusto Cury";"Lula";90329;72,2
+PA;"Augusto Cury";"Flávio Bolsonaro";24889;19,9
+PA;"Augusto Cury";"Branco/Nulo";9953;8,0
+PA;"Augusto Cury";"Abstenção";0;0,0
+PA;"Renan Santos";"Lula";59732;71,0
+PA;"Renan Santos";"Flávio Bolsonaro";17704;21,0
+PA;"Renan Santos";"Branco/Nulo";6729;8,0
+PA;"Renan Santos";"Abstenção";0;0,0
+PA;"Ronaldo Caiado";"Lula";30631;58,9
+PA;"Ronaldo Caiado";"Flávio Bolsonaro";21360;41,1
+PA;"Ronaldo Caiado";"Branco/Nulo";0;0,0
+PA;"Ronaldo Caiado";"Abstenção";0;0,0
+PA;"Outros candidatos";"Lula";8109;74,9
+PA;"Outros candidatos";"Flávio Bolsonaro";2724;25,1
+PA;"Outros candidatos";"Branco/Nulo";0;0,0
+PA;"Outros candidatos";"Abstenção";0;0,0
+PA;"Branco/Nulo";"Lula";151219;74,4
+PA;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+PA;"Branco/Nulo";"Branco/Nulo";51930;25,6
+PA;"Branco/Nulo";"Abstenção";0;0,0
+PA;"Abstenção";"Lula";33374;2,8
+PA;"Abstenção";"Flávio Bolsonaro";0;0,0
+PA;"Abstenção";"Branco/Nulo";0;0,0
+PA;"Abstenção";"Abstenção";1162520;97,2
+PB;"Lula";"Lula";1530156;99,3
+PB;"Lula";"Flávio Bolsonaro";0;0,0
+PB;"Lula";"Branco/Nulo";0;0,0
+PB;"Lula";"Abstenção";10971;0,7
+PB;"Flávio Bolsonaro";"Lula";0;0,0
+PB;"Flávio Bolsonaro";"Flávio Bolsonaro";816814;98,2
+PB;"Flávio Bolsonaro";"Branco/Nulo";14563;1,8
+PB;"Flávio Bolsonaro";"Abstenção";0;0,0
+PB;"Augusto Cury";"Lula";39538;53,6
+PB;"Augusto Cury";"Flávio Bolsonaro";20763;28,1
+PB;"Augusto Cury";"Branco/Nulo";11638;15,8
+PB;"Augusto Cury";"Abstenção";1892;2,6
+PB;"Renan Santos";"Lula";17209;40,7
+PB;"Renan Santos";"Flávio Bolsonaro";11620;27,5
+PB;"Renan Santos";"Branco/Nulo";7866;18,6
+PB;"Renan Santos";"Abstenção";5552;13,1
+PB;"Ronaldo Caiado";"Lula";5652;29,0
+PB;"Ronaldo Caiado";"Flávio Bolsonaro";12876;66,0
+PB;"Ronaldo Caiado";"Branco/Nulo";983;5,0
+PB;"Ronaldo Caiado";"Abstenção";0;0,0
+PB;"Outros candidatos";"Lula";1858;32,4
+PB;"Outros candidatos";"Flávio Bolsonaro";3164;55,1
+PB;"Outros candidatos";"Branco/Nulo";722;12,6
+PB;"Outros candidatos";"Abstenção";0;0,0
+PB;"Branco/Nulo";"Lula";127331;74,8
+PB;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+PB;"Branco/Nulo";"Branco/Nulo";42820;25,2
+PB;"Branco/Nulo";"Abstenção";0;0,0
+PB;"Abstenção";"Lula";72368;12,8
+PB;"Abstenção";"Flávio Bolsonaro";0;0,0
+PB;"Abstenção";"Branco/Nulo";5701;1,0
+PB;"Abstenção";"Abstenção";486474;86,2
+PE;"Lula";"Lula";3553971;100,0
+PE;"Lula";"Flávio Bolsonaro";0;0,0
+PE;"Lula";"Branco/Nulo";0;0,0
+PE;"Lula";"Abstenção";0;0,0
+PE;"Flávio Bolsonaro";"Lula";0;0,0
+PE;"Flávio Bolsonaro";"Flávio Bolsonaro";1737065;99,9
+PE;"Flávio Bolsonaro";"Branco/Nulo";977;0,1
+PE;"Flávio Bolsonaro";"Abstenção";0;0,0
+PE;"Augusto Cury";"Lula";71820;52,1
+PE;"Augusto Cury";"Flávio Bolsonaro";34073;24,7
+PE;"Augusto Cury";"Branco/Nulo";28898;20,9
+PE;"Augusto Cury";"Abstenção";3168;2,3
+PE;"Renan Santos";"Lula";32279;37,6
+PE;"Renan Santos";"Flávio Bolsonaro";25209;29,4
+PE;"Renan Santos";"Branco/Nulo";16403;19,1
+PE;"Renan Santos";"Abstenção";11974;13,9
+PE;"Ronaldo Caiado";"Lula";32435;44,3
+PE;"Ronaldo Caiado";"Flávio Bolsonaro";28430;38,9
+PE;"Ronaldo Caiado";"Branco/Nulo";12311;16,8
+PE;"Ronaldo Caiado";"Abstenção";0;0,0
+PE;"Outros candidatos";"Lula";0;0,0
+PE;"Outros candidatos";"Flávio Bolsonaro";7832;64,5
+PE;"Outros candidatos";"Branco/Nulo";1536;12,7
+PE;"Outros candidatos";"Abstenção";2772;22,8
+PE;"Branco/Nulo";"Lula";221884;71,6
+PE;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+PE;"Branco/Nulo";"Branco/Nulo";88023;28,4
+PE;"Branco/Nulo";"Abstenção";0;0,0
+PE;"Abstenção";"Lula";205251;15,6
+PE;"Abstenção";"Flávio Bolsonaro";0;0,0
+PE;"Abstenção";"Branco/Nulo";28257;2,2
+PE;"Abstenção";"Abstenção";1078880;82,2
+PI;"Lula";"Lula";1486177;97,5
+PI;"Lula";"Flávio Bolsonaro";0;0,0
+PI;"Lula";"Branco/Nulo";10097;0,7
+PI;"Lula";"Abstenção";27436;1,8
+PI;"Flávio Bolsonaro";"Lula";8348;1,6
+PI;"Flávio Bolsonaro";"Flávio Bolsonaro";501715;97,0
+PI;"Flávio Bolsonaro";"Branco/Nulo";5953;1,2
+PI;"Flávio Bolsonaro";"Abstenção";1011;0,2
+PI;"Augusto Cury";"Lula";31205;65,4
+PI;"Augusto Cury";"Flávio Bolsonaro";10246;21,5
+PI;"Augusto Cury";"Branco/Nulo";6241;13,1
+PI;"Augusto Cury";"Abstenção";0;0,0
+PI;"Renan Santos";"Lula";16587;51,4
+PI;"Renan Santos";"Flávio Bolsonaro";4743;14,7
+PI;"Renan Santos";"Branco/Nulo";4535;14,1
+PI;"Renan Santos";"Abstenção";6409;19,9
+PI;"Ronaldo Caiado";"Lula";13767;63,7
+PI;"Ronaldo Caiado";"Flávio Bolsonaro";7779;36,0
+PI;"Ronaldo Caiado";"Branco/Nulo";83;0,4
+PI;"Ronaldo Caiado";"Abstenção";0;0,0
+PI;"Outros candidatos";"Lula";2724;66,2
+PI;"Outros candidatos";"Flávio Bolsonaro";1389;33,8
+PI;"Outros candidatos";"Branco/Nulo";0;0,0
+PI;"Outros candidatos";"Abstenção";0;0,0
+PI;"Branco/Nulo";"Lula";66557;70,5
+PI;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+PI;"Branco/Nulo";"Branco/Nulo";27880;29,5
+PI;"Branco/Nulo";"Abstenção";0;0,0
+PI;"Abstenção";"Lula";28662;6,2
+PI;"Abstenção";"Flávio Bolsonaro";0;0,0
+PI;"Abstenção";"Branco/Nulo";5193;1,1
+PI;"Abstenção";"Abstenção";430020;92,7
+PR;"Lula";"Lula";2054597;100,0
+PR;"Lula";"Flávio Bolsonaro";0;0,0
+PR;"Lula";"Branco/Nulo";0;0,0
+PR;"Lula";"Abstenção";0;0,0
+PR;"Flávio Bolsonaro";"Lula";0;0,0
+PR;"Flávio Bolsonaro";"Flávio Bolsonaro";3945345;100,0
+PR;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+PR;"Flávio Bolsonaro";"Abstenção";0;0,0
+PR;"Augusto Cury";"Lula";84000;41,0
+PR;"Augusto Cury";"Flávio Bolsonaro";81690;39,8
+PR;"Augusto Cury";"Branco/Nulo";29728;14,5
+PR;"Augusto Cury";"Abstenção";9677;4,7
+PR;"Renan Santos";"Lula";41930;23,6
+PR;"Renan Santos";"Flávio Bolsonaro";69456;39,1
+PR;"Renan Santos";"Branco/Nulo";26456;14,9
+PR;"Renan Santos";"Abstenção";39591;22,3
+PR;"Ronaldo Caiado";"Lula";43050;25,1
+PR;"Ronaldo Caiado";"Flávio Bolsonaro";98177;57,3
+PR;"Ronaldo Caiado";"Branco/Nulo";24205;14,1
+PR;"Ronaldo Caiado";"Abstenção";5862;3,4
+PR;"Outros candidatos";"Lula";4252;13,4
+PR;"Outros candidatos";"Flávio Bolsonaro";18877;59,5
+PR;"Outros candidatos";"Branco/Nulo";7255;22,9
+PR;"Outros candidatos";"Abstenção";1362;4,3
+PR;"Branco/Nulo";"Lula";139773;54,6
+PR;"Branco/Nulo";"Flávio Bolsonaro";18512;7,2
+PR;"Branco/Nulo";"Branco/Nulo";93220;36,4
+PR;"Branco/Nulo";"Abstenção";4440;1,7
+PR;"Abstenção";"Lula";198910;11,2
+PR;"Abstenção";"Flávio Bolsonaro";59401;3,4
+PR;"Abstenção";"Branco/Nulo";20526;1,2
+PR;"Abstenção";"Abstenção";1493363;84,3
+RJ;"Lula";"Lula";3693021;100,0
+RJ;"Lula";"Flávio Bolsonaro";0;0,0
+RJ;"Lula";"Branco/Nulo";0;0,0
+RJ;"Lula";"Abstenção";0;0,0
+RJ;"Flávio Bolsonaro";"Lula";0;0,0
+RJ;"Flávio Bolsonaro";"Flávio Bolsonaro";4735359;95,3
+RJ;"Flávio Bolsonaro";"Branco/Nulo";26759;0,5
+RJ;"Flávio Bolsonaro";"Abstenção";204727;4,1
+RJ;"Augusto Cury";"Lula";118515;47,9
+RJ;"Augusto Cury";"Flávio Bolsonaro";74176;30,0
+RJ;"Augusto Cury";"Branco/Nulo";40315;16,3
+RJ;"Augusto Cury";"Abstenção";14391;5,8
+RJ;"Renan Santos";"Lula";80902;38,2
+RJ;"Renan Santos";"Flávio Bolsonaro";90546;42,7
+RJ;"Renan Santos";"Branco/Nulo";40394;19,1
+RJ;"Renan Santos";"Abstenção";0;0,0
+RJ;"Ronaldo Caiado";"Lula";91000;45,5
+RJ;"Ronaldo Caiado";"Flávio Bolsonaro";93095;46,6
+RJ;"Ronaldo Caiado";"Branco/Nulo";15749;7,9
+RJ;"Ronaldo Caiado";"Abstenção";0;0,0
+RJ;"Outros candidatos";"Lula";21486;42,0
+RJ;"Outros candidatos";"Flávio Bolsonaro";24688;48,3
+RJ;"Outros candidatos";"Branco/Nulo";4964;9,7
+RJ;"Outros candidatos";"Abstenção";0;0,0
+RJ;"Branco/Nulo";"Lula";286230;58,4
+RJ;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+RJ;"Branco/Nulo";"Branco/Nulo";195785;40,0
+RJ;"Branco/Nulo";"Abstenção";7700;1,6
+RJ;"Abstenção";"Lula";274282;9,1
+RJ;"Abstenção";"Flávio Bolsonaro";151218;5,0
+RJ;"Abstenção";"Branco/Nulo";19060;0,6
+RJ;"Abstenção";"Abstenção";2553285;85,2
+RN;"Lula";"Lula";1201984;97,1
+RN;"Lula";"Flávio Bolsonaro";0;0,0
+RN;"Lula";"Branco/Nulo";0;0,0
+RN;"Lula";"Abstenção";35979;2,9
+RN;"Flávio Bolsonaro";"Lula";2722;0,4
+RN;"Flávio Bolsonaro";"Flávio Bolsonaro";694770;96,4
+RN;"Flávio Bolsonaro";"Branco/Nulo";11000;1,5
+RN;"Flávio Bolsonaro";"Abstenção";12002;1,7
+RN;"Augusto Cury";"Lula";29710;51,8
+RN;"Augusto Cury";"Flávio Bolsonaro";16001;27,9
+RN;"Augusto Cury";"Branco/Nulo";10417;18,2
+RN;"Augusto Cury";"Abstenção";1238;2,2
+RN;"Renan Santos";"Lula";19768;56,1
+RN;"Renan Santos";"Flávio Bolsonaro";12930;36,7
+RN;"Renan Santos";"Branco/Nulo";2563;7,3
+RN;"Renan Santos";"Abstenção";0;0,0
+RN;"Ronaldo Caiado";"Lula";5752;35,1
+RN;"Ronaldo Caiado";"Flávio Bolsonaro";10655;64,9
+RN;"Ronaldo Caiado";"Branco/Nulo";0;0,0
+RN;"Ronaldo Caiado";"Abstenção";0;0,0
+RN;"Outros candidatos";"Lula";1428;32,0
+RN;"Outros candidatos";"Flávio Bolsonaro";3042;68,0
+RN;"Outros candidatos";"Branco/Nulo";0;0,0
+RN;"Outros candidatos";"Abstenção";0;0,0
+RN;"Branco/Nulo";"Lula";59906;60,5
+RN;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+RN;"Branco/Nulo";"Branco/Nulo";39146;39,5
+RN;"Branco/Nulo";"Abstenção";0;0,0
+RN;"Abstenção";"Lula";92303;18,9
+RN;"Abstenção";"Flávio Bolsonaro";0;0,0
+RN;"Abstenção";"Branco/Nulo";18691;3,8
+RN;"Abstenção";"Abstenção";377818;77,3
+RO;"Lula";"Lula";244916;97,7
+RO;"Lula";"Flávio Bolsonaro";0;0,0
+RO;"Lula";"Branco/Nulo";0;0,0
+RO;"Lula";"Abstenção";5751;2,3
+RO;"Flávio Bolsonaro";"Lula";0;0,0
+RO;"Flávio Bolsonaro";"Flávio Bolsonaro";652988;100,0
+RO;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+RO;"Flávio Bolsonaro";"Abstenção";0;0,0
+RO;"Augusto Cury";"Lula";14609;57,8
+RO;"Augusto Cury";"Flávio Bolsonaro";3350;13,3
+RO;"Augusto Cury";"Branco/Nulo";3004;11,9
+RO;"Augusto Cury";"Abstenção";4317;17,1
+RO;"Renan Santos";"Lula";8823;46,0
+RO;"Renan Santos";"Flávio Bolsonaro";3911;20,4
+RO;"Renan Santos";"Branco/Nulo";2631;13,7
+RO;"Renan Santos";"Abstenção";3822;19,9
+RO;"Ronaldo Caiado";"Lula";8615;50,9
+RO;"Ronaldo Caiado";"Flávio Bolsonaro";6386;37,7
+RO;"Ronaldo Caiado";"Branco/Nulo";1928;11,4
+RO;"Ronaldo Caiado";"Abstenção";0;0,0
+RO;"Outros candidatos";"Lula";1687;54,9
+RO;"Outros candidatos";"Flávio Bolsonaro";552;17,9
+RO;"Outros candidatos";"Branco/Nulo";391;12,7
+RO;"Outros candidatos";"Abstenção";445;14,5
+RO;"Branco/Nulo";"Lula";12133;52,9
+RO;"Branco/Nulo";"Flávio Bolsonaro";783;3,4
+RO;"Branco/Nulo";"Branco/Nulo";8826;38,4
+RO;"Branco/Nulo";"Abstenção";1213;5,3
+RO;"Abstenção";"Lula";3655;1,3
+RO;"Abstenção";"Flávio Bolsonaro";6394;2,3
+RO;"Abstenção";"Branco/Nulo";2882;1,0
+RO;"Abstenção";"Abstenção";261882;95,3
+RR;"Lula";"Lula";70464;94,7
+RR;"Lula";"Flávio Bolsonaro";0;0,0
+RR;"Lula";"Branco/Nulo";0;0,0
+RR;"Lula";"Abstenção";3956;5,3
+RR;"Flávio Bolsonaro";"Lula";4937;2,1
+RR;"Flávio Bolsonaro";"Flávio Bolsonaro";204847;88,6
+RR;"Flávio Bolsonaro";"Branco/Nulo";3044;1,3
+RR;"Flávio Bolsonaro";"Abstenção";18494;8,0
+RR;"Augusto Cury";"Lula";2927;34,1
+RR;"Augusto Cury";"Flávio Bolsonaro";5652;65,9
+RR;"Augusto Cury";"Branco/Nulo";0;0,0
+RR;"Augusto Cury";"Abstenção";0;0,0
+RR;"Renan Santos";"Lula";1918;29,0
+RR;"Renan Santos";"Flávio Bolsonaro";4705;71,0
+RR;"Renan Santos";"Branco/Nulo";0;0,0
+RR;"Renan Santos";"Abstenção";0;0,0
+RR;"Ronaldo Caiado";"Lula";93;2,6
+RR;"Ronaldo Caiado";"Flávio Bolsonaro";3546;97,4
+RR;"Ronaldo Caiado";"Branco/Nulo";0;0,0
+RR;"Ronaldo Caiado";"Abstenção";0;0,0
+RR;"Outros candidatos";"Lula";270;27,6
+RR;"Outros candidatos";"Flávio Bolsonaro";706;72,4
+RR;"Outros candidatos";"Branco/Nulo";0;0,0
+RR;"Outros candidatos";"Abstenção";0;0,0
+RR;"Branco/Nulo";"Lula";2893;40,1
+RR;"Branco/Nulo";"Flávio Bolsonaro";208;2,9
+RR;"Branco/Nulo";"Branco/Nulo";2373;32,9
+RR;"Branco/Nulo";"Abstenção";1739;24,1
+RR;"Abstenção";"Lula";0;0,0
+RR;"Abstenção";"Flávio Bolsonaro";0;0,0
+RR;"Abstenção";"Branco/Nulo";0;0,0
+RR;"Abstenção";"Abstenção";68749;100,0
+RS;"Lula";"Lula";2294759;100,0
+RS;"Lula";"Flávio Bolsonaro";0;0,0
+RS;"Lula";"Branco/Nulo";0;0,0
+RS;"Lula";"Abstenção";0;0,0
+RS;"Flávio Bolsonaro";"Lula";0;0,0
+RS;"Flávio Bolsonaro";"Flávio Bolsonaro";3573783;100,0
+RS;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+RS;"Flávio Bolsonaro";"Abstenção";0;0,0
+RS;"Augusto Cury";"Lula";59309;30,4
+RS;"Augusto Cury";"Flávio Bolsonaro";88878;45,5
+RS;"Augusto Cury";"Branco/Nulo";31697;16,2
+RS;"Augusto Cury";"Abstenção";15412;7,9
+RS;"Renan Santos";"Lula";57408;34,3
+RS;"Renan Santos";"Flávio Bolsonaro";69140;41,3
+RS;"Renan Santos";"Branco/Nulo";26766;16,0
+RS;"Renan Santos";"Abstenção";14243;8,5
+RS;"Ronaldo Caiado";"Lula";17178;10,8
+RS;"Ronaldo Caiado";"Flávio Bolsonaro";110884;69,8
+RS;"Ronaldo Caiado";"Branco/Nulo";24212;15,2
+RS;"Ronaldo Caiado";"Abstenção";6546;4,1
+RS;"Outros candidatos";"Lula";10905;33,0
+RS;"Outros candidatos";"Flávio Bolsonaro";14326;43,3
+RS;"Outros candidatos";"Branco/Nulo";5930;17,9
+RS;"Outros candidatos";"Abstenção";1921;5,8
+RS;"Branco/Nulo";"Lula";160949;57,6
+RS;"Branco/Nulo";"Flávio Bolsonaro";17469;6,2
+RS;"Branco/Nulo";"Branco/Nulo";101185;36,2
+RS;"Branco/Nulo";"Abstenção";0;0,0
+RS;"Abstenção";"Lula";224118;12,3
+RS;"Abstenção";"Flávio Bolsonaro";0;0,0
+RS;"Abstenção";"Branco/Nulo";923;0,1
+RS;"Abstenção";"Abstenção";1594601;87,6
+SC;"Lula";"Lula";1127168;100,0
+SC;"Lula";"Flávio Bolsonaro";0;0,0
+SC;"Lula";"Branco/Nulo";0;0,0
+SC;"Lula";"Abstenção";0;0,0
+SC;"Flávio Bolsonaro";"Lula";0;0,0
+SC;"Flávio Bolsonaro";"Flávio Bolsonaro";3000020;100,0
+SC;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+SC;"Flávio Bolsonaro";"Abstenção";0;0,0
+SC;"Augusto Cury";"Lula";54945;40,9
+SC;"Augusto Cury";"Flávio Bolsonaro";45038;33,5
+SC;"Augusto Cury";"Branco/Nulo";19570;14,6
+SC;"Augusto Cury";"Abstenção";14720;11,0
+SC;"Renan Santos";"Lula";28788;21,7
+SC;"Renan Santos";"Flávio Bolsonaro";62761;47,3
+SC;"Renan Santos";"Branco/Nulo";22542;17,0
+SC;"Renan Santos";"Abstenção";18705;14,1
+SC;"Ronaldo Caiado";"Lula";18465;23,1
+SC;"Ronaldo Caiado";"Flávio Bolsonaro";51435;64,4
+SC;"Ronaldo Caiado";"Branco/Nulo";10010;12,5
+SC;"Ronaldo Caiado";"Abstenção";0;0,0
+SC;"Outros candidatos";"Lula";6736;25,0
+SC;"Outros candidatos";"Flávio Bolsonaro";14630;54,4
+SC;"Outros candidatos";"Branco/Nulo";4154;15,4
+SC;"Outros candidatos";"Abstenção";1395;5,2
+SC;"Branco/Nulo";"Lula";72714;49,4
+SC;"Branco/Nulo";"Flávio Bolsonaro";11544;7,8
+SC;"Branco/Nulo";"Branco/Nulo";62820;42,7
+SC;"Branco/Nulo";"Abstenção";0;0,0
+SC;"Abstenção";"Lula";109489;10,1
+SC;"Abstenção";"Flávio Bolsonaro";34623;3,2
+SC;"Abstenção";"Branco/Nulo";4821;0,4
+SC;"Abstenção";"Abstenção";937558;86,3
+SE;"Lula";"Lula";838762;98,0
+SE;"Lula";"Flávio Bolsonaro";0;0,0
+SE;"Lula";"Branco/Nulo";0;0,0
+SE;"Lula";"Abstenção";17257;2,0
+SE;"Flávio Bolsonaro";"Lula";0;0,0
+SE;"Flávio Bolsonaro";"Flávio Bolsonaro";408689;97,8
+SE;"Flávio Bolsonaro";"Branco/Nulo";6274;1,5
+SE;"Flávio Bolsonaro";"Abstenção";2876;0,7
+SE;"Augusto Cury";"Lula";23394;60,1
+SE;"Augusto Cury";"Flávio Bolsonaro";9553;24,6
+SE;"Augusto Cury";"Branco/Nulo";5308;13,6
+SE;"Augusto Cury";"Abstenção";641;1,6
+SE;"Renan Santos";"Lula";10551;49,3
+SE;"Renan Santos";"Flávio Bolsonaro";4168;19,5
+SE;"Renan Santos";"Branco/Nulo";4490;21,0
+SE;"Renan Santos";"Abstenção";2196;10,3
+SE;"Ronaldo Caiado";"Lula";15136;56,8
+SE;"Ronaldo Caiado";"Flávio Bolsonaro";9422;35,4
+SE;"Ronaldo Caiado";"Branco/Nulo";2093;7,9
+SE;"Ronaldo Caiado";"Abstenção";0;0,0
+SE;"Outros candidatos";"Lula";1970;57,2
+SE;"Outros candidatos";"Flávio Bolsonaro";1474;42,8
+SE;"Outros candidatos";"Branco/Nulo";0;0,0
+SE;"Outros candidatos";"Abstenção";0;0,0
+SE;"Branco/Nulo";"Lula";51724;69,1
+SE;"Branco/Nulo";"Flávio Bolsonaro";59;0,1
+SE;"Branco/Nulo";"Branco/Nulo";23045;30,8
+SE;"Branco/Nulo";"Abstenção";0;0,0
+SE;"Abstenção";"Lula";47527;15,8
+SE;"Abstenção";"Flávio Bolsonaro";0;0,0
+SE;"Abstenção";"Branco/Nulo";3055;1,0
+SE;"Abstenção";"Abstenção";250471;83,2
+SP;"Lula";"Lula";9505413;100,0
+SP;"Lula";"Flávio Bolsonaro";0;0,0
+SP;"Lula";"Branco/Nulo";0;0,0
+SP;"Lula";"Abstenção";0;0,0
+SP;"Flávio Bolsonaro";"Lula";0;0,0
+SP;"Flávio Bolsonaro";"Flávio Bolsonaro";12922023;100,0
+SP;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+SP;"Flávio Bolsonaro";"Abstenção";0;0,0
+SP;"Augusto Cury";"Lula";485387;54,4
+SP;"Augusto Cury";"Flávio Bolsonaro";222454;24,9
+SP;"Augusto Cury";"Branco/Nulo";144735;16,2
+SP;"Augusto Cury";"Abstenção";39792;4,5
+SP;"Renan Santos";"Lula";316100;39,3
+SP;"Renan Santos";"Flávio Bolsonaro";245536;30,5
+SP;"Renan Santos";"Branco/Nulo";149990;18,6
+SP;"Renan Santos";"Abstenção";92683;11,5
+SP;"Ronaldo Caiado";"Lula";76129;13,1
+SP;"Ronaldo Caiado";"Flávio Bolsonaro";368705;63,6
+SP;"Ronaldo Caiado";"Branco/Nulo";96098;16,6
+SP;"Ronaldo Caiado";"Abstenção";38639;6,7
+SP;"Outros candidatos";"Lula";49827;27,6
+SP;"Outros candidatos";"Flávio Bolsonaro";85183;47,2
+SP;"Outros candidatos";"Branco/Nulo";27634;15,3
+SP;"Outros candidatos";"Abstenção";17974;10,0
+SP;"Branco/Nulo";"Lula";944547;61,0
+SP;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+SP;"Branco/Nulo";"Branco/Nulo";603142;39,0
+SP;"Branco/Nulo";"Abstenção";0;0,0
+SP;"Abstenção";"Lula";741624;9,6
+SP;"Abstenção";"Flávio Bolsonaro";294987;3,8
+SP;"Abstenção";"Branco/Nulo";84314;1,1
+SP;"Abstenção";"Abstenção";6569975;85,4
+TO;"Lula";"Lula";383174;94,8
+TO;"Lula";"Flávio Bolsonaro";0;0,0
+TO;"Lula";"Branco/Nulo";12715;3,1
+TO;"Lula";"Abstenção";8121;2,0
+TO;"Flávio Bolsonaro";"Lula";6002;1,3
+TO;"Flávio Bolsonaro";"Flávio Bolsonaro";449528;95,8
+TO;"Flávio Bolsonaro";"Branco/Nulo";6775;1,4
+TO;"Flávio Bolsonaro";"Abstenção";7016;1,5
+TO;"Augusto Cury";"Lula";15895;70,9
+TO;"Augusto Cury";"Flávio Bolsonaro";4552;20,3
+TO;"Augusto Cury";"Branco/Nulo";1987;8,9
+TO;"Augusto Cury";"Abstenção";0;0,0
+TO;"Renan Santos";"Lula";7025;54,1
+TO;"Renan Santos";"Flávio Bolsonaro";5958;45,9
+TO;"Renan Santos";"Branco/Nulo";0;0,0
+TO;"Renan Santos";"Abstenção";0;0,0
+TO;"Ronaldo Caiado";"Lula";8470;42,0
+TO;"Ronaldo Caiado";"Flávio Bolsonaro";7004;34,7
+TO;"Ronaldo Caiado";"Branco/Nulo";4715;23,4
+TO;"Ronaldo Caiado";"Abstenção";0;0,0
+TO;"Outros candidatos";"Lula";673;43,7
+TO;"Outros candidatos";"Flávio Bolsonaro";866;56,3
+TO;"Outros candidatos";"Branco/Nulo";0;0,0
+TO;"Outros candidatos";"Abstenção";0;0,0
+TO;"Branco/Nulo";"Lula";17028;49,0
+TO;"Branco/Nulo";"Flávio Bolsonaro";0;0,0
+TO;"Branco/Nulo";"Branco/Nulo";17693;51,0
+TO;"Branco/Nulo";"Abstenção";0;0,0
+TO;"Abstenção";"Lula";4689;2,2
+TO;"Abstenção";"Flávio Bolsonaro";0;0,0
+TO;"Abstenção";"Branco/Nulo";0;0,0
+TO;"Abstenção";"Abstenção";212138;97,8
+ZZ;"Lula";"Lula";157387;100,0
+ZZ;"Lula";"Flávio Bolsonaro";0;0,0
+ZZ;"Lula";"Branco/Nulo";0;0,0
+ZZ;"Lula";"Abstenção";0;0,0
+ZZ;"Flávio Bolsonaro";"Lula";0;0,0
+ZZ;"Flávio Bolsonaro";"Flávio Bolsonaro";143900;100,0
+ZZ;"Flávio Bolsonaro";"Branco/Nulo";0;0,0
+ZZ;"Flávio Bolsonaro";"Abstenção";0;0,0
+ZZ;"Augusto Cury";"Lula";6652;68,3
+ZZ;"Augusto Cury";"Flávio Bolsonaro";2746;28,2
+ZZ;"Augusto Cury";"Branco/Nulo";336;3,5
+ZZ;"Augusto Cury";"Abstenção";0;0,0
+ZZ;"Renan Santos";"Lula";6431;75,0
+ZZ;"Renan Santos";"Flávio Bolsonaro";2149;25,0
+ZZ;"Renan Santos";"Branco/Nulo";0;0,0
+ZZ;"Renan Santos";"Abstenção";0;0,0
+ZZ;"Ronaldo Caiado";"Lula";2143;45,5
+ZZ;"Ronaldo Caiado";"Flávio Bolsonaro";1776;37,7
+ZZ;"Ronaldo Caiado";"Branco/Nulo";789;16,8
+ZZ;"Ronaldo Caiado";"Abstenção";0;0,0
+ZZ;"Outros candidatos";"Lula";2518;37,6
+ZZ;"Outros candidatos";"Flávio Bolsonaro";1714;25,6
+ZZ;"Outros candidatos";"Branco/Nulo";2464;36,8
+ZZ;"Outros candidatos";"Abstenção";0;0,0
+ZZ;"Branco/Nulo";"Lula";0;0,0
+ZZ;"Branco/Nulo";"Flávio Bolsonaro";3024;28,1
+ZZ;"Branco/Nulo";"Branco/Nulo";4795;44,6
+ZZ;"Branco/Nulo";"Abstenção";2942;27,3
+ZZ;"Abstenção";"Lula";24990;4,3
+ZZ;"Abstenção";"Flávio Bolsonaro";16161;2,8
+ZZ;"Abstenção";"Branco/Nulo";1406;0,2
+ZZ;"Abstenção";"Abstenção";532211;92,6
