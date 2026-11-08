@@ -31,6 +31,11 @@
     "votos": 1840348.9311822641
    }
   ],
+  "perdaMinLula": 58935,
+  "perdaMinFlavio": 383008,
+  "secoesLulaCaiu": 9591,
+  "secoesFlavioCaiu": 82180,
+  "secoes": 499248,
   "fluxos": [
    {
     "origem": "Lula",
@@ -125,6 +130,10 @@
      "votos": 9098.930298778088
     }
    ],
+   "perdaMinLula": 4734,
+   "perdaMinFlavio": 19228,
+   "secoesLulaCaiu": 609,
+   "secoesFlavioCaiu": 1536,
    "fluxos": [
     {
      "origem": "Lula",
@@ -218,6 +227,10 @@
      "votos": 33383.6267765073
     }
    ],
+   "perdaMinLula": 757,
+   "perdaMinFlavio": 15953,
+   "secoesLulaCaiu": 94,
+   "secoesFlavioCaiu": 3034,
    "fluxos": [
     {
      "origem": "Lula",
@@ -311,6 +324,10 @@
      "votos": 35005.031109031974
     }
    ],
+   "perdaMinLula": 10951,
+   "perdaMinFlavio": 27106,
+   "secoesLulaCaiu": 1308,
+   "secoesFlavioCaiu": 4002,
    "fluxos": [
     {
      "origem": "Lula",
@@ -404,6 +421,10 @@
      "votos": 12636.075840347816
     }
    ],
+   "perdaMinLula": 6005,
+   "perdaMinFlavio": 15546,
+   "secoesLulaCaiu": 499,
+   "secoesFlavioCaiu": 1415,
    "fluxos": [
     {
      "origem": "Lula",
@@ -497,6 +518,10 @@
      "votos": 114724.7365024112
     }
    ],
+   "perdaMinLula": 1983,
+   "perdaMinFlavio": 20183,
+   "secoesLulaCaiu": 536,
+   "secoesFlavioCaiu": 6227,
    "fluxos": [
     {
      "origem": "Lula",
@@ -590,6 +615,10 @@
      "votos": 90493.5328827994
     }
    ],
+   "perdaMinLula": 1294,
+   "perdaMinFlavio": 27755,
+   "secoesLulaCaiu": 331,
+   "secoesFlavioCaiu": 6955,
    "fluxos": [
     {
      "origem": "Lula",
@@ -683,6 +712,10 @@
      "votos": 32184.772868349744
     }
    ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 964,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 309,
    "fluxos": [
     {
      "origem": "Lula",
@@ -776,6 +809,10 @@
      "votos": 36008.210989082116
     }
    ],
+   "perdaMinLula": 235,
+   "perdaMinFlavio": 4828,
+   "secoesLulaCaiu": 87,
+   "secoesFlavioCaiu": 1385,
    "fluxos": [
     {
      "origem": "Lula",
@@ -869,6 +906,10 @@
      "votos": 95961.35650309909
     }
    ],
+   "perdaMinLula": 81,
+   "perdaMinFlavio": 664,
+   "secoesLulaCaiu": 22,
+   "secoesFlavioCaiu": 189,
    "fluxos": [
     {
      "origem": "Lula",
@@ -962,6 +1003,10 @@
      "votos": 88601.69002835579
     }
    ],
+   "perdaMinLula": 9407,
+   "perdaMinFlavio": 42556,
+   "secoesLulaCaiu": 1413,
+   "secoesFlavioCaiu": 9315,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1055,6 +1100,10 @@
      "votos": 241417.5021996769
     }
    ],
+   "perdaMinLula": 525,
+   "perdaMinFlavio": 13385,
+   "secoesLulaCaiu": 177,
+   "secoesFlavioCaiu": 4143,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1148,6 +1197,10 @@
      "votos": 18529.72080425596
     }
    ],
+   "perdaMinLula": 187,
+   "perdaMinFlavio": 3121,
+   "secoesLulaCaiu": 66,
+   "secoesFlavioCaiu": 793,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1241,6 +1294,10 @@
      "votos": 23382.148491439882
     }
    ],
+   "perdaMinLula": 552,
+   "perdaMinFlavio": 5983,
+   "secoesLulaCaiu": 143,
+   "secoesFlavioCaiu": 1412,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1334,6 +1391,10 @@
      "votos": 90329.1085763785
     }
    ],
+   "perdaMinLula": 13281,
+   "perdaMinFlavio": 40500,
+   "secoesLulaCaiu": 2165,
+   "secoesFlavioCaiu": 7772,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1427,6 +1488,10 @@
      "votos": 39538.0558148179
     }
    ],
+   "perdaMinLula": 91,
+   "perdaMinFlavio": 10098,
+   "secoesLulaCaiu": 34,
+   "secoesFlavioCaiu": 2755,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1520,6 +1585,10 @@
      "votos": 71820.43458502249
     }
    ],
+   "perdaMinLula": 368,
+   "perdaMinFlavio": 13078,
+   "secoesLulaCaiu": 42,
+   "secoesFlavioCaiu": 4066,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1613,6 +1682,10 @@
      "votos": 28662.355834655897
     }
    ],
+   "perdaMinLula": 3489,
+   "perdaMinFlavio": 14960,
+   "secoesLulaCaiu": 728,
+   "secoesFlavioCaiu": 3996,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1706,6 +1779,10 @@
      "votos": 98177.10908702713
     }
    ],
+   "perdaMinLula": 539,
+   "perdaMinFlavio": 2867,
+   "secoesLulaCaiu": 111,
+   "secoesFlavioCaiu": 879,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1799,6 +1876,10 @@
      "votos": 204726.6600083688
     }
    ],
+   "perdaMinLula": 295,
+   "perdaMinFlavio": 39921,
+   "secoesLulaCaiu": 51,
+   "secoesFlavioCaiu": 7971,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1892,6 +1973,10 @@
      "votos": 35978.9540518728
     }
    ],
+   "perdaMinLula": 161,
+   "perdaMinFlavio": 13010,
+   "secoesLulaCaiu": 53,
+   "secoesFlavioCaiu": 2849,
    "fluxos": [
     {
      "origem": "Lula",
@@ -1985,6 +2070,10 @@
      "votos": 8823.120334938487
     }
    ],
+   "perdaMinLula": 381,
+   "perdaMinFlavio": 3708,
+   "secoesLulaCaiu": 153,
+   "secoesFlavioCaiu": 870,
    "fluxos": [
     {
      "origem": "Lula",
@@ -2078,6 +2167,10 @@
      "votos": 4937.1548900525795
     }
    ],
+   "perdaMinLula": 1148,
+   "perdaMinFlavio": 13662,
+   "secoesLulaCaiu": 232,
+   "secoesFlavioCaiu": 1063,
    "fluxos": [
     {
      "origem": "Lula",
@@ -2171,6 +2264,10 @@
      "votos": 110884.4384313192
     }
    ],
+   "perdaMinLula": 252,
+   "perdaMinFlavio": 3332,
+   "secoesLulaCaiu": 127,
+   "secoesFlavioCaiu": 1131,
    "fluxos": [
     {
      "origem": "Lula",
@@ -2264,6 +2361,10 @@
      "votos": 62760.5672846086
     }
    ],
+   "perdaMinLula": 159,
+   "perdaMinFlavio": 1806,
+   "secoesLulaCaiu": 62,
+   "secoesFlavioCaiu": 551,
    "fluxos": [
     {
      "origem": "Lula",
@@ -2357,6 +2458,10 @@
      "votos": 23393.57703686207
     }
    ],
+   "perdaMinLula": 80,
+   "perdaMinFlavio": 5951,
+   "secoesLulaCaiu": 21,
+   "secoesFlavioCaiu": 1662,
    "fluxos": [
     {
      "origem": "Lula",
@@ -2450,6 +2555,10 @@
      "votos": 485386.5241550338
     }
    ],
+   "perdaMinLula": 230,
+   "perdaMinFlavio": 11528,
+   "secoesLulaCaiu": 74,
+   "secoesFlavioCaiu": 3665,
    "fluxos": [
     {
      "origem": "Lula",
@@ -2543,6 +2652,10 @@
      "votos": 12714.553821274687
     }
    ],
+   "perdaMinLula": 1607,
+   "perdaMinFlavio": 11246,
+   "secoesLulaCaiu": 434,
+   "secoesFlavioCaiu": 2210,
    "fluxos": [
     {
      "origem": "Lula",
@@ -2636,6 +2749,10 @@
      "votos": 6651.703025461816
     }
    ],
+   "perdaMinLula": 139,
+   "perdaMinFlavio": 69,
+   "secoesLulaCaiu": 16,
+   "secoesFlavioCaiu": 25,
    "fluxos": [
     {
      "origem": "Lula",
@@ -2736,7 +2853,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3884.7436465333603
     }
-   ]
+   ],
+   "perdaMinLula": 32,
+   "perdaMinFlavio": 2253,
+   "secoesLulaCaiu": 14,
+   "secoesFlavioCaiu": 347
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -2777,7 +2898,11 @@
      "destino": "Lula",
      "votos": 1238.3788595881276
     }
-   ]
+   ],
+   "perdaMinLula": 450,
+   "perdaMinFlavio": 2254,
+   "secoesLulaCaiu": 64,
+   "secoesFlavioCaiu": 196
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -2818,7 +2943,11 @@
      "destino": "Branco/Nulo",
      "votos": 631.1106536613356
     }
-   ]
+   ],
+   "perdaMinLula": 456,
+   "perdaMinFlavio": 2295,
+   "secoesLulaCaiu": 67,
+   "secoesFlavioCaiu": 117
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -2859,7 +2988,11 @@
      "destino": "Lula",
      "votos": 414.20019179688495
     }
-   ]
+   ],
+   "perdaMinLula": 535,
+   "perdaMinFlavio": 2135,
+   "secoesLulaCaiu": 72,
+   "secoesFlavioCaiu": 110
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -2900,7 +3033,11 @@
      "destino": "Lula",
      "votos": 361.94378848992125
     }
-   ]
+   ],
+   "perdaMinLula": 365,
+   "perdaMinFlavio": 1272,
+   "secoesLulaCaiu": 42,
+   "secoesFlavioCaiu": 81
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -2941,7 +3078,11 @@
      "destino": "Branco/Nulo",
      "votos": 212.6427896229874
     }
-   ]
+   ],
+   "perdaMinLula": 673,
+   "perdaMinFlavio": 1352,
+   "secoesLulaCaiu": 44,
+   "secoesFlavioCaiu": 46
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -2982,7 +3123,11 @@
      "destino": "Abstenção",
      "votos": 264.36450242467504
     }
-   ]
+   ],
+   "perdaMinLula": 55,
+   "perdaMinFlavio": 675,
+   "secoesLulaCaiu": 16,
+   "secoesFlavioCaiu": 66
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3023,7 +3168,11 @@
      "destino": "Branco/Nulo",
      "votos": 287.01884319341667
     }
-   ]
+   ],
+   "perdaMinLula": 85,
+   "perdaMinFlavio": 590,
+   "secoesLulaCaiu": 20,
+   "secoesFlavioCaiu": 56
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3064,7 +3213,11 @@
      "destino": "Branco/Nulo",
      "votos": 177.9002821809331
     }
-   ]
+   ],
+   "perdaMinLula": 212,
+   "perdaMinFlavio": 1000,
+   "secoesLulaCaiu": 35,
+   "secoesFlavioCaiu": 54
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3105,7 +3258,11 @@
      "destino": "Branco/Nulo",
      "votos": 164.4317740084341
     }
-   ]
+   ],
+   "perdaMinLula": 233,
+   "perdaMinFlavio": 770,
+   "secoesLulaCaiu": 39,
+   "secoesFlavioCaiu": 51
   },
   {
    "ranking": "Maior variação da margem",
@@ -3146,7 +3303,11 @@
      "destino": "Lula",
      "votos": 361.94378848992125
     }
-   ]
+   ],
+   "perdaMinLula": 365,
+   "perdaMinFlavio": 1272,
+   "secoesLulaCaiu": 42,
+   "secoesFlavioCaiu": 81
   },
   {
    "ranking": "Maior variação da margem",
@@ -3187,7 +3348,11 @@
      "destino": "Lula",
      "votos": 414.20019179688495
     }
-   ]
+   ],
+   "perdaMinLula": 535,
+   "perdaMinFlavio": 2135,
+   "secoesLulaCaiu": 72,
+   "secoesFlavioCaiu": 110
   },
   {
    "ranking": "Maior variação da margem",
@@ -3228,7 +3393,11 @@
      "destino": "Abstenção",
      "votos": 264.36450242467504
     }
-   ]
+   ],
+   "perdaMinLula": 55,
+   "perdaMinFlavio": 675,
+   "secoesLulaCaiu": 16,
+   "secoesFlavioCaiu": 66
   },
   {
    "ranking": "Maior variação da margem",
@@ -3269,7 +3438,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3884.7436465333603
     }
-   ]
+   ],
+   "perdaMinLula": 32,
+   "perdaMinFlavio": 2253,
+   "secoesLulaCaiu": 14,
+   "secoesFlavioCaiu": 347
   },
   {
    "ranking": "Maior variação da margem",
@@ -3310,7 +3483,11 @@
      "destino": "Branco/Nulo",
      "votos": 191.35537135664302
     }
-   ]
+   ],
+   "perdaMinLula": 61,
+   "perdaMinFlavio": 507,
+   "secoesLulaCaiu": 15,
+   "secoesFlavioCaiu": 37
   },
   {
    "ranking": "Maior variação da margem",
@@ -3351,7 +3528,11 @@
      "destino": "Branco/Nulo",
      "votos": 199.0757212531626
     }
-   ]
+   ],
+   "perdaMinLula": 72,
+   "perdaMinFlavio": 602,
+   "secoesLulaCaiu": 21,
+   "secoesFlavioCaiu": 51
   },
   {
    "ranking": "Maior variação da margem",
@@ -3392,7 +3573,11 @@
      "destino": "Branco/Nulo",
      "votos": 212.6427896229874
     }
-   ]
+   ],
+   "perdaMinLula": 673,
+   "perdaMinFlavio": 1352,
+   "secoesLulaCaiu": 44,
+   "secoesFlavioCaiu": 46
   },
   {
    "ranking": "Maior variação da margem",
@@ -3433,7 +3618,11 @@
      "destino": "Branco/Nulo",
      "votos": 227.10722776770956
     }
-   ]
+   ],
+   "perdaMinLula": 43,
+   "perdaMinFlavio": 484,
+   "secoesLulaCaiu": 11,
+   "secoesFlavioCaiu": 50
   },
   {
    "ranking": "Maior variação da margem",
@@ -3474,7 +3663,11 @@
      "destino": "Branco/Nulo",
      "votos": 220.77582083961775
     }
-   ]
+   ],
+   "perdaMinLula": 86,
+   "perdaMinFlavio": 343,
+   "secoesLulaCaiu": 16,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Maior variação da margem",
@@ -3515,7 +3708,11 @@
      "destino": "Branco/Nulo",
      "votos": 287.01884319341667
     }
-   ]
+   ],
+   "perdaMinLula": 85,
+   "perdaMinFlavio": 590,
+   "secoesLulaCaiu": 20,
+   "secoesFlavioCaiu": 56
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3556,7 +3753,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 14044.74116610227
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 1252,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 293
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3597,7 +3798,11 @@
      "destino": "Lula",
      "votos": 2484.9519622364446
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 421,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 106
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3638,7 +3843,11 @@
      "destino": "Lula",
      "votos": 1143.4468295701276
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 604,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 108
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3679,7 +3888,11 @@
      "destino": "Abstenção",
      "votos": 739.4721171309973
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 269,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 66
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3720,7 +3933,11 @@
      "destino": "Lula",
      "votos": 827.4778885771469
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 261,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 52
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3761,7 +3978,11 @@
      "destino": "Abstenção",
      "votos": 719.6477187709208
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 320,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 68
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3802,7 +4023,11 @@
      "destino": "Abstenção",
      "votos": 653.611089181388
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 328,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 64
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3843,7 +4068,11 @@
      "destino": "Abstenção",
      "votos": 670.5170482357852
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 451,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 78
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3884,7 +4113,11 @@
      "destino": "Lula",
      "votos": 521.5939970836915
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 416,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 70
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -3925,7 +4158,11 @@
      "destino": "Abstenção",
      "votos": 739.7959066950696
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 145,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 47
   },
   {
    "ranking": "Maior variação da margem",
@@ -3966,7 +4203,11 @@
      "destino": "Abstenção",
      "votos": 207.06967637148045
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 228,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 27
   },
   {
    "ranking": "Maior variação da margem",
@@ -4007,7 +4248,11 @@
      "destino": "Lula",
      "votos": 506.44425920605966
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 347,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 49
   },
   {
    "ranking": "Maior variação da margem",
@@ -4048,7 +4293,11 @@
      "destino": "Abstenção",
      "votos": 301.22685592722996
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 251,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 34
   },
   {
    "ranking": "Maior variação da margem",
@@ -4089,7 +4338,11 @@
      "destino": "Abstenção",
      "votos": 670.5170482357852
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 451,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 78
   },
   {
    "ranking": "Maior variação da margem",
@@ -4130,7 +4383,11 @@
      "destino": "Lula",
      "votos": 388.9130482240105
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 212,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 49
   },
   {
    "ranking": "Maior variação da margem",
@@ -4171,7 +4428,11 @@
      "destino": "Lula",
      "votos": 148.3219387730033
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 119,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 24
   },
   {
    "ranking": "Maior variação da margem",
@@ -4212,7 +4473,11 @@
      "destino": "Lula",
      "votos": 480.4950760800379
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 337,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 65
   },
   {
    "ranking": "Maior variação da margem",
@@ -4253,7 +4518,11 @@
      "destino": "Lula",
      "votos": 661.9133279608708
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 541,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 83
   },
   {
    "ranking": "Maior variação da margem",
@@ -4294,7 +4563,11 @@
      "destino": "Abstenção",
      "votos": 570.57133919102
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 545,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 61
   },
   {
    "ranking": "Maior variação da margem",
@@ -4335,7 +4608,11 @@
      "destino": "Lula",
      "votos": 189.4870003844413
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 185,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 29
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4376,7 +4653,11 @@
      "destino": "Lula",
      "votos": 19153.617310899204
     }
-   ]
+   ],
+   "perdaMinLula": 154,
+   "perdaMinFlavio": 5634,
+   "secoesLulaCaiu": 23,
+   "secoesFlavioCaiu": 1084
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4417,7 +4698,11 @@
      "destino": "Lula",
      "votos": 1107.7747015730895
     }
-   ]
+   ],
+   "perdaMinLula": 722,
+   "perdaMinFlavio": 1283,
+   "secoesLulaCaiu": 63,
+   "secoesFlavioCaiu": 175
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4458,7 +4743,11 @@
      "destino": "Lula",
      "votos": 974.3787175969621
     }
-   ]
+   ],
+   "perdaMinLula": 600,
+   "perdaMinFlavio": 1525,
+   "secoesLulaCaiu": 65,
+   "secoesFlavioCaiu": 186
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4499,7 +4788,11 @@
      "destino": "Lula",
      "votos": 958.8958954449781
     }
-   ]
+   ],
+   "perdaMinLula": 731,
+   "perdaMinFlavio": 509,
+   "secoesLulaCaiu": 66,
+   "secoesFlavioCaiu": 115
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4540,7 +4833,11 @@
      "destino": "Branco/Nulo",
      "votos": 625.4066559913864
     }
-   ]
+   ],
+   "perdaMinLula": 326,
+   "perdaMinFlavio": 1249,
+   "secoesLulaCaiu": 37,
+   "secoesFlavioCaiu": 138
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4581,7 +4878,11 @@
      "destino": "Lula",
      "votos": 694.8210436115163
     }
-   ]
+   ],
+   "perdaMinLula": 198,
+   "perdaMinFlavio": 719,
+   "secoesLulaCaiu": 39,
+   "secoesFlavioCaiu": 139
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4622,7 +4923,11 @@
      "destino": "Branco/Nulo",
      "votos": 580.5623429396827
     }
-   ]
+   ],
+   "perdaMinLula": 144,
+   "perdaMinFlavio": 750,
+   "secoesLulaCaiu": 33,
+   "secoesFlavioCaiu": 109
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4663,7 +4968,11 @@
      "destino": "Lula",
      "votos": 386.4955485369689
     }
-   ]
+   ],
+   "perdaMinLula": 465,
+   "perdaMinFlavio": 875,
+   "secoesLulaCaiu": 56,
+   "secoesFlavioCaiu": 91
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4704,7 +5013,11 @@
      "destino": "Lula",
      "votos": 367.95866486048095
     }
-   ]
+   ],
+   "perdaMinLula": 308,
+   "perdaMinFlavio": 655,
+   "secoesLulaCaiu": 46,
+   "secoesFlavioCaiu": 80
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -4745,7 +5058,11 @@
      "destino": "Lula",
      "votos": 484.1872238056806
     }
-   ]
+   ],
+   "perdaMinLula": 69,
+   "perdaMinFlavio": 475,
+   "secoesLulaCaiu": 18,
+   "secoesFlavioCaiu": 66
   },
   {
    "ranking": "Maior variação da margem",
@@ -4786,7 +5103,11 @@
      "destino": "Branco/Nulo",
      "votos": 314.76274021981123
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 331,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 49
   },
   {
    "ranking": "Maior variação da margem",
@@ -4827,7 +5148,11 @@
      "destino": "Abstenção",
      "votos": 169.62319603925624
     }
-   ]
+   ],
+   "perdaMinLula": 61,
+   "perdaMinFlavio": 349,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 29
   },
   {
    "ranking": "Maior variação da margem",
@@ -4868,7 +5193,11 @@
      "destino": "Lula",
      "votos": 231.05129222939763
     }
-   ]
+   ],
+   "perdaMinLula": 35,
+   "perdaMinFlavio": 383,
+   "secoesLulaCaiu": 5,
+   "secoesFlavioCaiu": 52
   },
   {
    "ranking": "Maior variação da margem",
@@ -4909,7 +5238,11 @@
      "destino": "Branco/Nulo",
      "votos": 625.4066559913864
     }
-   ]
+   ],
+   "perdaMinLula": 326,
+   "perdaMinFlavio": 1249,
+   "secoesLulaCaiu": 37,
+   "secoesFlavioCaiu": 138
   },
   {
    "ranking": "Maior variação da margem",
@@ -4950,7 +5283,11 @@
      "destino": "Abstenção",
      "votos": 438.819685326682
     }
-   ]
+   ],
+   "perdaMinLula": 250,
+   "perdaMinFlavio": 375,
+   "secoesLulaCaiu": 27,
+   "secoesFlavioCaiu": 50
   },
   {
    "ranking": "Maior variação da margem",
@@ -4991,7 +5328,11 @@
      "destino": "Lula",
      "votos": 306.4621239622991
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 524,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 66
   },
   {
    "ranking": "Maior variação da margem",
@@ -5032,7 +5373,11 @@
      "destino": "Lula",
      "votos": 184.10869640152845
     }
-   ]
+   ],
+   "perdaMinLula": 466,
+   "perdaMinFlavio": 602,
+   "secoesLulaCaiu": 41,
+   "secoesFlavioCaiu": 42
   },
   {
    "ranking": "Maior variação da margem",
@@ -5073,7 +5418,11 @@
      "destino": "Branco/Nulo",
      "votos": 262.63426010797684
     }
-   ]
+   ],
+   "perdaMinLula": 60,
+   "perdaMinFlavio": 347,
+   "secoesLulaCaiu": 10,
+   "secoesFlavioCaiu": 60
   },
   {
    "ranking": "Maior variação da margem",
@@ -5114,7 +5463,11 @@
      "destino": "Lula",
      "votos": 143.1160219166489
     }
-   ]
+   ],
+   "perdaMinLula": 101,
+   "perdaMinFlavio": 279,
+   "secoesLulaCaiu": 14,
+   "secoesFlavioCaiu": 27
   },
   {
    "ranking": "Maior variação da margem",
@@ -5155,7 +5508,11 @@
      "destino": "Lula",
      "votos": 146.4692072033705
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 275,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 37
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5196,7 +5553,11 @@
      "destino": "Lula",
      "votos": 7815.618337086555
     }
-   ]
+   ],
+   "perdaMinLula": 1003,
+   "perdaMinFlavio": 5359,
+   "secoesLulaCaiu": 80,
+   "secoesFlavioCaiu": 652
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5237,7 +5598,11 @@
      "destino": "Lula",
      "votos": 2046.5833344221398
     }
-   ]
+   ],
+   "perdaMinLula": 189,
+   "perdaMinFlavio": 1645,
+   "secoesLulaCaiu": 24,
+   "secoesFlavioCaiu": 189
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5278,7 +5643,11 @@
      "destino": "Abstenção",
      "votos": 513.4629970711875
     }
-   ]
+   ],
+   "perdaMinLula": 234,
+   "perdaMinFlavio": 849,
+   "secoesLulaCaiu": 33,
+   "secoesFlavioCaiu": 95
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5319,7 +5688,11 @@
      "destino": "Lula",
      "votos": 405.8028201047627
     }
-   ]
+   ],
+   "perdaMinLula": 1151,
+   "perdaMinFlavio": 1000,
+   "secoesLulaCaiu": 80,
+   "secoesFlavioCaiu": 82
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5360,7 +5733,11 @@
      "destino": "Lula",
      "votos": 461.4802780485196
     }
-   ]
+   ],
+   "perdaMinLula": 348,
+   "perdaMinFlavio": 623,
+   "secoesLulaCaiu": 39,
+   "secoesFlavioCaiu": 77
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5401,7 +5778,11 @@
      "destino": "Lula",
      "votos": 303.0537751081018
     }
-   ]
+   ],
+   "perdaMinLula": 141,
+   "perdaMinFlavio": 564,
+   "secoesLulaCaiu": 17,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5442,7 +5823,11 @@
      "destino": "Lula",
      "votos": 168.38936034800784
     }
-   ]
+   ],
+   "perdaMinLula": 689,
+   "perdaMinFlavio": 876,
+   "secoesLulaCaiu": 30,
+   "secoesFlavioCaiu": 31
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5483,7 +5868,11 @@
      "destino": "Lula",
      "votos": 191.0606452928184
     }
-   ]
+   ],
+   "perdaMinLula": 440,
+   "perdaMinFlavio": 760,
+   "secoesLulaCaiu": 38,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5524,7 +5913,11 @@
      "destino": "Lula",
      "votos": 251.3468097733887
     }
-   ]
+   ],
+   "perdaMinLula": 246,
+   "perdaMinFlavio": 459,
+   "secoesLulaCaiu": 26,
+   "secoesFlavioCaiu": 39
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5565,7 +5958,11 @@
      "destino": "Lula",
      "votos": 207.91954092282555
     }
-   ]
+   ],
+   "perdaMinLula": 217,
+   "perdaMinFlavio": 441,
+   "secoesLulaCaiu": 25,
+   "secoesFlavioCaiu": 29
   },
   {
    "ranking": "Maior variação da margem",
@@ -5606,7 +6003,11 @@
      "destino": "Lula",
      "votos": 251.3468097733887
     }
-   ]
+   ],
+   "perdaMinLula": 246,
+   "perdaMinFlavio": 459,
+   "secoesLulaCaiu": 26,
+   "secoesFlavioCaiu": 39
   },
   {
    "ranking": "Maior variação da margem",
@@ -5647,7 +6048,11 @@
      "destino": "Abstenção",
      "votos": 513.4629970711875
     }
-   ]
+   ],
+   "perdaMinLula": 234,
+   "perdaMinFlavio": 849,
+   "secoesLulaCaiu": 33,
+   "secoesFlavioCaiu": 95
   },
   {
    "ranking": "Maior variação da margem",
@@ -5688,7 +6093,11 @@
      "destino": "Lula",
      "votos": 191.0606452928184
     }
-   ]
+   ],
+   "perdaMinLula": 440,
+   "perdaMinFlavio": 760,
+   "secoesLulaCaiu": 38,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Maior variação da margem",
@@ -5729,7 +6138,11 @@
      "destino": "Lula",
      "votos": 303.0537751081018
     }
-   ]
+   ],
+   "perdaMinLula": 141,
+   "perdaMinFlavio": 564,
+   "secoesLulaCaiu": 17,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Maior variação da margem",
@@ -5770,7 +6183,11 @@
      "destino": "Lula",
      "votos": 7815.618337086555
     }
-   ]
+   ],
+   "perdaMinLula": 1003,
+   "perdaMinFlavio": 5359,
+   "secoesLulaCaiu": 80,
+   "secoesFlavioCaiu": 652
   },
   {
    "ranking": "Maior variação da margem",
@@ -5811,7 +6228,11 @@
      "destino": "Lula",
      "votos": 461.4802780485196
     }
-   ]
+   ],
+   "perdaMinLula": 348,
+   "perdaMinFlavio": 623,
+   "secoesLulaCaiu": 39,
+   "secoesFlavioCaiu": 77
   },
   {
    "ranking": "Maior variação da margem",
@@ -5852,7 +6273,11 @@
      "destino": "Lula",
      "votos": 2046.5833344221398
     }
-   ]
+   ],
+   "perdaMinLula": 189,
+   "perdaMinFlavio": 1645,
+   "secoesLulaCaiu": 24,
+   "secoesFlavioCaiu": 189
   },
   {
    "ranking": "Maior variação da margem",
@@ -5893,7 +6318,11 @@
      "destino": "Lula",
      "votos": 405.8028201047627
     }
-   ]
+   ],
+   "perdaMinLula": 1151,
+   "perdaMinFlavio": 1000,
+   "secoesLulaCaiu": 80,
+   "secoesFlavioCaiu": 82
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5934,7 +6363,11 @@
      "destino": "Lula",
      "votos": 20900.295399921517
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 2394,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 739
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -5975,7 +6408,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 5612.715264462362
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 368,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 112
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6016,7 +6453,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 5304.817502665696
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 160,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 54
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6057,7 +6498,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3008.0791559650484
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 117,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 28
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6098,7 +6543,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2173.1145285044627
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 152,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 37
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6139,7 +6588,11 @@
      "destino": "Lula",
      "votos": 1614.662057583238
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 145,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6180,7 +6633,11 @@
      "destino": "Lula",
      "votos": 1712.2082605370845
     }
-   ]
+   ],
+   "perdaMinLula": 12,
+   "perdaMinFlavio": 406,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 114
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6221,7 +6678,11 @@
      "destino": "Abstenção",
      "votos": 1577.2764766723283
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 284,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 87
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6262,7 +6723,11 @@
      "destino": "Abstenção",
      "votos": 1619.3783202940328
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 130,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6303,7 +6768,11 @@
      "destino": "Lula",
      "votos": 1305.763170751931
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 113,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 53
   },
   {
    "ranking": "Maior variação da margem",
@@ -6344,7 +6813,11 @@
      "destino": "Abstenção",
      "votos": 168.84675865570364
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 223,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 36
   },
   {
    "ranking": "Maior variação da margem",
@@ -6385,7 +6858,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2173.1145285044627
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 152,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 37
   },
   {
    "ranking": "Maior variação da margem",
@@ -6426,7 +6903,11 @@
      "destino": "Lula",
      "votos": 20900.295399921517
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 2394,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 739
   },
   {
    "ranking": "Maior variação da margem",
@@ -6467,7 +6948,11 @@
      "destino": "Lula",
      "votos": 405.6631572176072
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 19,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Maior variação da margem",
@@ -6508,7 +6993,11 @@
      "destino": "Lula",
      "votos": 1298.3379166295479
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 132,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 39
   },
   {
    "ranking": "Maior variação da margem",
@@ -6549,7 +7038,11 @@
      "destino": "Lula",
      "votos": 707.064984941905
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 94,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 31
   },
   {
    "ranking": "Maior variação da margem",
@@ -6590,7 +7083,11 @@
      "destino": "Abstenção",
      "votos": 267.6915572553483
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 119,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 20
   },
   {
    "ranking": "Maior variação da margem",
@@ -6631,7 +7128,11 @@
      "destino": "Lula",
      "votos": 103.10220144702092
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 116,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Maior variação da margem",
@@ -6672,7 +7173,11 @@
      "destino": "Abstenção",
      "votos": 1577.2764766723283
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 284,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 87
   },
   {
    "ranking": "Maior variação da margem",
@@ -6713,7 +7218,11 @@
      "destino": "Lula",
      "votos": 1531.7649153972757
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 221,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 55
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6754,7 +7263,11 @@
      "destino": "Lula",
      "votos": 25794.08601120784
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 2215,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 639
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6795,7 +7308,11 @@
      "destino": "Lula",
      "votos": 3858.813409848823
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 1303,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 247
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6836,7 +7353,11 @@
      "destino": "Lula",
      "votos": 3098.099389419989
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 633,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 186
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6877,7 +7398,11 @@
      "destino": "Abstenção",
      "votos": 2402.7695209995222
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 731,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 167
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6918,7 +7443,11 @@
      "destino": "Lula",
      "votos": 2775.55255904035
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 605,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 152
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -6959,7 +7488,11 @@
      "destino": "Abstenção",
      "votos": 2154.5212546965195
     }
-   ]
+   ],
+   "perdaMinLula": 138,
+   "perdaMinFlavio": 627,
+   "secoesLulaCaiu": 34,
+   "secoesFlavioCaiu": 151
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7000,7 +7533,11 @@
      "destino": "Lula",
      "votos": 923.9730941558817
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 355,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 103
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7041,7 +7578,11 @@
      "destino": "Abstenção",
      "votos": 1255.9645886691449
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 412,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 110
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7082,7 +7623,11 @@
      "destino": "Lula",
      "votos": 1062.7422979666746
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 299,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 79
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7123,7 +7668,11 @@
      "destino": "Lula",
      "votos": 1116.885050224893
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 170,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Maior variação da margem",
@@ -7164,7 +7713,11 @@
      "destino": "Lula",
      "votos": 839.3589752676813
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 643,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 90
   },
   {
    "ranking": "Maior variação da margem",
@@ -7205,7 +7758,11 @@
      "destino": "Abstenção",
      "votos": 2402.7695209995222
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 731,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 167
   },
   {
    "ranking": "Maior variação da margem",
@@ -7246,7 +7803,11 @@
      "destino": "Lula",
      "votos": 244.80112997611377
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 231,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 48
   },
   {
    "ranking": "Maior variação da margem",
@@ -7287,7 +7848,11 @@
      "destino": "Lula",
      "votos": 1225.5041639672352
     }
-   ]
+   ],
+   "perdaMinLula": 52,
+   "perdaMinFlavio": 438,
+   "secoesLulaCaiu": 8,
+   "secoesFlavioCaiu": 88
   },
   {
    "ranking": "Maior variação da margem",
@@ -7328,7 +7893,11 @@
      "destino": "Lula",
      "votos": 859.5889387365679
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 315,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 76
   },
   {
    "ranking": "Maior variação da margem",
@@ -7369,7 +7938,11 @@
      "destino": "Abstenção",
      "votos": 473.1269345098965
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 324,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 61
   },
   {
    "ranking": "Maior variação da margem",
@@ -7410,7 +7983,11 @@
      "destino": "Lula",
      "votos": 277.0175521265479
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 199,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 45
   },
   {
    "ranking": "Maior variação da margem",
@@ -7451,7 +8028,11 @@
      "destino": "Lula",
      "votos": 785.3946815606225
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 236,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 72
   },
   {
    "ranking": "Maior variação da margem",
@@ -7492,7 +8073,11 @@
      "destino": "Lula",
      "votos": 866.1350005259695
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 314,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 77
   },
   {
    "ranking": "Maior variação da margem",
@@ -7533,7 +8118,11 @@
      "destino": "Lula",
      "votos": 3858.813409848823
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 1303,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 247
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7574,7 +8163,11 @@
      "destino": "Lula",
      "votos": 32183.549672329325
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 964,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 309
   },
   {
    "ranking": "Maior variação da margem",
@@ -7615,7 +8208,11 @@
      "destino": "Lula",
      "votos": 32183.549672329325
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 964,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 309
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7656,7 +8253,11 @@
      "destino": "Lula",
      "votos": 4797.592649063925
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 371,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 110
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7697,7 +8298,11 @@
      "destino": "Lula",
      "votos": 4635.22525639559
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 265,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 93
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7738,7 +8343,11 @@
      "destino": "Lula",
      "votos": 3565.287140593692
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 344,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 98
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7779,7 +8388,11 @@
      "destino": "Lula",
      "votos": 3175.6111871220114
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 205,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 67
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7820,7 +8433,11 @@
      "destino": "Lula",
      "votos": 1397.2041591069526
     }
-   ]
+   ],
+   "perdaMinLula": 10,
+   "perdaMinFlavio": 335,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 93
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7861,7 +8478,11 @@
      "destino": "Lula",
      "votos": 1185.5768902981085
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 125,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 35
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7902,7 +8523,11 @@
      "destino": "Lula",
      "votos": 1184.131878370841
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 279,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 71
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7943,7 +8568,11 @@
      "destino": "Lula",
      "votos": 1120.5520025472415
     }
-   ]
+   ],
+   "perdaMinLula": 17,
+   "perdaMinFlavio": 79,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 28
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -7984,7 +8613,11 @@
      "destino": "Branco/Nulo",
      "votos": 974.1840653186821
     }
-   ]
+   ],
+   "perdaMinLula": 28,
+   "perdaMinFlavio": 288,
+   "secoesLulaCaiu": 7,
+   "secoesFlavioCaiu": 71
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8025,7 +8658,11 @@
      "destino": "Lula",
      "votos": 990.4682859130421
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 156,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 48
   },
   {
    "ranking": "Maior variação da margem",
@@ -8066,7 +8703,11 @@
      "destino": "Branco/Nulo",
      "votos": 242.89210789965756
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 74,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Maior variação da margem",
@@ -8107,7 +8748,11 @@
      "destino": "Lula",
      "votos": 990.4682859130421
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 156,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 48
   },
   {
    "ranking": "Maior variação da margem",
@@ -8148,7 +8793,11 @@
      "destino": "Lula",
      "votos": 4797.592649063925
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 371,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 110
   },
   {
    "ranking": "Maior variação da margem",
@@ -8189,7 +8838,11 @@
      "destino": "Lula",
      "votos": 3565.287140593692
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 344,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 98
   },
   {
    "ranking": "Maior variação da margem",
@@ -8230,7 +8883,11 @@
      "destino": "Branco/Nulo",
      "votos": 974.1840653186821
     }
-   ]
+   ],
+   "perdaMinLula": 28,
+   "perdaMinFlavio": 288,
+   "secoesLulaCaiu": 7,
+   "secoesFlavioCaiu": 71
   },
   {
    "ranking": "Maior variação da margem",
@@ -8271,7 +8928,11 @@
      "destino": "Lula",
      "votos": 699.548946063637
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 116,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 28
   },
   {
    "ranking": "Maior variação da margem",
@@ -8312,7 +8973,11 @@
      "destino": "Lula",
      "votos": 104.77868961376355
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 35,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Maior variação da margem",
@@ -8353,7 +9018,11 @@
      "destino": "Lula",
      "votos": 1184.131878370841
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 279,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 71
   },
   {
    "ranking": "Maior variação da margem",
@@ -8394,7 +9063,11 @@
      "destino": "Abstenção",
      "votos": 169.34713401616983
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 73,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 19
   },
   {
    "ranking": "Maior variação da margem",
@@ -8435,7 +9108,11 @@
      "destino": "Lula",
      "votos": 355.7787010368757
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 60,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 18
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8476,7 +9153,11 @@
      "destino": "Lula",
      "votos": 15530.670508358366
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8517,7 +9198,11 @@
      "destino": "Lula",
      "votos": 8345.403799295247
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 6,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8558,7 +9243,11 @@
      "destino": "Lula",
      "votos": 4976.2674838578605
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8599,7 +9288,11 @@
      "destino": "Lula",
      "votos": 3816.8497186176655
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 6,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8640,7 +9333,11 @@
      "destino": "Lula",
      "votos": 3478.4382472996804
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 1,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8681,7 +9378,11 @@
      "destino": "Lula",
      "votos": 1851.4395790016965
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 2,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8722,7 +9423,11 @@
      "destino": "Lula",
      "votos": 2437.8227373365235
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8763,7 +9468,11 @@
      "destino": "Lula",
      "votos": 2721.9267175031614
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 56,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 18
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8804,7 +9513,11 @@
      "destino": "Lula",
      "votos": 2572.3405941675483
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -8845,7 +9558,11 @@
      "destino": "Lula",
      "votos": 2139.7393462013333
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -8886,7 +9603,11 @@
      "destino": "Lula",
      "votos": 409.3612252269401
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 39,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Maior variação da margem",
@@ -8927,7 +9648,11 @@
      "destino": "Lula",
      "votos": 1923.1090392924343
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 1,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Maior variação da margem",
@@ -8968,7 +9693,11 @@
      "destino": "Lula",
      "votos": 1412.7746019237006
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 2,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Maior variação da margem",
@@ -9009,7 +9738,11 @@
      "destino": "Lula",
      "votos": 3478.4382472996804
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 1,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Maior variação da margem",
@@ -9050,7 +9783,11 @@
      "destino": "Lula",
      "votos": 680.274769044879
     }
-   ]
+   ],
+   "perdaMinLula": 12,
+   "perdaMinFlavio": 5,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 4
   },
   {
    "ranking": "Maior variação da margem",
@@ -9091,7 +9828,11 @@
      "destino": "Lula",
      "votos": 257.83291846973265
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 4,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Maior variação da margem",
@@ -9132,7 +9873,11 @@
      "destino": "Lula",
      "votos": 880.5076067884513
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -9173,7 +9918,11 @@
      "destino": "Lula",
      "votos": 739.6203116698515
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -9214,7 +9963,11 @@
      "destino": "Lula",
      "votos": 393.7391053323356
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -9255,7 +10008,11 @@
      "destino": "Lula",
      "votos": 1614.5378094242906
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9296,7 +10053,11 @@
      "destino": "Lula",
      "votos": 9640.470726708632
     }
-   ]
+   ],
+   "perdaMinLula": 45,
+   "perdaMinFlavio": 2563,
+   "secoesLulaCaiu": 8,
+   "secoesFlavioCaiu": 635
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9337,7 +10098,11 @@
      "destino": "Lula",
      "votos": 1911.268721566362
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 317,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 97
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9378,7 +10143,11 @@
      "destino": "Lula",
      "votos": 1826.2356462268162
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 551,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 132
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9419,7 +10188,11 @@
      "destino": "Lula",
      "votos": 1353.043240804206
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 688,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 182
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9460,7 +10233,11 @@
      "destino": "Lula",
      "votos": 1207.4516254660664
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 567,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 153
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9501,7 +10278,11 @@
      "destino": "Lula",
      "votos": 1502.4771513595417
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 356,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 85
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9542,7 +10323,11 @@
      "destino": "Abstenção",
      "votos": 663.0224038466181
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 495,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 135
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9583,7 +10368,11 @@
      "destino": "Abstenção",
      "votos": 1160.081826687652
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 691,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 150
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9624,7 +10413,11 @@
      "destino": "Lula",
      "votos": 937.9156845272123
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 293,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 71
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -9665,7 +10458,11 @@
      "destino": "Abstenção",
      "votos": 962.1283841251498
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 502,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 106
   },
   {
    "ranking": "Maior variação da margem",
@@ -9706,7 +10503,11 @@
      "destino": "Lula",
      "votos": 295.830773290329
     }
-   ]
+   ],
+   "perdaMinLula": 21,
+   "perdaMinFlavio": 293,
+   "secoesLulaCaiu": 5,
+   "secoesFlavioCaiu": 57
   },
   {
    "ranking": "Maior variação da margem",
@@ -9747,7 +10548,11 @@
      "destino": "Abstenção",
      "votos": 372.5031516387055
     }
-   ]
+   ],
+   "perdaMinLula": 10,
+   "perdaMinFlavio": 321,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 68
   },
   {
    "ranking": "Maior variação da margem",
@@ -9788,7 +10593,11 @@
      "destino": "Lula",
      "votos": 230.11842693247644
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 249,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Maior variação da margem",
@@ -9829,7 +10638,11 @@
      "destino": "Abstenção",
      "votos": 215.54091970766396
     }
-   ]
+   ],
+   "perdaMinLula": 18,
+   "perdaMinFlavio": 225,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Maior variação da margem",
@@ -9870,7 +10683,11 @@
      "destino": "Abstenção",
      "votos": 517.219090232287
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 454,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 88
   },
   {
    "ranking": "Maior variação da margem",
@@ -9911,7 +10728,11 @@
      "destino": "Abstenção",
      "votos": 186.21771027508427
     }
-   ]
+   ],
+   "perdaMinLula": 14,
+   "perdaMinFlavio": 223,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 37
   },
   {
    "ranking": "Maior variação da margem",
@@ -9952,7 +10773,11 @@
      "destino": "Lula",
      "votos": 330.3188872035159
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 218,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 50
   },
   {
    "ranking": "Maior variação da margem",
@@ -9993,7 +10818,11 @@
      "destino": "Abstenção",
      "votos": 246.79872936259335
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 189,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 49
   },
   {
    "ranking": "Maior variação da margem",
@@ -10034,7 +10863,11 @@
      "destino": "Abstenção",
      "votos": 348.7737530529163
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 215,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 37
   },
   {
    "ranking": "Maior variação da margem",
@@ -10075,7 +10908,11 @@
      "destino": "Lula",
      "votos": 590.2195102405394
     }
-   ]
+   ],
+   "perdaMinLula": 505,
+   "perdaMinFlavio": 530,
+   "secoesLulaCaiu": 44,
+   "secoesFlavioCaiu": 78
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10116,7 +10953,11 @@
      "destino": "Lula",
      "votos": 31389.906303511234
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 283,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 87
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10157,7 +10998,11 @@
      "destino": "Lula",
      "votos": 7812.215221267161
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 91,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 27
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10198,7 +11043,11 @@
      "destino": "Lula",
      "votos": 6522.461484328961
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 166,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 59
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10239,7 +11088,11 @@
      "destino": "Lula",
      "votos": 6123.462414158177
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 307,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 108
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10280,7 +11133,11 @@
      "destino": "Lula",
      "votos": 5192.461416614255
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 206,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 60
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10321,7 +11178,11 @@
      "destino": "Lula",
      "votos": 4501.633918358306
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 297,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 92
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10362,7 +11223,11 @@
      "destino": "Lula",
      "votos": 3624.0859711238345
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 105,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 41
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10403,7 +11268,11 @@
      "destino": "Lula",
      "votos": 3469.130947675223
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 112,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 38
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10444,7 +11313,11 @@
      "destino": "Lula",
      "votos": 3473.5597686015353
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 77,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 26
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10485,7 +11358,11 @@
      "destino": "Lula",
      "votos": 2953.621588210017
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 45,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Maior variação da margem",
@@ -10526,7 +11403,11 @@
      "destino": "Lula",
      "votos": 554.5449011574328
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 14,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 5
   },
   {
    "ranking": "Maior variação da margem",
@@ -10567,7 +11448,11 @@
      "destino": "Lula",
      "votos": 1157.2804550652208
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 61,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 15
   },
   {
    "ranking": "Maior variação da margem",
@@ -10608,7 +11493,11 @@
      "destino": "Lula",
      "votos": 1030.2372266625605
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 53,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 11
   },
   {
    "ranking": "Maior variação da margem",
@@ -10649,7 +11538,11 @@
      "destino": "Lula",
      "votos": 910.3709915345248
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 112,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 31
   },
   {
    "ranking": "Maior variação da margem",
@@ -10690,7 +11583,11 @@
      "destino": "Lula",
      "votos": 880.0738074186798
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 12,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 3
   },
   {
    "ranking": "Maior variação da margem",
@@ -10731,7 +11628,11 @@
      "destino": "Lula",
      "votos": 245.18206505803803
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 3,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Maior variação da margem",
@@ -10772,7 +11673,11 @@
      "destino": "Lula",
      "votos": 1632.1554155461317
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 72,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 21
   },
   {
    "ranking": "Maior variação da margem",
@@ -10813,7 +11718,11 @@
      "destino": "Lula",
      "votos": 1731.8330815972017
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 47,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Maior variação da margem",
@@ -10854,7 +11763,11 @@
      "destino": "Lula",
      "votos": 179.92745247572466
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 33,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Maior variação da margem",
@@ -10895,7 +11808,11 @@
      "destino": "Lula",
      "votos": 570.4252178169805
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 18,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 5
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10936,7 +11853,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 7112.835427468965
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 140,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 52
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -10977,7 +11898,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2167.3563297800592
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 73,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 25
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11018,7 +11943,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1094.0611116459254
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 35,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11059,7 +11988,11 @@
      "destino": "Abstenção",
      "votos": 1289.9570737584438
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 68,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 23
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11100,7 +12033,11 @@
      "destino": "Lula",
      "votos": 946.8335913264036
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 532,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 116
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11141,7 +12078,11 @@
      "destino": "Abstenção",
      "votos": 478.4985678667544
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 39,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 10
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11182,7 +12123,11 @@
      "destino": "Lula",
      "votos": 471.861136889853
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 8,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 3
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11223,7 +12168,11 @@
      "destino": "Lula",
      "votos": 400.04345070674987
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 51,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11264,7 +12213,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 277.01780962967365
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 28,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11305,7 +12258,11 @@
      "destino": "Lula",
      "votos": 234.4138318242511
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 13,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Maior variação da margem",
@@ -11346,7 +12303,11 @@
      "destino": "Lula",
      "votos": 234.4138318242511
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 13,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Maior variação da margem",
@@ -11387,7 +12348,11 @@
      "destino": "Abstenção",
      "votos": 122.05774508641242
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 64,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 15
   },
   {
    "ranking": "Maior variação da margem",
@@ -11428,7 +12393,11 @@
      "destino": "Lula",
      "votos": 206.46807534535324
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 7,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 5
   },
   {
    "ranking": "Maior variação da margem",
@@ -11469,7 +12438,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1094.0611116459254
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 35,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Maior variação da margem",
@@ -11510,7 +12483,11 @@
      "destino": "Abstenção",
      "votos": 189.79447035132148
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 30,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Maior variação da margem",
@@ -11551,7 +12528,11 @@
      "destino": "Lula",
      "votos": 160.10383617054038
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 4,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Maior variação da margem",
@@ -11592,7 +12573,11 @@
      "destino": "Lula",
      "votos": 156.91654668142692
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 127,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 27
   },
   {
    "ranking": "Maior variação da margem",
@@ -11633,7 +12618,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 139.52942065488418
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 11,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 3
   },
   {
    "ranking": "Maior variação da margem",
@@ -11674,7 +12663,11 @@
      "destino": "Lula",
      "votos": 131.31879799700027
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 61,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 15
   },
   {
    "ranking": "Maior variação da margem",
@@ -11715,7 +12708,11 @@
      "destino": "Abstenção",
      "votos": 1289.9570737584438
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 68,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 23
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11756,7 +12753,11 @@
      "destino": "Lula",
      "votos": 5786.780677789361
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 498,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 135
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11797,7 +12798,11 @@
      "destino": "Lula",
      "votos": 2078.421008545204
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 320,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 82
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11838,7 +12843,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1548.9027414512823
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 140,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 50
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11879,7 +12888,11 @@
      "destino": "Lula",
      "votos": 1305.8617034730817
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 36,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 15
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11920,7 +12933,11 @@
      "destino": "Lula",
      "votos": 746.2736889039697
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 43,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 14
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -11961,7 +12978,11 @@
      "destino": "Lula",
      "votos": 738.3752435226942
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 95,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 24
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12002,7 +13023,11 @@
      "destino": "Lula",
      "votos": 531.4646826376298
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 246,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 61
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12043,7 +13068,11 @@
      "destino": "Lula",
      "votos": 507.7432986422942
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 40,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 14
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12084,7 +13113,11 @@
      "destino": "Lula",
      "votos": 388.79717170305
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 74,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 22
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12125,7 +13158,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 508.8916846234819
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 46,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 16
   },
   {
    "ranking": "Maior variação da margem",
@@ -12166,7 +13203,11 @@
      "destino": "Lula",
      "votos": 216.67147383817274
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 112,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 26
   },
   {
    "ranking": "Maior variação da margem",
@@ -12207,7 +13248,11 @@
      "destino": "Lula",
      "votos": 292.0515292117334
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 39,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 12
   },
   {
    "ranking": "Maior variação da margem",
@@ -12248,7 +13293,11 @@
      "destino": "Abstenção",
      "votos": 205.7036143894145
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 147,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 38
   },
   {
    "ranking": "Maior variação da margem",
@@ -12289,7 +13338,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 246.18761381182395
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 37,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 12
   },
   {
    "ranking": "Maior variação da margem",
@@ -12330,7 +13383,11 @@
      "destino": "Lula",
      "votos": 154.8458139919689
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 59,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 11
   },
   {
    "ranking": "Maior variação da margem",
@@ -12371,7 +13428,11 @@
      "destino": "Lula",
      "votos": 144.4080929030337
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 189,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 24
   },
   {
    "ranking": "Maior variação da margem",
@@ -12412,7 +13473,11 @@
      "destino": "Lula",
      "votos": 531.4646826376298
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 246,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 61
   },
   {
    "ranking": "Maior variação da margem",
@@ -12453,7 +13518,11 @@
      "destino": "Lula",
      "votos": 2078.421008545204
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 320,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 82
   },
   {
    "ranking": "Maior variação da margem",
@@ -12494,7 +13563,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 166.06304614908578
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 13,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 4
   },
   {
    "ranking": "Maior variação da margem",
@@ -12535,7 +13608,11 @@
      "destino": "Lula",
      "votos": 120.5108049652313
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 30,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 10
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12576,7 +13653,11 @@
      "destino": "Lula",
      "votos": 11885.53607738083
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 1120,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 301
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12617,7 +13698,11 @@
      "destino": "Abstenção",
      "votos": 5575.790282263717
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 635,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 166
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12658,7 +13743,11 @@
      "destino": "Lula",
      "votos": 4068.889912724114
     }
-   ]
+   ],
+   "perdaMinLula": 349,
+   "perdaMinFlavio": 2113,
+   "secoesLulaCaiu": 72,
+   "secoesFlavioCaiu": 338
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12699,7 +13788,11 @@
      "destino": "Lula",
      "votos": 3116.509372950989
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 333,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 79
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12740,7 +13833,11 @@
      "destino": "Abstenção",
      "votos": 1664.3393079259142
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 221,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 66
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12781,7 +13878,11 @@
      "destino": "Lula",
      "votos": 1683.6278317178183
     }
-   ]
+   ],
+   "perdaMinLula": 21,
+   "perdaMinFlavio": 751,
+   "secoesLulaCaiu": 9,
+   "secoesFlavioCaiu": 172
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12822,7 +13923,11 @@
      "destino": "Abstenção",
      "votos": 1299.3682510468082
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 287,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 67
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12863,7 +13968,11 @@
      "destino": "Lula",
      "votos": 1839.2848588251784
     }
-   ]
+   ],
+   "perdaMinLula": 152,
+   "perdaMinFlavio": 730,
+   "secoesLulaCaiu": 28,
+   "secoesFlavioCaiu": 151
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12904,7 +14013,11 @@
      "destino": "Abstenção",
      "votos": 1561.4942923563842
     }
-   ]
+   ],
+   "perdaMinLula": 188,
+   "perdaMinFlavio": 319,
+   "secoesLulaCaiu": 28,
+   "secoesFlavioCaiu": 101
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -12945,7 +14058,11 @@
      "destino": "Lula",
      "votos": 1272.2263572523127
     }
-   ]
+   ],
+   "perdaMinLula": 43,
+   "perdaMinFlavio": 252,
+   "secoesLulaCaiu": 10,
+   "secoesFlavioCaiu": 65
   },
   {
    "ranking": "Maior variação da margem",
@@ -12986,7 +14103,11 @@
      "destino": "Lula",
      "votos": 840.8117993152583
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 673,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 123
   },
   {
    "ranking": "Maior variação da margem",
@@ -13027,7 +14148,11 @@
      "destino": "Lula",
      "votos": 817.7920569535345
     }
-   ]
+   ],
+   "perdaMinLula": 296,
+   "perdaMinFlavio": 1416,
+   "secoesLulaCaiu": 38,
+   "secoesFlavioCaiu": 156
   },
   {
    "ranking": "Maior variação da margem",
@@ -13068,7 +14193,11 @@
      "destino": "Lula",
      "votos": 303.3241346293247
     }
-   ]
+   ],
+   "perdaMinLula": 28,
+   "perdaMinFlavio": 340,
+   "secoesLulaCaiu": 7,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Maior variação da margem",
@@ -13109,7 +14238,11 @@
      "destino": "Lula",
      "votos": 254.8760457715753
     }
-   ]
+   ],
+   "perdaMinLula": 21,
+   "perdaMinFlavio": 343,
+   "secoesLulaCaiu": 5,
+   "secoesFlavioCaiu": 55
   },
   {
    "ranking": "Maior variação da margem",
@@ -13150,7 +14283,11 @@
      "destino": "Lula",
      "votos": 308.43501848114255
     }
-   ]
+   ],
+   "perdaMinLula": 7,
+   "perdaMinFlavio": 267,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 47
   },
   {
    "ranking": "Maior variação da margem",
@@ -13191,7 +14328,11 @@
      "destino": "Abstenção",
      "votos": 858.4714373407013
     }
-   ]
+   ],
+   "perdaMinLula": 28,
+   "perdaMinFlavio": 290,
+   "secoesLulaCaiu": 6,
+   "secoesFlavioCaiu": 68
   },
   {
    "ranking": "Maior variação da margem",
@@ -13232,7 +14373,11 @@
      "destino": "Abstenção",
      "votos": 5575.790282263717
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 635,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 166
   },
   {
    "ranking": "Maior variação da margem",
@@ -13273,7 +14418,11 @@
      "destino": "Lula",
      "votos": 832.3598113595726
     }
-   ]
+   ],
+   "perdaMinLula": 15,
+   "perdaMinFlavio": 534,
+   "secoesLulaCaiu": 5,
+   "secoesFlavioCaiu": 108
   },
   {
    "ranking": "Maior variação da margem",
@@ -13314,7 +14463,11 @@
      "destino": "Lula",
      "votos": 380.90000893585835
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 393,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 60
   },
   {
    "ranking": "Maior variação da margem",
@@ -13355,7 +14508,11 @@
      "destino": "Lula",
      "votos": 636.4925819382034
     }
-   ]
+   ],
+   "perdaMinLula": 14,
+   "perdaMinFlavio": 355,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 61
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13396,7 +14553,11 @@
      "destino": "Lula",
      "votos": 9484.123581302305
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 622,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 158
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13437,7 +14598,11 @@
      "destino": "Lula",
      "votos": 4404.494172806013
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 470,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 139
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13478,7 +14643,11 @@
      "destino": "Lula",
      "votos": 1531.729143910695
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 384,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 98
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13519,7 +14688,11 @@
      "destino": "Lula",
      "votos": 1151.8710167498318
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 366,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 84
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13560,7 +14733,11 @@
      "destino": "Lula",
      "votos": 829.461655047824
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 108,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 32
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13601,7 +14778,11 @@
      "destino": "Lula",
      "votos": 807.1584251900368
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 149,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 35
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13642,7 +14823,11 @@
      "destino": "Lula",
      "votos": 632.5037957166234
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 58,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 19
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13683,7 +14868,11 @@
      "destino": "Lula",
      "votos": 475.0475829214985
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 72,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 33
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13724,7 +14913,11 @@
      "destino": "Lula",
      "votos": 615.0530979604292
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 52,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 19
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -13765,7 +14958,11 @@
      "destino": "Lula",
      "votos": 361.2133401018776
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 235,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 64
   },
   {
    "ranking": "Maior variação da margem",
@@ -13806,7 +15003,11 @@
      "destino": "Lula",
      "votos": 166.3764792414053
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 208,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 34
   },
   {
    "ranking": "Maior variação da margem",
@@ -13847,7 +15048,11 @@
      "destino": "Lula",
      "votos": 196.85857967575683
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 74,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 16
   },
   {
    "ranking": "Maior variação da margem",
@@ -13888,7 +15093,11 @@
      "destino": "Lula",
      "votos": 1151.8710167498318
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 366,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 84
   },
   {
    "ranking": "Maior variação da margem",
@@ -13929,7 +15138,11 @@
      "destino": "Lula",
      "votos": 455.60071761839674
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 141,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 33
   },
   {
    "ranking": "Maior variação da margem",
@@ -13970,7 +15183,11 @@
      "destino": "Lula",
      "votos": 361.2133401018776
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 235,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 64
   },
   {
    "ranking": "Maior variação da margem",
@@ -14011,7 +15228,11 @@
      "destino": "Lula",
      "votos": 139.75370029744082
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 71,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Maior variação da margem",
@@ -14052,7 +15273,11 @@
      "destino": "Lula",
      "votos": 214.67644524060847
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 119,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 32
   },
   {
    "ranking": "Maior variação da margem",
@@ -14093,7 +15318,11 @@
      "destino": "Lula",
      "votos": 201.44742220960407
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 8,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 6
   },
   {
    "ranking": "Maior variação da margem",
@@ -14134,7 +15363,11 @@
      "destino": "Lula",
      "votos": 1531.729143910695
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 384,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 98
   },
   {
    "ranking": "Maior variação da margem",
@@ -14175,7 +15408,11 @@
      "destino": "Lula",
      "votos": 145.42026674650648
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 103,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 27
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14216,7 +15453,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 15646.238157247975
     }
-   ]
+   ],
+   "perdaMinLula": 51,
+   "perdaMinFlavio": 1231,
+   "secoesLulaCaiu": 5,
+   "secoesFlavioCaiu": 362
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14257,7 +15498,11 @@
      "destino": "Lula",
      "votos": 5740.914369224072
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 361,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 129
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14298,7 +15543,11 @@
      "destino": "Lula",
      "votos": 3199.805710349605
     }
-   ]
+   ],
+   "perdaMinLula": 117,
+   "perdaMinFlavio": 410,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 127
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14339,7 +15588,11 @@
      "destino": "Lula",
      "votos": 2844.5224424325825
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 183,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 63
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14380,7 +15633,11 @@
      "destino": "Lula",
      "votos": 3262.9116145849794
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 527,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 151
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14421,7 +15678,11 @@
      "destino": "Lula",
      "votos": 2845.683135594179
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 251,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 82
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14462,7 +15723,11 @@
      "destino": "Lula",
      "votos": 1990.9596045182766
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 276,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 84
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14503,7 +15768,11 @@
      "destino": "Lula",
      "votos": 1529.3607046034342
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 128,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 36
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14544,7 +15813,11 @@
      "destino": "Lula",
      "votos": 1132.4031278446269
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 139,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 46
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -14585,7 +15858,11 @@
      "destino": "Lula",
      "votos": 889.7997784145447
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 123,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Maior variação da margem",
@@ -14626,7 +15903,11 @@
      "destino": "Lula",
      "votos": 180.847478591334
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 58,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 16
   },
   {
    "ranking": "Maior variação da margem",
@@ -14667,7 +15948,11 @@
      "destino": "Lula",
      "votos": 260.7439859696148
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 90,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 18
   },
   {
    "ranking": "Maior variação da margem",
@@ -14708,7 +15993,11 @@
      "destino": "Lula",
      "votos": 3262.9116145849794
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 527,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 151
   },
   {
    "ranking": "Maior variação da margem",
@@ -14749,7 +16038,11 @@
      "destino": "Lula",
      "votos": 460.64800063980806
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 109,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 32
   },
   {
    "ranking": "Maior variação da margem",
@@ -14790,7 +16083,11 @@
      "destino": "Abstenção",
      "votos": 202.71079704546113
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 66,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 21
   },
   {
    "ranking": "Maior variação da margem",
@@ -14831,7 +16128,11 @@
      "destino": "Abstenção",
      "votos": 331.8434219373317
     }
-   ]
+   ],
+   "perdaMinLula": 29,
+   "perdaMinFlavio": 201,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 33
   },
   {
    "ranking": "Maior variação da margem",
@@ -14872,7 +16173,11 @@
      "destino": "Lula",
      "votos": 1132.4031278446269
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 139,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 46
   },
   {
    "ranking": "Maior variação da margem",
@@ -14913,7 +16218,11 @@
      "destino": "Lula",
      "votos": 499.72222772181306
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 71,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 24
   },
   {
    "ranking": "Maior variação da margem",
@@ -14954,7 +16263,11 @@
      "destino": "Lula",
      "votos": 163.39886884438133
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 66,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 16
   },
   {
    "ranking": "Maior variação da margem",
@@ -14995,7 +16308,11 @@
      "destino": "Lula",
      "votos": 91.93705996984876
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 69,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15036,7 +16353,11 @@
      "destino": "Lula",
      "votos": 8727.629932610267
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 1550,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 419
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15077,7 +16398,11 @@
      "destino": "Lula",
      "votos": 1642.5965326421674
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 533,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 158
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15118,7 +16443,11 @@
      "destino": "Lula",
      "votos": 552.3695949330505
     }
-   ]
+   ],
+   "perdaMinLula": 66,
+   "perdaMinFlavio": 247,
+   "secoesLulaCaiu": 18,
+   "secoesFlavioCaiu": 77
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15159,7 +16488,11 @@
      "destino": "Lula",
      "votos": 554.4019236006968
     }
-   ]
+   ],
+   "perdaMinLula": 13,
+   "perdaMinFlavio": 253,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 81
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15200,7 +16533,11 @@
      "destino": "Lula",
      "votos": 543.1647899023407
     }
-   ]
+   ],
+   "perdaMinLula": 20,
+   "perdaMinFlavio": 226,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 67
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15241,7 +16578,11 @@
      "destino": "Lula",
      "votos": 408.82659547854473
     }
-   ]
+   ],
+   "perdaMinLula": 32,
+   "perdaMinFlavio": 281,
+   "secoesLulaCaiu": 7,
+   "secoesFlavioCaiu": 76
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15282,7 +16623,11 @@
      "destino": "Lula",
      "votos": 462.36176847440845
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 220,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 59
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15323,7 +16668,11 @@
      "destino": "Lula",
      "votos": 409.39330859964946
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 169,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 52
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15364,7 +16713,11 @@
      "destino": "Lula",
      "votos": 336.7606502818595
     }
-   ]
+   ],
+   "perdaMinLula": 13,
+   "perdaMinFlavio": 224,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 54
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15405,7 +16758,11 @@
      "destino": "Lula",
      "votos": 420.1850599751112
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 119,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Maior variação da margem",
@@ -15446,7 +16803,11 @@
      "destino": "Lula",
      "votos": 258.2759794676967
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 232,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Maior variação da margem",
@@ -15487,7 +16848,11 @@
      "destino": "Lula",
      "votos": 163.31385204336343
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 64,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 16
   },
   {
    "ranking": "Maior variação da margem",
@@ -15528,7 +16893,11 @@
      "destino": "Lula",
      "votos": 227.14540782679052
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 199,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 47
   },
   {
    "ranking": "Maior variação da margem",
@@ -15569,7 +16938,11 @@
      "destino": "Lula",
      "votos": 290.03893288464957
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 143,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 48
   },
   {
    "ranking": "Maior variação da margem",
@@ -15610,7 +16983,11 @@
      "destino": "Lula",
      "votos": 1642.5965326421674
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 533,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 158
   },
   {
    "ranking": "Maior variação da margem",
@@ -15651,7 +17028,11 @@
      "destino": "Lula",
      "votos": 124.68276522090001
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 157,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 26
   },
   {
    "ranking": "Maior variação da margem",
@@ -15692,7 +17073,11 @@
      "destino": "Lula",
      "votos": 8727.629932610267
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 1550,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 419
   },
   {
    "ranking": "Maior variação da margem",
@@ -15733,7 +17118,11 @@
      "destino": "Lula",
      "votos": 554.4019236006968
     }
-   ]
+   ],
+   "perdaMinLula": 13,
+   "perdaMinFlavio": 253,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 81
   },
   {
    "ranking": "Maior variação da margem",
@@ -15774,7 +17163,11 @@
      "destino": "Lula",
      "votos": 462.36176847440845
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 220,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 59
   },
   {
    "ranking": "Maior variação da margem",
@@ -15815,7 +17208,11 @@
      "destino": "Lula",
      "votos": 88.98583339344385
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 128,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 36
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15856,7 +17253,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 19724.124163351527
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 17,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 10
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15897,7 +17298,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 5839.6370776799595
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 4,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 3
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15938,7 +17343,11 @@
      "destino": "Lula",
      "votos": 3771.4489715996424
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 5,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 3
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -15979,7 +17388,11 @@
      "destino": "Lula",
      "votos": 4767.904969556072
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 13,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 4
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16020,7 +17433,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3034.6683383543705
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 14,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16061,7 +17478,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2285.848395922898
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 38,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 16
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16102,7 +17523,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2254.2722394453676
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 16,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16143,7 +17568,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1920.5083819729045
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 81,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 30
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16184,7 +17613,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1281.0451349036555
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 69,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 27
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16225,7 +17658,11 @@
      "destino": "Lula",
      "votos": 1455.614272420631
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 17,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Maior variação da margem",
@@ -16266,7 +17703,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 220.2070646225986
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 83,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 25
   },
   {
    "ranking": "Maior variação da margem",
@@ -16307,7 +17748,11 @@
      "destino": "Abstenção",
      "votos": 129.70542760288092
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 60,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 12
   },
   {
    "ranking": "Maior variação da margem",
@@ -16348,7 +17793,11 @@
      "destino": "Lula",
      "votos": 149.1361972769268
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 3,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Maior variação da margem",
@@ -16389,7 +17838,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 130.63098185921908
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 3,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Maior variação da margem",
@@ -16430,7 +17883,11 @@
      "destino": "Lula",
      "votos": 194.93471935873046
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -16471,7 +17928,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 171.867514293752
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 23,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 6
   },
   {
    "ranking": "Maior variação da margem",
@@ -16512,7 +17973,11 @@
      "destino": "Lula",
      "votos": 185.84676638876942
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 4,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Maior variação da margem",
@@ -16553,7 +18018,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 80.20753108402134
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -16594,7 +18063,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 858.2023569414682
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 15,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 4
   },
   {
    "ranking": "Maior variação da margem",
@@ -16635,7 +18108,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 134.98727145537336
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 2,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16676,7 +18153,11 @@
      "destino": "Lula",
      "votos": 51535.307472054876
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 3074,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 892
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16717,7 +18198,11 @@
      "destino": "Abstenção",
      "votos": 9012.87074422683
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 2313,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 538
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16758,7 +18243,11 @@
      "destino": "Lula",
      "votos": 6385.960837369979
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 1694,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 438
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16799,7 +18288,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 5916.488456338816
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 2083,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 476
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16840,7 +18333,11 @@
      "destino": "Lula",
      "votos": 5587.202623963044
     }
-   ]
+   ],
+   "perdaMinLula": 16,
+   "perdaMinFlavio": 4733,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 594
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16881,7 +18378,11 @@
      "destino": "Abstenção",
      "votos": 6139.812227708497
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 1791,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 386
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16922,7 +18423,11 @@
      "destino": "Lula",
      "votos": 4056.1418448131653
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 505,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 161
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -16963,7 +18468,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 4247.9492276487
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 1726,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 331
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17004,7 +18513,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3345.6672382712204
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 138,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 42
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17045,7 +18558,11 @@
      "destino": "Abstenção",
      "votos": 3360.2000107468416
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 792,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 152
   },
   {
    "ranking": "Maior variação da margem",
@@ -17086,7 +18603,11 @@
      "destino": "Lula",
      "votos": 5587.202623963044
     }
-   ]
+   ],
+   "perdaMinLula": 16,
+   "perdaMinFlavio": 4733,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 594
   },
   {
    "ranking": "Maior variação da margem",
@@ -17127,7 +18648,11 @@
      "destino": "Lula",
      "votos": 609.5360687768579
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 566,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 75
   },
   {
    "ranking": "Maior variação da margem",
@@ -17168,7 +18693,11 @@
      "destino": "Abstenção",
      "votos": 931.2223684340006
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 414,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 99
   },
   {
    "ranking": "Maior variação da margem",
@@ -17209,7 +18738,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 4247.9492276487
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 1726,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 331
   },
   {
    "ranking": "Maior variação da margem",
@@ -17250,7 +18783,11 @@
      "destino": "Abstenção",
      "votos": 662.2992308627987
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 251,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 51
   },
   {
    "ranking": "Maior variação da margem",
@@ -17291,7 +18828,11 @@
      "destino": "Lula",
      "votos": 350.29034569473436
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 213,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 36
   },
   {
    "ranking": "Maior variação da margem",
@@ -17332,7 +18873,11 @@
      "destino": "Abstenção",
      "votos": 2515.5635900952343
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 796,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 162
   },
   {
    "ranking": "Maior variação da margem",
@@ -17373,7 +18918,11 @@
      "destino": "Lula",
      "votos": 510.7397840704403
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 244,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 39
   },
   {
    "ranking": "Maior variação da margem",
@@ -17414,7 +18963,11 @@
      "destino": "Lula",
      "votos": 187.86784435053002
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 319,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 35
   },
   {
    "ranking": "Maior variação da margem",
@@ -17455,7 +19008,11 @@
      "destino": "Abstenção",
      "votos": 6139.812227708497
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 1791,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 386
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17496,7 +19053,11 @@
      "destino": "Abstenção",
      "votos": 7817.645759872114
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 830,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 207
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17537,7 +19098,11 @@
      "destino": "Lula",
      "votos": 2490.493562922195
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 330,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 107
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17578,7 +19143,11 @@
      "destino": "Lula",
      "votos": 1837.7675754179857
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 294,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 79
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17619,7 +19188,11 @@
      "destino": "Lula",
      "votos": 1017.0307106562857
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 354,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 75
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17660,7 +19233,11 @@
      "destino": "Lula",
      "votos": 606.6136504330196
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 425,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 97
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17701,7 +19278,11 @@
      "destino": "Abstenção",
      "votos": 652.5701800091736
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 224,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 56
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17742,7 +19323,11 @@
      "destino": "Lula",
      "votos": 461.560141470454
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 195,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 48
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17783,7 +19368,11 @@
      "destino": "Lula",
      "votos": 624.816870240191
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 165,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 39
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17824,7 +19413,11 @@
      "destino": "Lula",
      "votos": 478.6366624909021
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 239,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 46
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -17865,7 +19458,11 @@
      "destino": "Lula",
      "votos": 389.9652915457423
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 203,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 45
   },
   {
    "ranking": "Maior variação da margem",
@@ -17906,7 +19503,11 @@
      "destino": "Lula",
      "votos": 296.8810316386918
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 267,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 30
   },
   {
    "ranking": "Maior variação da margem",
@@ -17947,7 +19548,11 @@
      "destino": "Lula",
      "votos": 217.49852360738976
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 167,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 27
   },
   {
    "ranking": "Maior variação da margem",
@@ -17988,7 +19593,11 @@
      "destino": "Abstenção",
      "votos": 248.32535397007064
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 162,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 30
   },
   {
    "ranking": "Maior variação da margem",
@@ -18029,7 +19638,11 @@
      "destino": "Lula",
      "votos": 478.6366624909021
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 239,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 46
   },
   {
    "ranking": "Maior variação da margem",
@@ -18070,7 +19683,11 @@
      "destino": "Abstenção",
      "votos": 245.75033529521016
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 144,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 37
   },
   {
    "ranking": "Maior variação da margem",
@@ -18111,7 +19728,11 @@
      "destino": "Lula",
      "votos": 100.0168383025287
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 56,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 14
   },
   {
    "ranking": "Maior variação da margem",
@@ -18152,7 +19773,11 @@
      "destino": "Lula",
      "votos": 389.9652915457423
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 203,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 45
   },
   {
    "ranking": "Maior variação da margem",
@@ -18193,7 +19818,11 @@
      "destino": "Lula",
      "votos": 245.68776643684566
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 200,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 52
   },
   {
    "ranking": "Maior variação da margem",
@@ -18234,7 +19863,11 @@
      "destino": "Abstenção",
      "votos": 104.932534922438
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 87,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 20
   },
   {
    "ranking": "Maior variação da margem",
@@ -18275,7 +19908,11 @@
      "destino": "Abstenção",
      "votos": 162.27320412855968
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 90,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18316,7 +19953,11 @@
      "destino": "Lula",
      "votos": 3744.3034738019055
     }
-   ]
+   ],
+   "perdaMinLula": 91,
+   "perdaMinFlavio": 1521,
+   "secoesLulaCaiu": 31,
+   "secoesFlavioCaiu": 312
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18357,7 +19998,11 @@
      "destino": "Lula",
      "votos": 791.3531302400391
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 152,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 46
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18398,7 +20043,11 @@
      "destino": "Lula",
      "votos": 670.9073183709589
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 48,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 24
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18439,7 +20088,11 @@
      "destino": "Lula",
      "votos": 614.9930923471851
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 29,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18480,7 +20133,11 @@
      "destino": "Lula",
      "votos": 553.3509216462744
     }
-   ]
+   ],
+   "perdaMinLula": 22,
+   "perdaMinFlavio": 151,
+   "secoesLulaCaiu": 9,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18521,7 +20178,11 @@
      "destino": "Lula",
      "votos": 443.56888576575494
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 20,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18562,7 +20223,11 @@
      "destino": "Lula",
      "votos": 389.21233774212044
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 66,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 18
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18603,7 +20268,11 @@
      "destino": "Lula",
      "votos": 175.85076244531797
     }
-   ]
+   ],
+   "perdaMinLula": 10,
+   "perdaMinFlavio": 57,
+   "secoesLulaCaiu": 5,
+   "secoesFlavioCaiu": 14
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18644,7 +20313,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 225.48626531878395
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 50,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 15
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -18685,7 +20358,11 @@
      "destino": "Lula",
      "votos": 210.94070776461834
     }
-   ]
+   ],
+   "perdaMinLula": 42,
+   "perdaMinFlavio": 180,
+   "secoesLulaCaiu": 8,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Maior variação da margem",
@@ -18726,7 +20403,11 @@
      "destino": "Lula",
      "votos": 3744.3034738019055
     }
-   ]
+   ],
+   "perdaMinLula": 91,
+   "perdaMinFlavio": 1521,
+   "secoesLulaCaiu": 31,
+   "secoesFlavioCaiu": 312
   },
   {
    "ranking": "Maior variação da margem",
@@ -18767,7 +20448,11 @@
      "destino": "Abstenção",
      "votos": 216.98797801282072
     }
-   ]
+   ],
+   "perdaMinLula": 29,
+   "perdaMinFlavio": 210,
+   "secoesLulaCaiu": 11,
+   "secoesFlavioCaiu": 37
   },
   {
    "ranking": "Maior variação da margem",
@@ -18808,7 +20493,11 @@
      "destino": "Lula",
      "votos": 210.94070776461834
     }
-   ]
+   ],
+   "perdaMinLula": 42,
+   "perdaMinFlavio": 180,
+   "secoesLulaCaiu": 8,
+   "secoesFlavioCaiu": 44
   },
   {
    "ranking": "Maior variação da margem",
@@ -18849,7 +20538,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 225.48626531878395
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 50,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 15
   },
   {
    "ranking": "Maior variação da margem",
@@ -18890,7 +20583,11 @@
      "destino": "Lula",
      "votos": 175.85076244531797
     }
-   ]
+   ],
+   "perdaMinLula": 10,
+   "perdaMinFlavio": 57,
+   "secoesLulaCaiu": 5,
+   "secoesFlavioCaiu": 14
   },
   {
    "ranking": "Maior variação da margem",
@@ -18931,7 +20628,11 @@
      "destino": "Lula",
      "votos": 791.3531302400391
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 152,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 46
   },
   {
    "ranking": "Maior variação da margem",
@@ -18972,7 +20673,11 @@
      "destino": "Lula",
      "votos": 443.56888576575494
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 20,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Maior variação da margem",
@@ -19013,7 +20718,11 @@
      "destino": "Lula",
      "votos": 77.12754221663414
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 71,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Maior variação da margem",
@@ -19054,7 +20763,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 113.90621714583699
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 213,
+   "secoesLulaCaiu": 6,
+   "secoesFlavioCaiu": 38
   },
   {
    "ranking": "Maior variação da margem",
@@ -19095,7 +20808,11 @@
      "destino": "Lula",
      "votos": 92.20937702328864
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 2,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19136,7 +20853,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3785.1523321046675
     }
-   ]
+   ],
+   "perdaMinLula": 27,
+   "perdaMinFlavio": 2528,
+   "secoesLulaCaiu": 9,
+   "secoesFlavioCaiu": 433
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19177,7 +20898,11 @@
      "destino": "Lula",
      "votos": 579.8210225901413
     }
-   ]
+   ],
+   "perdaMinLula": 143,
+   "perdaMinFlavio": 1395,
+   "secoesLulaCaiu": 19,
+   "secoesFlavioCaiu": 94
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19218,7 +20943,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 185.48411802659905
     }
-   ]
+   ],
+   "perdaMinLula": 188,
+   "perdaMinFlavio": 1227,
+   "secoesLulaCaiu": 30,
+   "secoesFlavioCaiu": 61
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19259,7 +20988,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 170.3343160895384
     }
-   ]
+   ],
+   "perdaMinLula": 56,
+   "perdaMinFlavio": 1210,
+   "secoesLulaCaiu": 16,
+   "secoesFlavioCaiu": 71
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19300,7 +21033,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 141.7907748024957
     }
-   ]
+   ],
+   "perdaMinLula": 60,
+   "perdaMinFlavio": 989,
+   "secoesLulaCaiu": 17,
+   "secoesFlavioCaiu": 49
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19341,7 +21078,11 @@
      "destino": "Abstenção",
      "votos": 146.287390659614
     }
-   ]
+   ],
+   "perdaMinLula": 56,
+   "perdaMinFlavio": 877,
+   "secoesLulaCaiu": 23,
+   "secoesFlavioCaiu": 60
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19382,7 +21123,11 @@
      "destino": "Lula",
      "votos": 86.00436760616833
     }
-   ]
+   ],
+   "perdaMinLula": 51,
+   "perdaMinFlavio": 958,
+   "secoesLulaCaiu": 15,
+   "secoesFlavioCaiu": 48
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19423,7 +21168,11 @@
      "destino": "Abstenção",
      "votos": 93.99885694425079
     }
-   ]
+   ],
+   "perdaMinLula": 70,
+   "perdaMinFlavio": 838,
+   "secoesLulaCaiu": 12,
+   "secoesFlavioCaiu": 30
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19464,7 +21213,11 @@
      "destino": "Lula",
      "votos": 138.86221298263288
     }
-   ]
+   ],
+   "perdaMinLula": 127,
+   "perdaMinFlavio": 672,
+   "secoesLulaCaiu": 19,
+   "secoesFlavioCaiu": 41
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19505,7 +21258,11 @@
      "destino": "Abstenção",
      "votos": 94.43042870156576
     }
-   ]
+   ],
+   "perdaMinLula": 51,
+   "perdaMinFlavio": 678,
+   "secoesLulaCaiu": 13,
+   "secoesFlavioCaiu": 30
   },
   {
    "ranking": "Maior variação da margem",
@@ -19546,7 +21303,11 @@
      "destino": "Lula",
      "votos": 86.00436760616833
     }
-   ]
+   ],
+   "perdaMinLula": 51,
+   "perdaMinFlavio": 958,
+   "secoesLulaCaiu": 15,
+   "secoesFlavioCaiu": 48
   },
   {
    "ranking": "Maior variação da margem",
@@ -19587,7 +21348,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 170.3343160895384
     }
-   ]
+   ],
+   "perdaMinLula": 56,
+   "perdaMinFlavio": 1210,
+   "secoesLulaCaiu": 16,
+   "secoesFlavioCaiu": 71
   },
   {
    "ranking": "Maior variação da margem",
@@ -19628,7 +21393,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 141.7907748024957
     }
-   ]
+   ],
+   "perdaMinLula": 60,
+   "perdaMinFlavio": 989,
+   "secoesLulaCaiu": 17,
+   "secoesFlavioCaiu": 49
   },
   {
    "ranking": "Maior variação da margem",
@@ -19669,7 +21438,11 @@
      "destino": "Lula",
      "votos": 579.8210225901413
     }
-   ]
+   ],
+   "perdaMinLula": 143,
+   "perdaMinFlavio": 1395,
+   "secoesLulaCaiu": 19,
+   "secoesFlavioCaiu": 94
   },
   {
    "ranking": "Maior variação da margem",
@@ -19710,7 +21483,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3785.1523321046675
     }
-   ]
+   ],
+   "perdaMinLula": 27,
+   "perdaMinFlavio": 2528,
+   "secoesLulaCaiu": 9,
+   "secoesFlavioCaiu": 433
   },
   {
    "ranking": "Maior variação da margem",
@@ -19751,7 +21528,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 185.48411802659905
     }
-   ]
+   ],
+   "perdaMinLula": 188,
+   "perdaMinFlavio": 1227,
+   "secoesLulaCaiu": 30,
+   "secoesFlavioCaiu": 61
   },
   {
    "ranking": "Maior variação da margem",
@@ -19792,7 +21573,11 @@
      "destino": "Abstenção",
      "votos": 146.287390659614
     }
-   ]
+   ],
+   "perdaMinLula": 56,
+   "perdaMinFlavio": 877,
+   "secoesLulaCaiu": 23,
+   "secoesFlavioCaiu": 60
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19833,7 +21618,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 13582.203351502716
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 209,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 77
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19874,7 +21663,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 4997.682858591698
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 43,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19915,7 +21708,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3098.0311769086566
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 47,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 19
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19956,7 +21753,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3446.654190021653
     }
-   ]
+   ],
+   "perdaMinLula": 4,
+   "perdaMinFlavio": 69,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 26
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -19997,7 +21798,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2538.615607912203
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 19,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20038,7 +21843,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2637.4583086575826
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 53,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 20
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20079,7 +21888,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2200.305832247277
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 56,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20120,7 +21933,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1854.4115826707887
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 30,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 10
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20161,7 +21978,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1543.0118165442668
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 54,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 22
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20202,7 +22023,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1683.2477491572458
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 42,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 13
   },
   {
    "ranking": "Maior variação da margem",
@@ -20243,7 +22068,11 @@
      "destino": "Lula",
      "votos": 385.95264531961334
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 161,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 42
   },
   {
    "ranking": "Maior variação da margem",
@@ -20284,7 +22113,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1595.0031424734605
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 60,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 21
   },
   {
    "ranking": "Maior variação da margem",
@@ -20325,7 +22158,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2200.305832247277
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 56,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 17
   },
   {
    "ranking": "Maior variação da margem",
@@ -20366,7 +22203,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1081.1807224014174
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 61,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 21
   },
   {
    "ranking": "Maior variação da margem",
@@ -20407,7 +22248,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1179.8043737543815
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 32,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 11
   },
   {
    "ranking": "Maior variação da margem",
@@ -20448,7 +22293,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 167.57035959086048
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 13,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 5
   },
   {
    "ranking": "Maior variação da margem",
@@ -20489,7 +22338,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 201.25639487483002
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 3,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 3
   },
   {
    "ranking": "Maior variação da margem",
@@ -20530,7 +22383,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 222.3996638891283
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 34,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 10
   },
   {
    "ranking": "Maior variação da margem",
@@ -20571,7 +22428,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 376.64656870092034
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 13,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Maior variação da margem",
@@ -20612,7 +22473,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1543.0118165442668
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 54,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 22
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20653,7 +22518,11 @@
      "destino": "Lula",
      "votos": 5379.12379770842
     }
-   ]
+   ],
+   "perdaMinLula": 13,
+   "perdaMinFlavio": 83,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 31
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20694,7 +22563,11 @@
      "destino": "Lula",
      "votos": 5174.3301272123
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 20,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 8
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20735,7 +22608,11 @@
      "destino": "Lula",
      "votos": 3530.737919281395
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 25,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 3
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20776,7 +22653,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2688.4800469861625
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 47,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 13
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20817,7 +22698,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2193.734382779899
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 66,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 16
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20858,7 +22743,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 2115.865308370328
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 17,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 8
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20899,7 +22788,11 @@
      "destino": "Lula",
      "votos": 1978.1855348302865
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 31,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 7
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20940,7 +22833,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 1826.4932992470324
     }
-   ]
+   ],
+   "perdaMinLula": 21,
+   "perdaMinFlavio": 56,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 10
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -20981,7 +22878,11 @@
      "destino": "Lula",
      "votos": 1194.519834495832
     }
-   ]
+   ],
+   "perdaMinLula": 3,
+   "perdaMinFlavio": 60,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 19
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21022,7 +22923,11 @@
      "destino": "Lula",
      "votos": 1373.0991438047947
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 2,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Maior variação da margem",
@@ -21063,7 +22968,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 265.76117321197927
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 14,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 5
   },
   {
    "ranking": "Maior variação da margem",
@@ -21104,7 +23013,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 273.8212687681909
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 37,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 10
   },
   {
    "ranking": "Maior variação da margem",
@@ -21145,7 +23058,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 80.4610268342695
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 11,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 6
   },
   {
    "ranking": "Maior variação da margem",
@@ -21186,7 +23103,11 @@
      "destino": "Lula",
      "votos": 555.6983639224246
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 71,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 19
   },
   {
    "ranking": "Maior variação da margem",
@@ -21227,7 +23148,11 @@
      "destino": "Lula",
      "votos": 195.23844458679588
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 18,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 8
   },
   {
    "ranking": "Maior variação da margem",
@@ -21268,7 +23193,11 @@
      "destino": "Abstenção",
      "votos": 468.84600172962803
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 53,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 12
   },
   {
    "ranking": "Maior variação da margem",
@@ -21309,7 +23238,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 134.67925752308713
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 18,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 5
   },
   {
    "ranking": "Maior variação da margem",
@@ -21350,7 +23283,11 @@
      "destino": "Lula",
      "votos": 655.4123020993068
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 7,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 4
   },
   {
    "ranking": "Maior variação da margem",
@@ -21391,7 +23328,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 206.46927983288745
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 25,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 9
   },
   {
    "ranking": "Maior variação da margem",
@@ -21432,7 +23373,11 @@
      "destino": "Lula",
      "votos": 452.157524056542
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 8,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 3
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21473,7 +23418,11 @@
      "destino": "Lula",
      "votos": 6847.453589665885
     }
-   ]
+   ],
+   "perdaMinLula": 12,
+   "perdaMinFlavio": 629,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 198
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21514,7 +23463,11 @@
      "destino": "Lula",
      "votos": 2105.541829252931
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 355,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 94
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21555,7 +23508,11 @@
      "destino": "Lula",
      "votos": 1215.5184052222949
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 313,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 81
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21596,7 +23553,11 @@
      "destino": "Lula",
      "votos": 1035.440285755989
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 216,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 77
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21637,7 +23598,11 @@
      "destino": "Lula",
      "votos": 928.6050922367951
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 170,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 45
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21678,7 +23643,11 @@
      "destino": "Lula",
      "votos": 586.0336568797928
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 112,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 49
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21719,7 +23688,11 @@
      "destino": "Lula",
      "votos": 501.4291526872478
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 72,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 28
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21760,7 +23733,11 @@
      "destino": "Lula",
      "votos": 496.6499206696264
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 295,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 67
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21801,7 +23778,11 @@
      "destino": "Abstenção",
      "votos": 468.154878212115
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 101,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 28
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -21842,7 +23823,11 @@
      "destino": "Lula",
      "votos": 419.5751944645733
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 98,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 33
   },
   {
    "ranking": "Maior variação da margem",
@@ -21883,7 +23868,11 @@
      "destino": "Lula",
      "votos": 2105.541829252931
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 355,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 94
   },
   {
    "ranking": "Maior variação da margem",
@@ -21924,7 +23913,11 @@
      "destino": "Lula",
      "votos": 1215.5184052222949
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 313,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 81
   },
   {
    "ranking": "Maior variação da margem",
@@ -21965,7 +23958,11 @@
      "destino": "Abstenção",
      "votos": 335.95726560358986
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 152,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 32
   },
   {
    "ranking": "Maior variação da margem",
@@ -22006,7 +24003,11 @@
      "destino": "Lula",
      "votos": 496.6499206696264
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 295,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 67
   },
   {
    "ranking": "Maior variação da margem",
@@ -22047,7 +24048,11 @@
      "destino": "Abstenção",
      "votos": 217.66467707177463
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 73,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 15
   },
   {
    "ranking": "Maior variação da margem",
@@ -22088,7 +24093,11 @@
      "destino": "Lula",
      "votos": 244.17145004922503
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 137,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 36
   },
   {
    "ranking": "Maior variação da margem",
@@ -22129,7 +24138,11 @@
      "destino": "Lula",
      "votos": 239.50450313801792
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 106,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 29
   },
   {
    "ranking": "Maior variação da margem",
@@ -22170,7 +24183,11 @@
      "destino": "Lula",
      "votos": 243.78294532923954
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 100,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 25
   },
   {
    "ranking": "Maior variação da margem",
@@ -22211,7 +24228,11 @@
      "destino": "Lula",
      "votos": 419.5751944645733
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 98,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 33
   },
   {
    "ranking": "Maior variação da margem",
@@ -22252,7 +24273,11 @@
      "destino": "Lula",
      "votos": 928.6050922367951
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 170,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 45
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22293,7 +24318,11 @@
      "destino": "Lula",
      "votos": 150051.3378095171
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 2098,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 724
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22334,7 +24363,11 @@
      "destino": "Lula",
      "votos": 14508.195409620548
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 714,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 184
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22375,7 +24408,11 @@
      "destino": "Lula",
      "votos": 10858.063000182738
     }
-   ]
+   ],
+   "perdaMinLula": 10,
+   "perdaMinFlavio": 256,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 68
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22416,7 +24453,11 @@
      "destino": "Lula",
      "votos": 11423.366320654015
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 110,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 42
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22457,7 +24498,11 @@
      "destino": "Lula",
      "votos": 9071.699776207506
     }
-   ]
+   ],
+   "perdaMinLula": 5,
+   "perdaMinFlavio": 112,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 38
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22498,7 +24543,11 @@
      "destino": "Lula",
      "votos": 9140.9258669177
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 36,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 15
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22539,7 +24588,11 @@
      "destino": "Lula",
      "votos": 7623.363505709589
     }
-   ]
+   ],
+   "perdaMinLula": 18,
+   "perdaMinFlavio": 74,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 28
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22580,7 +24633,11 @@
      "destino": "Lula",
      "votos": 7608.918571841953
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 176,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 54
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22621,7 +24678,11 @@
      "destino": "Lula",
      "votos": 7818.288004487415
     }
-   ]
+   ],
+   "perdaMinLula": 12,
+   "perdaMinFlavio": 61,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 28
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -22662,7 +24723,11 @@
      "destino": "Lula",
      "votos": 5082.89545414414
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 67,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 25
   },
   {
    "ranking": "Maior variação da margem",
@@ -22703,7 +24768,11 @@
      "destino": "Lula",
      "votos": 176.74769757432927
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 18,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 6
   },
   {
    "ranking": "Maior variação da margem",
@@ -22744,7 +24813,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 3349.2729228216303
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 182,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 50
   },
   {
    "ranking": "Maior variação da margem",
@@ -22785,7 +24858,11 @@
      "destino": "Lula",
      "votos": 3504.965989324557
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 61,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 25
   },
   {
    "ranking": "Maior variação da margem",
@@ -22826,7 +24903,11 @@
      "destino": "Lula",
      "votos": 1929.3335862084475
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 62,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 19
   },
   {
    "ranking": "Maior variação da margem",
@@ -22867,7 +24948,11 @@
      "destino": "Lula",
      "votos": 900.7588383855543
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 30,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 8
   },
   {
    "ranking": "Maior variação da margem",
@@ -22908,7 +24993,11 @@
      "destino": "Lula",
      "votos": 1426.1800459105798
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 105,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 32
   },
   {
    "ranking": "Maior variação da margem",
@@ -22949,7 +25038,11 @@
      "destino": "Lula",
      "votos": 142.70366474356
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 2,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Maior variação da margem",
@@ -22990,7 +25083,11 @@
      "destino": "Lula",
      "votos": 570.4660303767432
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 12,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 6
   },
   {
    "ranking": "Maior variação da margem",
@@ -23031,7 +25128,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 140.64207678881883
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 5,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Maior variação da margem",
@@ -23072,7 +25173,11 @@
      "destino": "Lula",
      "votos": 2836.0513170055588
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 116,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 30
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23113,7 +25218,11 @@
      "destino": "Lula",
      "votos": 2146.0047794856937
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 762,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 168
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23154,7 +25263,11 @@
      "destino": "Lula",
      "votos": 1204.5094396778331
     }
-   ]
+   ],
+   "perdaMinLula": 16,
+   "perdaMinFlavio": 760,
+   "secoesLulaCaiu": 7,
+   "secoesFlavioCaiu": 157
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23195,7 +25308,11 @@
      "destino": "Lula",
      "votos": 614.9388583246213
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 436,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 100
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23236,7 +25353,11 @@
      "destino": "Lula",
      "votos": 604.0593747427951
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 261,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 60
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23277,7 +25398,11 @@
      "destino": "Branco/Nulo",
      "votos": 336.6224904328899
     }
-   ]
+   ],
+   "perdaMinLula": 6,
+   "perdaMinFlavio": 250,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 55
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23318,7 +25443,11 @@
      "destino": "Abstenção",
      "votos": 304.15888327735405
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 252,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 45
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23359,7 +25488,11 @@
      "destino": "Branco/Nulo",
      "votos": 344.9366425797241
     }
-   ]
+   ],
+   "perdaMinLula": 36,
+   "perdaMinFlavio": 103,
+   "secoesLulaCaiu": 12,
+   "secoesFlavioCaiu": 34
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23400,7 +25533,11 @@
      "destino": "Branco/Nulo",
      "votos": 178.32538430105652
     }
-   ]
+   ],
+   "perdaMinLula": 15,
+   "perdaMinFlavio": 148,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 30
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23441,7 +25578,11 @@
      "destino": "Lula",
      "votos": 206.25220807884008
     }
-   ]
+   ],
+   "perdaMinLula": 13,
+   "perdaMinFlavio": 189,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23482,7 +25623,11 @@
      "destino": "Branco/Nulo",
      "votos": 239.92038898228066
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 104,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 26
   },
   {
    "ranking": "Maior variação da margem",
@@ -23523,7 +25668,11 @@
      "destino": "Branco/Nulo",
      "votos": 150.21597620751044
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 153,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 31
   },
   {
    "ranking": "Maior variação da margem",
@@ -23564,7 +25713,11 @@
      "destino": "Branco/Nulo",
      "votos": 239.92038898228066
     }
-   ]
+   ],
+   "perdaMinLula": 8,
+   "perdaMinFlavio": 104,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 26
   },
   {
    "ranking": "Maior variação da margem",
@@ -23605,7 +25758,11 @@
      "destino": "Lula",
      "votos": 206.25220807884008
     }
-   ]
+   ],
+   "perdaMinLula": 13,
+   "perdaMinFlavio": 189,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 43
   },
   {
    "ranking": "Maior variação da margem",
@@ -23646,7 +25803,11 @@
      "destino": "Lula",
      "votos": 137.44209507341097
     }
-   ]
+   ],
+   "perdaMinLula": 14,
+   "perdaMinFlavio": 153,
+   "secoesLulaCaiu": 4,
+   "secoesFlavioCaiu": 27
   },
   {
    "ranking": "Maior variação da margem",
@@ -23687,7 +25848,11 @@
      "destino": "Lula",
      "votos": 604.0593747427951
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 261,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 60
   },
   {
    "ranking": "Maior variação da margem",
@@ -23728,7 +25893,11 @@
      "destino": "Lula",
      "votos": 96.1358078817841
     }
-   ]
+   ],
+   "perdaMinLula": 9,
+   "perdaMinFlavio": 210,
+   "secoesLulaCaiu": 2,
+   "secoesFlavioCaiu": 28
   },
   {
    "ranking": "Maior variação da margem",
@@ -23769,7 +25938,11 @@
      "destino": "Branco/Nulo",
      "votos": 172.46279911815324
     }
-   ]
+   ],
+   "perdaMinLula": 18,
+   "perdaMinFlavio": 143,
+   "secoesLulaCaiu": 5,
+   "secoesFlavioCaiu": 29
   },
   {
    "ranking": "Maior variação da margem",
@@ -23810,7 +25983,11 @@
      "destino": "Lula",
      "votos": 614.9388583246213
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 436,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 100
   },
   {
    "ranking": "Maior variação da margem",
@@ -23851,7 +26028,11 @@
      "destino": "Lula",
      "votos": 1204.5094396778331
     }
-   ]
+   ],
+   "perdaMinLula": 16,
+   "perdaMinFlavio": 760,
+   "secoesLulaCaiu": 7,
+   "secoesFlavioCaiu": 157
   },
   {
    "ranking": "Maior variação da margem",
@@ -23892,7 +26073,11 @@
      "destino": "Abstenção",
      "votos": 304.15888327735405
     }
-   ]
+   ],
+   "perdaMinLula": 11,
+   "perdaMinFlavio": 252,
+   "secoesLulaCaiu": 3,
+   "secoesFlavioCaiu": 45
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23933,7 +26118,11 @@
      "destino": "Lula",
      "votos": 628.1857188495502
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -23974,7 +26163,11 @@
      "destino": "Lula",
      "votos": 485.82620772460206
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 7,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -24015,7 +26208,11 @@
      "destino": "Lula",
      "votos": 250.57588971651032
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -24056,7 +26253,11 @@
      "destino": "Lula",
      "votos": 337.7458759148834
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -24097,7 +26298,11 @@
      "destino": "Lula",
      "votos": 267.7048414264902
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -24138,7 +26343,11 @@
      "destino": "Lula",
      "votos": 134.77312865666727
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -24179,7 +26388,11 @@
      "destino": "Abstenção",
      "votos": 281.2980557857363
     }
-   ]
+   ],
+   "perdaMinLula": 2,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -24220,7 +26433,11 @@
      "destino": "Lula",
      "votos": 196.7564031293632
     }
-   ]
+   ],
+   "perdaMinLula": 1,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 1,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -24261,7 +26478,11 @@
      "destino": "Lula",
      "votos": 186.4699585108135
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Volume de votos em movimento",
@@ -24302,7 +26523,11 @@
      "destino": "Lula",
      "votos": 127.95037226768486
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -24343,7 +26568,11 @@
      "destino": "Lula",
      "votos": 63.23744806416278
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -24384,7 +26613,11 @@
      "destino": "Lula",
      "votos": 55.975148269471354
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -24425,7 +26658,11 @@
      "destino": "Lula",
      "votos": 161.59733251370469
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -24466,7 +26703,11 @@
      "destino": "Flávio Bolsonaro",
      "votos": 154.86894232246965
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -24507,7 +26748,11 @@
      "destino": "Lula",
      "votos": 91.06428421257574
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 2,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Maior variação da margem",
@@ -24548,7 +26793,11 @@
      "destino": "Lula",
      "votos": 125.9810394279557
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -24589,7 +26838,11 @@
      "destino": "Lula",
      "votos": 136.01631131583397
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 0,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 0
   },
   {
    "ranking": "Maior variação da margem",
@@ -24630,7 +26883,11 @@
      "destino": "Lula",
      "votos": 155.97785422968005
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 7,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 2
   },
   {
    "ranking": "Maior variação da margem",
@@ -24671,7 +26928,11 @@
      "destino": "Lula",
      "votos": 92.17746265397206
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 2,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   },
   {
    "ranking": "Maior variação da margem",
@@ -24712,7 +26973,11 @@
      "destino": "Lula",
      "votos": 485.82620772460206
     }
-   ]
+   ],
+   "perdaMinLula": 0,
+   "perdaMinFlavio": 7,
+   "secoesLulaCaiu": 0,
+   "secoesFlavioCaiu": 1
   }
  ],
  "viradas": 227

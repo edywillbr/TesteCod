@@ -237,6 +237,18 @@ function resumir({ F, linhas, colunas }) {
   };
 }
 
+// Perda mínima de cada finalista, sem modelo: soma dos votos a menos nas seções em que ele caiu
+// do 1º para o 2º turno. Pelo menos esse número de eleitores dele não repetiu o voto.
+function perdas(secoes) {
+  const r = { perdaMinLula: 0, perdaMinFlavio: 0, secoesLulaCaiu: 0, secoesFlavioCaiu: 0 };
+  for (const s of secoes) {
+    const dl = s.y[0] - s.x[0], df = s.y[1] - s.x[1];
+    if (dl < 0) { r.perdaMinLula -= dl; r.secoesLulaCaiu++; }
+    if (df < 0) { r.perdaMinFlavio -= df; r.secoesFlavioCaiu++; }
+  }
+  return r;
+}
+
 const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleString("pt-BR")}`;
 
 (async () => {
@@ -304,7 +316,7 @@ const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleStr
   for (const [uf, lista] of [...porUf(secoes)].sort((a, b) => a[0].localeCompare(b[0]))) {
     const { G, C } = acumular(lista);
     const B = estimarMatriz(G, C);
-    const est = { uf, B, secoes: lista.length, erro: erroMedio(lista, B), ...resumir(fluxos(lista, B)) };
+    const est = { uf, B, secoes: lista.length, erro: erroMedio(lista, B), ...resumir(fluxos(lista, B)), ...perdas(lista) };
     estados.push(est);
 
     // λ equivalente a ~10 seções típicas do estado
@@ -320,7 +332,7 @@ const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleStr
         uf, codigo: cod, nome: nomeProprio(ss[0].nome), secoes: ss.length,
         aptos: ss.reduce((t, s) => t + s.a2, 0),
         latitude: c ? +(c.lat / c.w).toFixed(5) : null, longitude: c ? +(c.lon / c.w).toFixed(5) : null,
-        ...resumir(fluxos(ss, Bm)),
+        ...resumir(fluxos(ss, Bm)), ...perdas(ss),
       });
     }
     console.log(`  ${uf}: ${lista.length} seções, ${porMun.size} municípios, erro médio ${est.erro.toFixed(2)} p.p.`);
@@ -330,7 +342,7 @@ const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleStr
   const Fbr = zeros(NO, ND);
   for (const e of estados) e.F.forEach((r, i) => r.forEach((v, k) => (Fbr[i][k] += v)));
   const somar = campo => estados.reduce((t, e) => t.map((v, i) => v + e[campo][i]), Array(campo === "linhas" ? NO : ND).fill(0));
-  const brasil = resumir({ F: Fbr, linhas: somar("linhas"), colunas: somar("colunas") });
+  const brasil = { ...resumir({ F: Fbr, linhas: somar("linhas"), colunas: somar("colunas") }), ...perdas(secoes), secoes: secoes.length };
 
   // ---------- Arquivos ----------
 
@@ -351,7 +363,8 @@ const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleStr
   const cabResumo = ["UF", "Lula 1T", "Flávio 1T", "Lula 2T", "Flávio 2T", "Ganho Lula", "Ganho Flávio",
     "Margem Lula 1T (%)", "Margem Lula 2T (%)", "Variação da margem (p.p.)", "Vencedor 1T", "Vencedor 2T", "Virada",
     ...ORIGENS.slice(2).flatMap(o => [`${o.nome} → Lula (%)`, `${o.nome} → Flávio (%)`]),
-    "Votos em movimento", "Principais fluxos", "Seções", "Erro médio do modelo (p.p.)"];
+    "Votos em movimento", "Principais fluxos", "Perda mínima Lula", "Perda mínima Flávio",
+    "Seções em que Lula caiu", "Seções em que Flávio caiu", "Seções", "Erro médio do modelo (p.p.)"];
   const linhaResumo = e => {
     const parte = i => {
       const total = e.F[i].reduce((a, b) => a + b, 0);
@@ -360,7 +373,8 @@ const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleStr
     return [e.uf, n0(e.lula1), n0(e.flavio1), n0(e.lula2), n0(e.flavio2), n0(e.deltaLula), n0(e.deltaFlavio),
       pct(e.margem1), pct(e.margem2), pct(e.variacaoMargem), csvTexto(e.vencedor1), csvTexto(e.vencedor2),
       e.virada ? "Sim" : "Não", ...ORIGENS.slice(2).flatMap((_, j) => parte(j + 2)), n0(e.movimento),
-      csvTexto(e.principais.map(fluxoTexto).join(" | ")), e.secoes ?? "", e.erro == null ? "" : dec(e.erro.toFixed(2))];
+      csvTexto(e.principais.map(fluxoTexto).join(" | ")), n0(e.perdaMinLula), n0(e.perdaMinFlavio),
+      e.secoesLulaCaiu, e.secoesFlavioCaiu, e.secoes ?? "", e.erro == null ? "" : dec(e.erro.toFixed(2))];
   };
   salvarCsv("migracao-presidente-estados.csv", cabResumo, [{ uf: "BR", ...brasil }, ...estados].map(linhaResumo));
 
@@ -368,7 +382,7 @@ const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleStr
   const cabMun = ["UF", "Ranking", "Posição", "Município", "Código TSE", "Latitude", "Longitude", "Aptos",
     "Lula 1T", "Flávio 1T", "Lula 2T", "Flávio 2T", "Ganho Lula", "Ganho Flávio",
     "Margem Lula 1T (%)", "Margem Lula 2T (%)", "Variação da margem (p.p.)", "Vencedor 1T", "Vencedor 2T", "Virada",
-    "Votos em movimento", "Fluxo 1", "Fluxo 2", "Fluxo 3"];
+    "Votos em movimento", "Fluxo 1", "Fluxo 2", "Fluxo 3", "Perda mínima Lula", "Perda mínima Flávio"];
   const linhasMun = [], topJson = [];
   const rankings = [
     { nome: "Volume de votos em movimento", ordem: (a, b) => b.movimento - a.movimento, filtro: () => true },
@@ -382,7 +396,7 @@ const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleStr
         linhasMun.push([m.uf, csvTexto(r.nome), i + 1, csvTexto(m.nome), m.codigo, dec(m.latitude), dec(m.longitude), m.aptos,
           n0(m.lula1), n0(m.flavio1), n0(m.lula2), n0(m.flavio2), n0(m.deltaLula), n0(m.deltaFlavio),
           pct(m.margem1), pct(m.margem2), pct(m.variacaoMargem), csvTexto(m.vencedor1), csvTexto(m.vencedor2),
-          m.virada ? "Sim" : "Não", n0(m.movimento), ...[0, 1, 2].map(j => csvTexto(m.principais[j] ? fluxoTexto(m.principais[j]) : ""))]);
+          m.virada ? "Sim" : "Não", n0(m.movimento), ...[0, 1, 2].map(j => csvTexto(m.principais[j] ? fluxoTexto(m.principais[j]) : "")), n0(m.perdaMinLula), n0(m.perdaMinFlavio)]);
         topJson.push({ ranking: r.nome, posicao: i + 1, ...m, F: undefined });
       });
     }
@@ -395,7 +409,16 @@ const fluxoTexto = f => `${f.origem} → ${f.destino}: ${n0(f.votos).toLocaleStr
     viradas.map(m => [m.uf, csvTexto(m.nome), m.codigo, dec(m.latitude), dec(m.longitude), m.aptos,
       n0(m.lula1), n0(m.flavio1), n0(m.lula2), n0(m.flavio2), n0(m.deltaLula), n0(m.deltaFlavio),
       pct(m.margem1), pct(m.margem2), pct(m.variacaoMargem), csvTexto(m.vencedor1), csvTexto(m.vencedor2), "Sim",
-      n0(m.movimento), ...[0, 1, 2].map(j => csvTexto(m.principais[j] ? fluxoTexto(m.principais[j]) : ""))]));
+      n0(m.movimento), ...[0, 1, 2].map(j => csvTexto(m.principais[j] ? fluxoTexto(m.principais[j]) : "")), n0(m.perdaMinLula), n0(m.perdaMinFlavio)]));
+
+  // Todos os municípios
+  const linhaMun = m => [m.uf, csvTexto(m.nome), m.codigo, dec(m.latitude), dec(m.longitude), m.aptos,
+    n0(m.lula1), n0(m.flavio1), n0(m.lula2), n0(m.flavio2), n0(m.deltaLula), n0(m.deltaFlavio),
+    pct(m.margem1), pct(m.margem2), pct(m.variacaoMargem), csvTexto(m.vencedor1), csvTexto(m.vencedor2),
+    m.virada ? "Sim" : "Não", n0(m.movimento), ...[0, 1, 2].map(j => csvTexto(m.principais[j] ? fluxoTexto(m.principais[j]) : "")),
+    n0(m.perdaMinLula), n0(m.perdaMinFlavio)];
+  salvarCsv("migracao-presidente-municipios.csv", cabMun.filter(c => c !== "Ranking" && c !== "Posição"),
+    [...municipios].sort((a, b) => a.uf.localeCompare(b.uf) || a.nome.localeCompare(b.nome)).map(linhaMun));
 
   // JSON com tudo, para gráficos e para o roteiro
   const matriz = F => F.map((r, i) => Object.fromEntries([["origem", ORIGENS[i].nome], ...r.map((v, k) => [DESTINOS[k].nome, n0(v)])]));
