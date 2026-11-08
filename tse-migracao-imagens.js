@@ -1,9 +1,12 @@
 // Imagens verticais (1080x1920) para vídeo, a partir dos resultados de tse-migracao-presidente.js.
 // Uso: node tse-migracao-imagens.js [--pasta migracao-presidente-2026] [--so 01,05,estado-SP]
 //
+// Gera cada imagem em duas versões: <pasta>/imagens com fundo transparente, para sobrepor ao vídeo
+// (títulos e notas em caixas pretas), e <pasta>/imagens-com-fundo com fundo escuro.
+//
 // Lê migracao-presidente.json, migracao-presidente-municipios.csv e migracao-presidente-viradas.csv da pasta
 // e dados/ufs-brasil.json (contornos simplificados das UFs, de codeforamerica/click_that_hood).
-// Grava os PNGs em <pasta>/imagens. Renderiza HTML com o Chromium do Playwright.
+// Renderiza HTML com o Chromium do Playwright.
 
 const fs = require("fs");
 const path = require("path");
@@ -15,9 +18,12 @@ function argumento(nome, padrao) {
 }
 
 const pasta = path.resolve(argumento("--pasta", "migracao-presidente-2026"));
-const saida = path.join(pasta, "imagens");
 const so = argumento("--so", "") ? argumento("--so").split(",") : null;
-fs.mkdirSync(saida, { recursive: true });
+const VERSOES = [
+  { pasta: path.join(pasta, "imagens"), transparente: true },
+  { pasta: path.join(pasta, "imagens-com-fundo"), transparente: false },
+];
+for (const v of VERSOES) fs.mkdirSync(v.pasta, { recursive: true });
 
 const dados = JSON.parse(fs.readFileSync(path.join(pasta, "migracao-presidente.json"), "utf8"));
 const ufs = JSON.parse(fs.readFileSync(path.join(__dirname, "dados", "ufs-brasil.json"), "utf8"));
@@ -56,6 +62,8 @@ const FONTE_EST = "Estimativa por seção eleitoral (inferência ecológica), aj
 
 // ---------- Página base ----------
 
+let transparente = false;
+
 function pagina(corpo, { fonte = FONTE_TSE, nota = "" } = {}) {
   return `<!doctype html><html><head><meta charset="utf-8"><style>
   * { box-sizing: border-box; margin: 0; }
@@ -70,13 +78,17 @@ function pagina(corpo, { fonte = FONTE_TSE, nota = "" } = {}) {
   .preto { background: #000; border-radius: 28px; padding: 36px 44px; font-size: 40px; line-height: 1.3; }
   .preto b { color: #ffd23f; }
   .rodape { margin-top: auto; font-size: 22px; color: #7c838f; line-height: 1.4; }
+  body.transparente { background: transparent; }
+  body.transparente .eyebrow { align-self: flex-start; background: #000; color: #d6d9de; padding: 10px 18px; border-radius: 14px; }
+  body.transparente h1 { background: #000; padding: 24px 32px; border-radius: 28px; }
+  body.transparente .rodape { background: rgba(0, 0, 0, .8); color: #c9cdd4; padding: 14px 20px; border-radius: 14px; }
   .legenda { display: flex; flex-wrap: wrap; gap: 14px 32px; font-size: 26px; color: #2b2f36; }
   .legenda span { display: inline-flex; align-items: center; gap: 10px; }
   .sw { width: 22px; height: 22px; border-radius: 4px; display: inline-block; border: 1px solid #c7cbd1; }
   .grande { font-family: "Inter Display", Inter, sans-serif; font-size: 150px; font-weight: 800; line-height: 1; }
   table { border-collapse: collapse; width: 100%; font-size: 28px; }
   td { padding: 14px 0; border-bottom: 1px solid #e3e5e8; vertical-align: top; }
-  </style></head><body>${corpo}
+  </style></head><body class="${transparente ? "transparente" : ""}">${corpo}
   <div class="rodape">${nota ? esc(nota) + "<br>" : ""}${esc(fonte)}</div></body></html>`;
 }
 
@@ -161,7 +173,7 @@ imagens["01-primeiro-turno"] = () => pagina(`
     ${legenda([[COR.flavio, "Flávio"], [COR.lula, "Lula"], [COR.terceira, "Terceira via"], [COR.nulos, "Nulos, brancos e abstenções"]])}
   </div>
   <div class="preto">Terceira via: <b>${mi(tv.total)}</b><br>Cury ${mi(totalOrigem("Augusto Cury"))} · Renan ${mi(totalOrigem("Renan Santos"))} · Caiado ${mi(totalOrigem("Ronaldo Caiado"))} · outros ${mi(totalOrigem("Outros candidatos"))}</div>
-  <div class="preto">Nulos, brancos e abstenções: <b>${mi(nulos1)}</b>, não 33 mi.<br>Só a abstenção foi ${mi(totalOrigem("Abstenção"))}.</div>`);
+  <div class="preto">Nulos, brancos e abstenções: <b>${mi(nulos1)}</b><br>Abstenção ${mi(totalOrigem("Abstenção"))} · nulos e brancos ${mi(totalOrigem("Branco/Nulo"))}</div>`);
 
 imagens["02-segundo-turno"] = () => pagina(`
   <div class="eyebrow">Presidente · 2º turno de 2026</div>
@@ -233,14 +245,13 @@ imagens["04-terceira-via"] = () => {
   };
   const cand = o => linhaTv(o, fluxo(o, "Lula"), fluxo(o, "Flávio Bolsonaro"), fluxo(o, "Branco/Nulo") + fluxo(o, "Abstenção"));
   return pagina(`
-  <div class="eyebrow">Os ${mi(tv.total)} da terceira via</div>
+  <div class="eyebrow">Os ${mi(tv.total)} da terceira via · estimativa</div>
   <h1>Para onde foram</h1>
   <div class="card">
-    ${linhaTv("Cenário do vídeo", 2, 4, 3)}
-    ${linhaTv("Estimativa pelos boletins", tv.lula, tv.flavio, tv.bn)}
+    ${linhaTv(`Terceira via, total (${mi(tv.total)})`, tv.lula, tv.flavio, tv.bn)}
   </div>
   <div class="card">
-    <h2>Por candidato, estimativa</h2>
+    <h2>Por candidato</h2>
     ${cand("Augusto Cury")}${cand("Renan Santos")}${cand("Ronaldo Caiado")}
   </div>`, { fonte: FONTE_EST + " " + FONTE_TSE });
 };
@@ -254,7 +265,7 @@ imagens["05-flavio-perdeu-eleitores"] = () => pagina(`
     <div style="font-size:34px;line-height:1.3">eleitores do Flávio no 1º turno não repetiram o voto</div>
     <div class="nota">Soma dos votos que ele perdeu em cada seção onde caiu: <b>${int(br.secoesFlavioCaiu)}</b> das ${int(br.secoes)} seções. É um piso: dentro de uma mesma seção ele pode ter perdido uns e ganhado outros.</div>
   </div>
-  <div class="preto">Estimativa total: <b>~${mil(perdaFlavio.lula + perdaFlavio.sai)}</b><br>${mil(perdaFlavio.lula)} → Lula · ${mil(perdaFlavio.sai)} → nulo ou abstenção<br><br>No cenário do vídeo: 3 mi</div>
+  <div class="preto">Estimativa total: <b>~${mil(perdaFlavio.lula + perdaFlavio.sai)}</b><br>${mil(perdaFlavio.lula)} → Lula · ${mil(perdaFlavio.sai)} → nulo ou abstenção</div>
   <div class="preto" style="font-size:32px">Lula também perdeu: no mínimo <b>${mil(br.perdaMinLula)}</b>, em ${int(br.secoesLulaCaiu)} seções.</div>`,
   { fonte: FONTE_TSE + " A estimativa total usa inferência ecológica." });
 
@@ -332,11 +343,14 @@ for (const e of dados.estados.filter(e => e.uf !== "ZZ")) {
 (async () => {
   const navegador = await chromium.launch();
   const pagina_ = await navegador.newPage({ viewport: { width: 1080, height: 1920 } });
-  for (const [nome, gerar] of Object.entries(imagens)) {
-    if (so && !so.some(s => nome.startsWith(s))) continue;
-    await pagina_.setContent(gerar(), { waitUntil: "load" });
-    await pagina_.screenshot({ path: path.join(saida, `${nome}.png`) });
-    console.log("Imagem salva:", path.join(saida, `${nome}.png`));
+  for (const versao of VERSOES) {
+    transparente = versao.transparente;
+    for (const [nome, gerar] of Object.entries(imagens)) {
+      if (so && !so.some(s => nome.startsWith(s))) continue;
+      await pagina_.setContent(gerar(), { waitUntil: "load" });
+      await pagina_.screenshot({ path: path.join(versao.pasta, `${nome}.png`), omitBackground: transparente });
+    }
+    console.log("Imagens salvas em", versao.pasta);
   }
   await navegador.close();
 })().catch(erro => {
