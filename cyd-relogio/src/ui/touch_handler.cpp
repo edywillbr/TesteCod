@@ -16,6 +16,7 @@
 
 #include "../util/constants.h"
 #include "../app/alarm.h"
+#include "../app/greeting.h"
 #include "../data/app_state.h"
 #include "../data/city_data.h"
 #include "../data/nameday.h"
@@ -217,7 +218,7 @@ void handleTouch( int x, int y ) {
                 delay( UI_DEBOUNCE_MS );
             }
             // Down arrow
-            else if ( menuOffset < 3 && x >= 230 && x <= 280 && y >= 180 && y <= 230 ) {
+            else if ( menuOffset < 4 && x >= 230 && x <= 280 && y >= 180 && y <= 230 ) {
                 menuOffset++;
                 drawSettingsScreen();
                 delay( UI_DEBOUNCE_MS );
@@ -256,12 +257,18 @@ void handleTouch( int x, int y ) {
                                 drawAlarmScreen();
                                 break;
 
-                            case 5: // Firmware
+                            case 5: // Nome (saudação)
+                                currentState = NAMEINPUT;
+                                nameInputBegin();
+                                drawNameInputScreen();
+                                break;
+
+                            case 6: // Firmware
                                 currentState = FIRMWARE_SETTINGS;
                                 drawFirmwareScreen();
                                 break;
 
-                            case 6: // Calibrate
+                            case 7: // Calibrate
                                 runTouchCalibration();
                                 menuOffset = 0;
                                 drawSettingsScreen();
@@ -279,6 +286,11 @@ void handleTouch( int x, int y ) {
         case ALARMCONFIG: {
             handleAlarmScreenTouch( x, y );
             delay( UI_DEBOUNCE_MS );
+            break;
+        }
+
+        case NAMEINPUT: {
+            handleNameInputTouch( x, y );
             break;
         }
 

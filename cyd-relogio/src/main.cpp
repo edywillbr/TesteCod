@@ -27,6 +27,7 @@ Ref: https://github.com/lachimalaif/DataDisplay-V1-instalator/tree/main
 
 // --- Application modules ---
 #include "app/alarm.h"
+#include "app/greeting.h"
 #include "app/location.h"
 #include "data/app_state.h"
 #include "data/city_data.h"
@@ -320,7 +321,8 @@ void setup() {
 
     log_d( "[SETUP] Touchscreen initialized" );
 
-    alarmInit();  // pinos das luzes + alarme salvo
+    alarmInit();     // pinos das luzes + alarme salvo
+    greetingInit();  // nome do usuário para a saudação
 
     // ===== UI INITIALIZATION =====
     tft.setTextColor( getTextColor() );
@@ -414,7 +416,7 @@ void loop() {
                 currentState != SETTINGS && currentState != WEATHERCONFIG && currentState != REGIONALCONFIG && currentState != GRAPHICSCONFIG &&
                 currentState != FIRMWARE_SETTINGS && currentState != COUNTRYSELECT && currentState != CITYSELECT && currentState != LOCATIONCONFIRM &&
                 currentState != COUNTRYLOOKUPCONFIRM && currentState != CITYLOOKUPCONFIRM &&
-                currentState != ALARMCONFIG && currentState != ALARMRINGING ) {
+                currentState != ALARMCONFIG && currentState != ALARMRINGING && currentState != NAMEINPUT ) {
             currentState = CLOCK;
         }
 
@@ -490,6 +492,7 @@ void loop() {
                 }
 
                 updateHands( ti.tm_hour, ti.tm_min, ti.tm_sec );
+                drawGreetingIfPeriodChanged();  // Bom dia -> Boa tarde -> Boa noite
                 lastHour = ti.tm_hour;
                 lastMin  = ti.tm_min;
                 lastSec  = ti.tm_sec;

@@ -12,6 +12,7 @@
 #include "../util/moon.h"
 #include "../util/constants.h"
 #include "../app/alarm.h"
+#include "../app/greeting.h"
 #include "../util/string_utils.h"
 #include "../net/weather_api.h"
 
@@ -382,7 +383,7 @@ void drawWeatherSection() {
     if ( !initialWeatherFetched ) {
         tft.setTextColor( txt, bg );
         tft.setTextDatum( MC_DATUM );
-        tft.drawString( "Carregando...", 75, 120 );
+        tft.drawString( "Carregando...", 75, 150 );  // abaixo da saudação
         return;
     }
 
@@ -405,36 +406,13 @@ void drawWeatherSection() {
     tft.setTextColor( txt, bg );
     tft.drawString( getWeatherDesc( weatherCode ), 45, 48 );
 
+    // Umidade logo abaixo da descrição; pressão, vento e nascer/pôr do sol deram lugar à saudação
     tft.setFreeFont( NULL );
     tft.setTextColor( txt, bg );
-    tft.setCursor( 5, 75 );
-    if ( weatherUnitInHg ) {
-        float pressInHg = currentPressure * 0.02953f;
-        tft.printf( "UR: %d%%  P: %.2f inHg", currentHumidity, pressInHg );
-    }
-    else {
-        tft.printf( "UR: %d%%  P: %d hPa", currentHumidity, currentPressure );
-    }
+    tft.setCursor( 45, 66 );
+    tft.printf( "Umidade: %d%%", currentHumidity );
 
-    tft.setCursor( 5, 88 );
-    if ( weatherUnitMph ) {
-        float windMph = currentWindSpeed * 0.621371;
-        tft.printf( "Vento: %.1f mph %s", windMph, getWindDir( currentWindDirection ).c_str() );
-    }
-    else {
-        tft.printf( "Vento: %.1f km/h %s", currentWindSpeed, getWindDir( currentWindDirection ).c_str() );
-    }
-
-    // --- Sunrise/Sunset ---
-    tft.drawBitmap( 5, 98, icon_sunrise, 16, 16, TFT_ORANGE );
-    tft.setCursor( 24, 102 );
-    tft.setTextColor( TFT_ORANGE, bg );
-    tft.print( sunriseTime );
-
-    tft.drawBitmap( 85, 101, icon_sunset, 16, 16, TFT_RED );
-    tft.setCursor( 104, 102 );
-    tft.setTextColor( TFT_RED, bg );
-    tft.print( sunsetTime );
+    drawGreeting();
 
     tft.setTextColor( txt, bg );
     tft.drawFastHLine( 5, 120, 145, TFT_DARKGREY );

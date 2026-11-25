@@ -23,6 +23,12 @@ O README original está em `README-original.md`.
 - Alimentação: USB da própria placa (5 V). Não precisa de fiação para a tela.
 - Montagem de cabeça para baixo: em Configurações > Graphics, opção **FLP** (180°).
 
+## Saudação
+
+No lugar de pressão, vento e nascer/pôr do sol, a coluna da esquerda mostra
+"Bom dia" (5h–11h59), "Boa tarde" (12h–17h59) ou "Boa noite" (18h–4h59) seguido do
+nome cadastrado em **Ajustes > Nome**. A umidade fica logo abaixo da descrição do tempo.
+
 ## Luz e alarme
 
 Na tela do relógio, no canto inferior esquerdo:
@@ -85,6 +91,8 @@ pelo toque.
 - `semAcentos()` em `src/util/string_utils.cpp`: remove acentos de nomes de cidade e feriados
   (antes "Brasília" aparecia como "Braslia").
 - Feriados no nome local (Nager.Date `localName`) e busca de cidades em português.
+- Saudação com nome do usuário (`src/app/greeting.cpp`) no lugar de pressão, vento e
+  nascer/pôr do sol; item **Nome** nos ajustes.
 - Luz em dois estágios e alarme com dias da semana (`src/app/alarm.cpp`). Os botões LUZ/OFF
   ocupam o lugar do texto da fase da lua (o ícone da lua continua).
 - Verificação de atualização (OTA) desativada: o canal do autor instalaria o firmware dele
