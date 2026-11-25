@@ -1228,7 +1228,7 @@ void handleTouch( int x, int y ) {
                 // ILI9341 (CYD1): invertColors directly controls inversion.
                 // invertColors=false → tft.invertDisplay(false) = normal display
                 // invertColors=true  → tft.invertDisplay(true)  = inverted display
-                tft.invertDisplay( invertColors );
+                tft.invertDisplay( invertColors != CYD_PANEL_INVERTED );  // ST7789 (CYD2USB) é invertido de fábrica
                 log_d( "[INVERT] Display SW inverted: %s", invertColors ? "TRUE" : "FALSE" );
 
                 drawGraphicsScreen();

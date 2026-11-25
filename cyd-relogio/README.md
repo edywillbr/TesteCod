@@ -16,9 +16,10 @@ O README original está em `README-original.md`.
 
 ## Hardware
 
-- Placa: ESP32-2432S028R com controlador **ILI9341** (modelo com uma entrada micro-USB).
-  O modelo com duas entradas (USB-C + micro-USB) costuma usar outro controlador e
-  pode mostrar cores erradas.
+- Placa: ESP32-2432S028R de **duas entradas** (USB-C + micro-USB), com painel **ST7789**.
+  É o ambiente padrão (`cyd2usb`) do `platformio.ini`.
+  Para o modelo de uma entrada (ILI9341), use o ambiente `release`.
+  Se vermelho e azul saírem trocados, descomente `-D CYD_BGR` em `[env:cyd2usb]`.
 - Alimentação: USB da própria placa (5 V). Não precisa de fiação para a tela.
 - Montagem de cabeça para baixo: em Configurações > Graphics, opção **FLP** (180°).
 
@@ -26,8 +27,10 @@ O README original está em `README-original.md`.
 
 1. Instale o **VS Code** e a extensão **pioarduino** (fork do PlatformIO com o core 3.x do ESP32).
 2. Abra esta pasta (`cyd-relogio/`) no VS Code.
-3. Conecte o CYD no USB e rode: `pio run -e release -t upload`
-   (ou o botão "Upload" do ambiente `release`).
+3. Conecte o CYD no USB e rode: `pio run -e cyd2usb -t upload`
+   (ou o botão "Upload" do ambiente `cyd2usb`).
+   Para gerar um `.bin` único (gravar no endereço 0x0 pelo web.esphome.io):
+   `pio run -e cyd2usb -t merged` → arquivo em `bin/`.
 4. Monitor serial: `pio device monitor` (115200).
 
 Se a porta não for detectada sozinha, descomente `upload_port` no `platformio.ini`
@@ -39,6 +42,8 @@ pelo toque.
 ## Mudanças em relação ao original
 
 - `platformio.ini`: porta serial fixa do macOS comentada (detecção automática).
+- Suporte ao CYD de duas entradas USB (painel ST7789): ambiente `cyd2usb`, flag `CYD_2USB`
+  em `include/User_Setup.h` e inversão de cores compensada em `main.cpp` e `touch_handler.cpp`.
 
 ## Próximas adaptações planejadas
 

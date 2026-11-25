@@ -300,7 +300,7 @@ void setup() {
     // invertColors=false → normal display, invertColors=true → inverted display.
     // (The CYD2U/ST7789 version used !invertColors to compensate HW inversion.)
     delay( 50 );
-    tft.invertDisplay( invertColors );
+    tft.invertDisplay( invertColors != CYD_PANEL_INVERTED );  // ST7789 (CYD2USB) é invertido de fábrica
     delay( 50 );
 
     tft.fillScreen( getBgColor() ); // Fill screen with theme colour while backlight is still off

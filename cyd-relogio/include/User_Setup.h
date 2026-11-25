@@ -12,9 +12,23 @@
 
 
 // Section 1. Call up the right driver file and any options for it
+#ifdef CYD_2USB
+// CYD de duas entradas (USB-C + micro-USB): painel ST7789 240x320.
+// Com o driver ILI9341 a imagem sai deslocada, cortada e com uma faixa de ruído.
+#define ST7789_DRIVER
+#define TFT_WIDTH  240
+#define TFT_HEIGHT 320
+#ifdef CYD_BGR                  // use se vermelho e azul aparecerem trocados
+#define TFT_RGB_ORDER TFT_BGR
+#endif
+// O painel ST7789 vem invertido de fábrica: a "cor normal" é invertDisplay(true)
+#define CYD_PANEL_INVERTED 1
+#else
 #define ILI9341_DRIVER     // Standard ILI9341 driver
 // No TFT_RGB_ORDER override - ILI9341 defaults to RGB
 // No TFT_INVERSION - handled entirely in software via tft.invertDisplay()
+#define CYD_PANEL_INVERTED 0
+#endif
 
 // Section 2. Define the pins that are used to interface with the display here
 #define TFT_BL   21           // LED back-light control pin
