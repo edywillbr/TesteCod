@@ -67,9 +67,11 @@ static void alarmSave() {
 // ---------------------------------------------------------------------------
 // Light
 // ---------------------------------------------------------------------------
+// Acende as lâmpadas pedidas, limitando o brilho para caber no carregador (ver alarm.h)
 static void lampWrite( bool bottom, bool top ) {
-    digitalWrite( LAMP_BOTTOM_PIN, bottom ? HIGH : LOW );
-    digitalWrite( LAMP_TOP_PIN,    top    ? HIGH : LOW );
+    uint8_t duty = ( bottom && top ) ? LAMP_DUTY_STAGE2 : LAMP_DUTY_STAGE1;
+    ledcWrite( LAMP_BOTTOM_PIN, bottom ? duty : 0 );
+    ledcWrite( LAMP_TOP_PIN,    top    ? duty : 0 );
 }
 
 int lampGetLevel() {
@@ -91,8 +93,8 @@ void lampNext() {
 // Lifecycle
 // ---------------------------------------------------------------------------
 void alarmInit() {
-    pinMode( LAMP_BOTTOM_PIN, OUTPUT );
-    pinMode( LAMP_TOP_PIN, OUTPUT );
+    ledcAttach( LAMP_BOTTOM_PIN, LAMP_PWM_FREQ_HZ, 8 );
+    ledcAttach( LAMP_TOP_PIN, LAMP_PWM_FREQ_HZ, 8 );
     lampWrite( false, false );
     alarmLoad();
     log_i( "[ALARM] %s %02d:%02d dias=0x%02X", alarmCfg.enabled ? "ativo" : "inativo",

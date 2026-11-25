@@ -16,6 +16,14 @@ constexpr int LAMP_BOTTOM_PIN = 22;  // luz de baixo (estágio 1)
 constexpr int LAMP_TOP_PIN    = 27;  // luz de cima  (estágio 2)
 constexpr int SPEAKER_PIN     = 26;  // amplificador do conector SPEAK
 
+// Brilho por PWM (0–255). Cada lâmpada de 5 V puxa ~0,6 A a 100%; a placa, ~0,25 A.
+// Com estes valores o total fica abaixo de 1 A, para funcionar com um carregador comum de 1 A:
+//   estágio 1 (só a de baixo) ~0,85 A | estágio 2 / alarme (as duas a 60%) ~0,97 A.
+// Com um carregador de 2 A ou mais, pode usar 255 em tudo.
+constexpr uint8_t LAMP_DUTY_STAGE1 = 255;  // luz de baixo sozinha
+constexpr uint8_t LAMP_DUTY_STAGE2 = 153;  // cada lâmpada quando as duas estão acesas (60%)
+constexpr uint32_t LAMP_PWM_FREQ_HZ = 20000;  // acima do audível; sem cintilação visível
+
 constexpr unsigned long ALARM_MAX_RING_MS = 10UL * 60UL * 1000UL;  // para sozinho após 10 min
 constexpr unsigned int  ALARM_TONE_HZ     = 2000;
 

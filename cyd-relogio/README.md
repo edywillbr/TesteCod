@@ -84,7 +84,11 @@ Para conferir a impedância, meça a resistência entre os fios com o multímetr
 ### Alimentação
 
 Com as duas lâmpadas a corrente passa de 1,4 A, então:
-- Use um carregador USB de **5 V e pelo menos 2 A** (a porta USB de um computador não basta).
+- O brilho é limitado por PWM para o total ficar abaixo de **1 A**: estágio 1 (luz de baixo
+  a 100%) ~0,85 A; estágio 2 e alarme (as duas a 60%) ~0,97 A. Assim funciona com um
+  carregador comum de **5 V / 1 A**. Com um de 2 A ou mais, troque `LAMP_DUTY_STAGE2`
+  para 255 em `src/app/alarm.h` para ter as duas a 100% (~1,45 A).
+- A porta USB de um computador (0,5–0,9 A) não basta.
 - **Não** puxe a corrente das lâmpadas pelo USB da CYD: ela passaria pelo conector e pelo
   diodo da placa, que esquentam. Entre com o 5 V pelo módulo USB-C avulso (JRC-C009) e
   divida em dois caminhos: um para as lâmpadas (via MOSFETs) e outro para o pino **VIN**
