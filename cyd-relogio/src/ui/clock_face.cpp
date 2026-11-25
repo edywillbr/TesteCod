@@ -11,6 +11,7 @@
 #include "../net/holidays.h"
 #include "../util/moon.h"
 #include "../util/constants.h"
+#include "../app/alarm.h"
 #include "../util/string_utils.h"
 #include "../net/weather_api.h"
 
@@ -492,20 +493,14 @@ void drawWeatherSection() {
         int phase = getMoonPhase( ti.tm_year + 1900, ti.tm_mon + 1, ti.tm_mday );
         moonPhaseVal = phase;
 
-        tft.setTextColor( txt, bg );
-        tft.setFreeFont( NULL );
-        tft.drawString( "Fase da Lua:", 5, 210 );
-
-        String phaseNames[] = {"Lua Nova", "Crescente", "Quarto Crescente", "Crescente Gibosa", "Lua Cheia", "Minguante Gibosa", "Quarto Minguante", "Minguante"};
-        if ( phase >= 0 && phase <= 7 ) {
-            tft.drawString( phaseNames[ phase ], 5, 222 );
-        }
-
-        int mx = 120;
-        int my = 222;
+        // O texto da fase da lua deu lugar aos botões LUZ / OFF; o ícone continua à direita
+        int mx = 133;
+        int my = 221;
         int r = 13;
         drawMoonPhaseIcon( mx, my, r, phase, txt, bg );
 
         log_d( "[MOON] Phase: %d | Date: %d-%d-%d", phase, ti.tm_year + 1900, ti.tm_mon + 1, ti.tm_mday );
     }
+
+    drawLampButtons();
 }

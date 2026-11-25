@@ -514,10 +514,10 @@ void drawSettingsScreen() {
     tft.setTextDatum( MC_DATUM );
     tft.drawString( "AJUSTES", 160, 30, 4 );
 
-    String menuItems[] = {"Config. Wi-Fi", "Clima", "Regional", "Tela", "Firmware", "Calibrar"};
-    uint16_t colors[]  = {TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_ORANGE};
+    String menuItems[] = {"Config. Wi-Fi", "Clima", "Regional", "Tela", "Alarme", "Firmware", "Calibrar"};
+    uint16_t colors[]  = {TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_ORANGE};
 
-    int totalItems   = 6;
+    int totalItems   = 7;
     int visibleItems = 4;  // How many fit on screen at once
 
     for ( int i = 0; i < totalItems; i++ ) {

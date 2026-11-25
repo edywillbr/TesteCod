@@ -26,6 +26,7 @@ Ref: https://github.com/lachimalaif/DataDisplay-V1-instalator/tree/main
 #include "time.h"
 
 // --- Application modules ---
+#include "app/alarm.h"
 #include "app/location.h"
 #include "data/app_state.h"
 #include "data/city_data.h"
@@ -70,7 +71,9 @@ bool displayFlipped = false; // true = rotation 3 (180° flipped), false = rotat
 
 // ================= OTA UPDATE GLOBALS =================
 const char *FIRMWARE_VERSION = "2.1.1";  // CURRENT VERSION
-const char *VERSION_CHECK_URL = "https://raw.githubusercontent.com/Xylopyrographer/CYD_DD/main/version.json";
+// Verificação de atualização desativada: o canal do autor original instalaria o firmware
+// dele por cima desta versão adaptada. Para reativar, aponte para um version.json próprio.
+const char *VERSION_CHECK_URL = "";
 const char *FIRMWARE_URL = "https://github.com/lachimalaif/DataDisplay-V1-instalator/releases/latest/download/DataDisplayCYD.ino.bin";
 
 String availableVersion = "";   // Available version from GitHub
@@ -317,6 +320,8 @@ void setup() {
 
     log_d( "[SETUP] Touchscreen initialized" );
 
+    alarmInit();  // pinos das luzes + alarme salvo
+
     // ===== UI INITIALIZATION =====
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
@@ -395,6 +400,8 @@ void setup() {
 
 
 void loop() {
+    alarmLoop();  // dispara o alarme no horário e anima luzes/som enquanto toca
+
     // AUTODIM LOGIC
     if ( millis() - lastBrightnessUpdate > BRIGHTNESS_UPDATE_INTERVAL ) {
         applyAutoDim();
@@ -406,7 +413,8 @@ void loop() {
         if ( currentState != WIFICONFIG && currentState != KEYBOARD && currentState != SSID_INPUT && currentState != CUSTOMCITYINPUT && currentState != CUSTOMCOUNTRYINPUT &&
                 currentState != SETTINGS && currentState != WEATHERCONFIG && currentState != REGIONALCONFIG && currentState != GRAPHICSCONFIG &&
                 currentState != FIRMWARE_SETTINGS && currentState != COUNTRYSELECT && currentState != CITYSELECT && currentState != LOCATIONCONFIRM &&
-                currentState != COUNTRYLOOKUPCONFIRM && currentState != CITYLOOKUPCONFIRM ) {
+                currentState != COUNTRYLOOKUPCONFIRM && currentState != CITYLOOKUPCONFIRM &&
+                currentState != ALARMCONFIG && currentState != ALARMRINGING ) {
             currentState = CLOCK;
         }
 
@@ -441,7 +449,7 @@ void loop() {
     }
 
     // 3. INACTIVITY TIMEOUT — return to CLOCK after 3 min of no touch while in any settings/setup screen
-    if ( currentState != CLOCK && millis() - lastTouchTime > SETTINGS_INACTIVITY_TIMEOUT ) {
+    if ( currentState != CLOCK && currentState != ALARMRINGING && millis() - lastTouchTime > SETTINGS_INACTIVITY_TIMEOUT ) {
         currentState = CLOCK;
         lastSec      = -1;
     }
@@ -507,7 +515,7 @@ void loop() {
         }
     }
     // OTA version check (at startup and every X hours)
-    if ( !isUpdating && WiFi.status() == WL_CONNECTED ) {
+    if ( VERSION_CHECK_URL[ 0 ] != '\0' && !isUpdating && WiFi.status() == WL_CONNECTED ) {
         if ( lastVersionCheck == 0 || ( millis() - lastVersionCheck > VERSION_CHECK_INTERVAL ) ) {
             checkForUpdate();
 

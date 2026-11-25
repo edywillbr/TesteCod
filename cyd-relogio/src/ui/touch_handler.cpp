@@ -15,6 +15,7 @@
 #include <time.h>
 
 #include "../util/constants.h"
+#include "../app/alarm.h"
 #include "../data/app_state.h"
 #include "../data/city_data.h"
 #include "../data/nameday.h"
@@ -155,8 +156,12 @@ String syncRegion();
 void handleTouch( int x, int y ) {
     switch ( currentState ) {
         case CLOCK: {
+            // Botões LUZ / OFF (canto inferior esquerdo)
+            if ( handleLampTouch( x, y ) ) {
+                delay( UI_DEBOUNCE_MS );
+            }
             // WiFi + update icon bounding box — jump directly to FIRMWARE screen (only when update icon is visible)
-            if ( updateAvailable && x >= 295 && x <= 325 && y >= 10 && y <= 30 ) {
+            else if ( updateAvailable && x >= 295 && x <= 325 && y >= 10 && y <= 30 ) {
                 currentState = FIRMWARE_SETTINGS;
                 drawFirmwareScreen();
                 delay( UI_DEBOUNCE_MS );
@@ -212,7 +217,7 @@ void handleTouch( int x, int y ) {
                 delay( UI_DEBOUNCE_MS );
             }
             // Down arrow
-            else if ( menuOffset < 2 && x >= 230 && x <= 280 && y >= 180 && y <= 230 ) {
+            else if ( menuOffset < 3 && x >= 230 && x <= 280 && y >= 180 && y <= 230 ) {
                 menuOffset++;
                 drawSettingsScreen();
                 delay( UI_DEBOUNCE_MS );
@@ -246,12 +251,17 @@ void handleTouch( int x, int y ) {
                                 drawGraphicsScreen();
                                 break;
 
-                            case 4: // Firmware
+                            case 4: // Alarme
+                                currentState = ALARMCONFIG;
+                                drawAlarmScreen();
+                                break;
+
+                            case 5: // Firmware
                                 currentState = FIRMWARE_SETTINGS;
                                 drawFirmwareScreen();
                                 break;
 
-                            case 5: // Calibrate
+                            case 6: // Calibrate
                                 runTouchCalibration();
                                 menuOffset = 0;
                                 drawSettingsScreen();
@@ -263,6 +273,17 @@ void handleTouch( int x, int y ) {
                     }
                 }
             }
+            break;
+        }
+
+        case ALARMCONFIG: {
+            handleAlarmScreenTouch( x, y );
+            delay( UI_DEBOUNCE_MS );
+            break;
+        }
+
+        case ALARMRINGING: {
+            handleAlarmRingingTouch( x, y );
             break;
         }
 
