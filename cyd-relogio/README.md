@@ -50,22 +50,41 @@ desativado. Se ninguém desligar, ele para sozinho após 10 minutos.
 | Luz de cima (estágio 2) | GPIO27 | conector lateral (CN1) |
 | Alto-falante | conector **SPEAK** | já tem amplificador na placa (GPIO26) |
 
-O pino do ESP32 não aguenta a corrente de uma lâmpada LED: cada luz precisa de um
-transistor ou MOSFET funcionando como chave, alimentada pelos 5 V do USB:
+As lâmpadas são placas de LED de **5 V** (modelo 2835-24D-5V, 47 mm): 24 LEDs 2835 em
+8 grupos de 3, cada grupo com um resistor de 27 Ω ("270") já na placa. Não precisam de
+resistor nem diodo extra. Consumo estimado: cerca de **0,6 A por lâmpada** (~3 W), ou seja,
+~1,2 A com as duas acesas, mais ~0,25 A da placa.
+
+O pino do ESP32 não aguenta essa corrente: cada lâmpada é chaveada por um **MOSFET canal N
+logic-level** (ex.: IRLB8721 ou IRLZ44N, de furo; AO3400 em módulo SMD; ou um módulo pronto
+"MOSFET trigger" com AOD4184):
 
 ```
-5V ──── (+) LED ── (−) ──┬── Dreno  (MOSFET N logic-level, ex.: AO3400, IRLZ44N)
-                          │
-GPIO22 ── 220 Ω ── Gate   │   Gate ── 100 kΩ ── GND   (mantém apagada durante o boot)
-                          │
-GND  ────────────── Fonte ┘
+5V  ───────────── (+) lâmpada (−) ──── Dreno
+                                         │
+GPIO22 ── 220 Ω ── Gate                  │    (MOSFET)
+                    │                    │
+                  100 kΩ                 │
+                    │                    │
+GND ────────────────┴────────────── Fonte┘
 ```
 
-Repita para a luz de cima no GPIO27. Uma lâmpada feita para 3,7 V (bateria de lítio)
-recebe 5 V aqui, o que pode ser demais: confira a especificação. Se for preciso, coloque
-um resistor em série ou um ou dois diodos 1N4007 (cada um derruba cerca de 0,7 V).
+Repita para a luz de cima no GPIO27. O resistor de 100 kΩ mantém a lâmpada apagada
+enquanto a placa liga.
 
+### Alimentação
 
+Com as duas lâmpadas a corrente passa de 1,4 A, então:
+- Use um carregador USB de **5 V e pelo menos 2 A** (a porta USB de um computador não basta).
+- **Não** puxe a corrente das lâmpadas pelo USB da CYD: ela passaria pelo conector e pelo
+  diodo da placa, que esquentam. Entre com o 5 V pelo módulo USB-C avulso (JRC-C009) e
+  divida em dois caminhos: um para as lâmpadas (via MOSFETs) e outro para o pino **VIN**
+  do conector P1 da CYD. Todos os GND juntos.
+- Coloque um capacitor de 470–1000 µF / 10 V entre 5 V e GND perto das lâmpadas: no
+  alarme elas piscam juntas e os picos de corrente podem reiniciar a placa.
+- Para gravar o firmware pelo USB da CYD, desligue a alimentação externa.
+
+## Como compilar e gravar
 
 1. Instale o **VS Code** e a extensão **pioarduino** (fork do PlatformIO com o core 3.x do ESP32).
 2. Abra esta pasta (`cyd-relogio/`) no VS Code.
