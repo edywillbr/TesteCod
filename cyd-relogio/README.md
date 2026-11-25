@@ -72,6 +72,15 @@ GND ────────────────┴────────�
 Repita para a luz de cima no GPIO27. O resistor de 100 kΩ mantém a lâmpada apagada
 enquanto a placa liga.
 
+### Alto-falante
+
+Um alto-falante pequeno, de 4 a 8 Ω (como os de notebook ou celular), serve. A placa já
+tem o amplificador (SC8002B) ligado ao GPIO26; não precisa de transistor nem resistor.
+O conector **SPEAK** da CYD é um JST de 2 pinos com passo de 1,25 mm (MX1.25): use um
+cabinho com esse plugue ou solde os fios nos pinos do conector. A polaridade não importa.
+Para conferir a impedância, meça a resistência entre os fios com o multímetro:
+~3–4 Ω indica alto-falante de 4 Ω; ~6–7 Ω indica 8 Ω.
+
 ### Alimentação
 
 Com as duas lâmpadas a corrente passa de 1,4 A, então:
