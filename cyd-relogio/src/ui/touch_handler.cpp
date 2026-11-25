@@ -777,10 +777,10 @@ void handleTouch( int x, int y ) {
             }
             else if ( x >= 40 && x <= 145 && y >= 205 && y <= 235 ) {
                 if ( regionAutoMode ) {
-                    drawSyncOverlay( "Syncing...", false );
+                    drawSyncOverlay( "Sincronizando...", false );
                     String syncErr = syncRegion();
                     if ( syncErr.isEmpty() ) {
-                        drawSyncOverlay( "Sync complete!", false );
+                        drawSyncOverlay( "Sincronizado!", false );
                         delay( 1500 );
                     }
                     else {
@@ -1147,7 +1147,7 @@ void handleTouch( int x, int y ) {
                     tft.fillScreen( TFT_BLACK );
                     tft.setTextColor( TFT_WHITE );
                     tft.setTextDatum( MC_DATUM );
-                    tft.drawString( "CHECKING...", 160, 100, 2 );
+                    tft.drawString( "VERIFICANDO...", 160, 100, 2 );
 
                     checkForUpdate();
 
@@ -1228,7 +1228,7 @@ void handleTouch( int x, int y ) {
                 // ILI9341 (CYD1): invertColors directly controls inversion.
                 // invertColors=false → tft.invertDisplay(false) = normal display
                 // invertColors=true  → tft.invertDisplay(true)  = inverted display
-                tft.invertDisplay( invertColors != CYD_PANEL_INVERTED );  // ST7789 (CYD2USB) é invertido de fábrica
+                tft.invertDisplay( invertColors != CYD_PANEL_INVERTED );  // CYD_PANEL_INVERTED: ver include/User_Setup.h
                 log_d( "[INVERT] Display SW inverted: %s", invertColors ? "TRUE" : "FALSE" );
 
                 drawGraphicsScreen();

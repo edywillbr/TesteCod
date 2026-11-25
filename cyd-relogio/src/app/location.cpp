@@ -47,7 +47,7 @@ extern unsigned long lastWeatherUpdate;
 // ---------------------------------------------------------------------------
 String syncRegion() {
     if ( WiFi.status() != WL_CONNECTED ) {
-        return "No WiFi connection";
+        return "Sem Wi-Fi";
     }
 
     log_d( "[AUTO] Syncing region..." );
@@ -143,13 +143,13 @@ String syncRegion() {
         else {
             log_e( "[AUTO] JSON Parsing error or status not success" );
             http.end();
-            return "Location API failed";
+            return "Falha ao buscar local";
         }
     }
     else {
         log_w( "[AUTO] HTTP Error: %d", httpCode );
         http.end();
-        return "Server error (HTTP " + String( httpCode ) + ")";
+        return "Erro no servidor (HTTP " + String( httpCode ) + ")";
     }
     http.end();
     return "";

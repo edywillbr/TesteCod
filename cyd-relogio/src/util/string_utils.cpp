@@ -30,3 +30,25 @@ bool fuzzyMatch( String input, String target ) {
     return false;
 }
 
+
+String semAcentos( const String &input ) {
+    // Latin-1 supplement (U+00C0..U+00FF) encoded in UTF-8 as 0xC3 0x80..0xBF
+    static const char *map = "AAAAAAACEEEEIIIIDNOOOOOxOUUUUYTsaaaaaaaceeeeiiiidnooooo/ouuuuyty";
+    String out;
+    out.reserve( input.length() );
+    for ( unsigned int i = 0; i < input.length(); i++ ) {
+        uint8_t c = ( uint8_t )input[ i ];
+        if ( c == 0xC3 && i + 1 < input.length() ) {
+            uint8_t n = ( uint8_t )input[ i + 1 ];
+            if ( n >= 0x80 && n <= 0xBF ) {
+                out += map[ n - 0x80 ];
+                i++;
+                continue;
+            }
+        }
+        if ( c < 0x80 ) {
+            out += ( char )c;
+        }
+    }
+    return out;
+}

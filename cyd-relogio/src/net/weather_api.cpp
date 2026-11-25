@@ -47,27 +47,27 @@ extern bool         initialWeatherFetched;
 
 String getWeatherDesc( int code ) {
     if ( code == 0 ) {
-        return "Clear";
+        return "Limpo";
     }
     if ( code <= 3 ) {
-        return "Cloudy";
+        return "Nublado";
     }
     if ( code <= 48 ) {
-        return "Fog";
+        return "Neblina";
     }
     if ( code <= 67 ) {
-        return "Rain";
+        return "Chuva";
     }
     if ( code <= 77 ) {
-        return "Snow";
+        return "Neve";
     }
     if ( code <= 82 ) {
-        return "Showers";
+        return "Pancadas";
     }
     if ( code <= 99 ) {
-        return "Storm";
+        return "Temporal";
     }
-    return "Unknown";
+    return "--";
 }
 
 String getWindDir( int deg ) {
@@ -78,7 +78,7 @@ String getWindDir( int deg ) {
         return "NE";
     }
     if ( deg < 112 ) {
-        return "E";
+        return "L";
     }
     if ( deg < 157 ) {
         return "SE";
@@ -87,12 +87,12 @@ String getWindDir( int deg ) {
         return "S";
     }
     if ( deg < 247 ) {
-        return "SW";
+        return "SO";
     }
     if ( deg < 292 ) {
-        return "W";
+        return "O";
     }
-    return "NW";
+    return "NO";
 }
 
 // ============================================
@@ -117,7 +117,7 @@ void fetchWeatherData() {
 
         String searchName = weatherCity;
         searchName.replace( " ", "+" );
-        String geoUrl = "https://geocoding-api.open-meteo.com/v1/search?name=" + searchName + "&count=5&language=en&format=json";
+        String geoUrl = "https://geocoding-api.open-meteo.com/v1/search?name=" + searchName + "&count=5&language=pt&format=json";
 
         http.setTimeout( HTTP_TIMEOUT_SHORT );
         http.begin( geoUrl );
@@ -195,7 +195,7 @@ void fetchWeatherData() {
     struct tm *timeinfo = localtime( &now );
 
     if ( timeinfo ) {
-        const char *dayAbbr[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+        const char *dayAbbr[] = {"Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"};
         int tomorrowWday = ( timeinfo->tm_wday + 1 ) % 7;
         forecastDay1Name = dayAbbr[ tomorrowWday ];
         int afterTomorrowWday = ( timeinfo->tm_wday + 2 ) % 7;

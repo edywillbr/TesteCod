@@ -11,6 +11,7 @@
 #include "../net/holidays.h"
 #include "../util/moon.h"
 #include "../util/constants.h"
+#include "../util/string_utils.h"
 #include "../net/weather_api.h"
 
 // ---------------------------------------------------------------------------
@@ -140,8 +141,10 @@ void drawDateAndWeek( const struct tm *ti ) {
 
     tft.fillRect( 155, 160, 165, 80, getBgColor() );
 
-    char dateBuf[ 30 ];
-    strftime( dateBuf, sizeof( dateBuf ), "%B %d, %Y", ti );
+    const char *monthNames[] = {"janeiro", "fevereiro", "marco", "abril", "maio", "junho",
+                                "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
+    char dateBuf[ 32 ];
+    snprintf( dateBuf, sizeof( dateBuf ), "%d de %s de %d", ti->tm_mday, monthNames[ ti->tm_mon ], ti->tm_year + 1900 );
     tft.drawString( String( dateBuf ), clockX, 175, 2 );
 
     int weekNum = 0;
@@ -149,9 +152,9 @@ void drawDateAndWeek( const struct tm *ti ) {
     strftime( weekBuf, sizeof( weekBuf ), "%V", ti );
     weekNum = atoi( weekBuf );
 
-    const char *dayNames[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+    const char *dayNames[] = {"Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"};
     String dayStr = String( dayNames[ ti->tm_wday ] );
-    String weekStr = "Week " + String( weekNum ) + ", " + dayStr;
+    String weekStr = "Semana " + String( weekNum ) + ", " + dayStr;
     tft.drawString( weekStr, clockX, 193, 2 );
 
     if ( cityName != "" ) {
@@ -161,7 +164,7 @@ void drawDateAndWeek( const struct tm *ti ) {
         else {
             tft.setTextColor( TFT_SKYBLUE, getBgColor() );
         }
-        tft.drawString( cityName, clockX, 211, 2 );
+        tft.drawString( semAcentos( cityName ), clockX, 211, 2 );
     }
 
     // Holiday line takes priority; nameday shown only for Czech Republic when no holiday
@@ -378,7 +381,7 @@ void drawWeatherSection() {
     if ( !initialWeatherFetched ) {
         tft.setTextColor( txt, bg );
         tft.setTextDatum( MC_DATUM );
-        tft.drawString( "Loading...", 75, 120 );
+        tft.drawString( "Carregando...", 75, 120 );
         return;
     }
 
@@ -406,19 +409,19 @@ void drawWeatherSection() {
     tft.setCursor( 5, 75 );
     if ( weatherUnitInHg ) {
         float pressInHg = currentPressure * 0.02953f;
-        tft.printf( "RH: %d%%  P: %.2f inHg", currentHumidity, pressInHg );
+        tft.printf( "UR: %d%%  P: %.2f inHg", currentHumidity, pressInHg );
     }
     else {
-        tft.printf( "RH: %d%%  P: %d hPa", currentHumidity, currentPressure );
+        tft.printf( "UR: %d%%  P: %d hPa", currentHumidity, currentPressure );
     }
 
     tft.setCursor( 5, 88 );
     if ( weatherUnitMph ) {
         float windMph = currentWindSpeed * 0.621371;
-        tft.printf( "Wind: %.1f mph %s", windMph, getWindDir( currentWindDirection ).c_str() );
+        tft.printf( "Vento: %.1f mph %s", windMph, getWindDir( currentWindDirection ).c_str() );
     }
     else {
-        tft.printf( "Wind: %.1f km/h %s", currentWindSpeed, getWindDir( currentWindDirection ).c_str() );
+        tft.printf( "Vento: %.1f km/h %s", currentWindSpeed, getWindDir( currentWindDirection ).c_str() );
     }
 
     // --- Sunrise/Sunset ---
@@ -438,7 +441,7 @@ void drawWeatherSection() {
     // --- 2. Forecast ---
     tft.setTextColor( txt, bg );
     tft.setFreeFont( NULL );
-    tft.drawString( "Forecast:", 5, 128 );
+    tft.drawString( "Previsao:", 5, 128 );
 
     drawWeatherIconVectorSmall( forecast[ 0 ].code, 8, 138 );
     tft.setTextDatum( ML_DATUM );
@@ -491,9 +494,9 @@ void drawWeatherSection() {
 
         tft.setTextColor( txt, bg );
         tft.setFreeFont( NULL );
-        tft.drawString( "Moon Phase:", 5, 210 );
+        tft.drawString( "Fase da Lua:", 5, 210 );
 
-        String phaseNames[] = {"New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous", "Full Moon", "Waning Gibbous", "Last Quarter", "Waning Crescent"};
+        String phaseNames[] = {"Lua Nova", "Crescente", "Quarto Crescente", "Crescente Gibosa", "Lua Cheia", "Minguante Gibosa", "Quarto Minguante", "Minguante"};
         if ( phase >= 0 && phase <= 7 ) {
             tft.drawString( phaseNames[ phase ], 5, 222 );
         }

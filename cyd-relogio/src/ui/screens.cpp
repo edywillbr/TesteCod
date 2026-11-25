@@ -8,6 +8,7 @@
 #include <XPT2046_Touchscreen.h>
 
 #include "../util/constants.h"
+#include "../util/string_utils.h"
 #include "../data/app_state.h"
 #include "../data/city_data.h"
 #include "../data/nameday.h"
@@ -129,15 +130,15 @@ void   syncRegion();
 // ---------------------------------------------------------------------------
 
 // ================= LOADING SCREEN =================
-// Shows "Loading information. / One moment..." centred on a solid background.
+// Shows "Carregando dados. / Um momento..." centred on a solid background.
 // Called once from setup() after WiFi connects; stays on screen while NTP
 // syncs.  The first clock render blanks and rebuilds the display when ready.
 void drawLoadingScreen() {
     tft.fillScreen( getBgColor() );
     tft.setTextDatum( MC_DATUM );
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Loading information.", 160, 110, 2 );
-    tft.drawString( "One moment...", 160, 140, 2 );
+    tft.drawString( "Carregando dados.", 160, 110, 2 );
+    tft.drawString( "Um momento...", 160, 140, 2 );
 }
 
 void drawSyncOverlay( const String &msg, bool okButton ) {
@@ -165,11 +166,11 @@ void showWifiConnectingScreen( String ssid ) {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Connecting to", 160, 80, 2 );
+    tft.drawString( "Conectando a", 160, 80, 2 );
     tft.setTextColor( TFT_SKYBLUE );
     tft.drawString( ssid, 160, 110, 2 );
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Please wait...", 160, 150, 2 );
+    tft.drawString( "Aguarde...", 160, 150, 2 );
 }
 
 void showWifiResultScreen( bool success ) {
@@ -177,12 +178,12 @@ void showWifiResultScreen( bool success ) {
     if ( success ) {
         tft.setTextColor( TFT_GREEN );
         tft.setTextDatum( MC_DATUM );
-        tft.drawString( "Connection Successful!", 160, 100, 2 );
+        tft.drawString( "Conectado!", 160, 100, 2 );
     }
     else {
         tft.setTextColor( TFT_RED );
         tft.setTextDatum( MC_DATUM );
-        tft.drawString( "Connection FAILED", 160, 100, 2 );
+        tft.drawString( "FALHA na conexao", 160, 100, 2 );
     }
     delay( UI_SPLASH_DELAY_MS );
 }
@@ -191,7 +192,7 @@ void scanWifiNetworks() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Scanning WiFi...", 160, 120, 2 );
+    tft.drawString( "Buscando Wi-Fi...", 160, 120, 2 );
 
     WiFi.mode( WIFI_STA );
     if ( WiFi.status() != WL_CONNECTED ) {
@@ -255,8 +256,8 @@ void runTouchCalibration() {
     tft.fillScreen( BG );
     tft.setTextColor( FG, BG );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Touch Calibration", 160, 80, 2 );
-    tft.drawString( "Tap the cross", 160, 110, 2 );
+    tft.drawString( "Calibrar toque", 160, 80, 2 );
+    tft.drawString( "Toque na cruz", 160, 110, 2 );
     drawCalTarget( T1X, T1Y, TFT_YELLOW );
     delay( 300 );
 
@@ -267,8 +268,8 @@ void runTouchCalibration() {
     tft.fillScreen( BG );
     tft.setTextColor( FG, BG );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Touch Calibration", 160, 80, 2 );
-    tft.drawString( "Tap the cross", 160, 110, 2 );
+    tft.drawString( "Calibrar toque", 160, 80, 2 );
+    tft.drawString( "Toque na cruz", 160, 110, 2 );
     drawCalTarget( T2X, T2Y, TFT_YELLOW );
     delay( 300 );
 
@@ -315,8 +316,8 @@ void runTouchCalibration() {
     tft.fillScreen( BG );
     tft.setTextColor( TFT_GREEN, BG );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Calibration saved!", 160, 110, 2 );
-    tft.drawString( "Returning to settings...", 160, 135, 2 );
+    tft.drawString( "Calibracao salva!", 160, 110, 2 );
+    tft.drawString( "Voltando aos ajustes...", 160, 135, 2 );
     delay( 1500 );
 }
 
@@ -327,7 +328,7 @@ void drawCoordInputScreen() {
 
     tft.setTextDatum( MC_DATUM );
     tft.setTextColor( txt, bg );
-    tft.drawString( "MANUAL COORDINATES", 160, 18, 2 );
+    tft.drawString( "COORDENADAS MANUAIS", 160, 18, 2 );
 
     uint16_t latBorderCol = !coordEditingLon ? TFT_SKYBLUE : TFT_DARKGREY;
     uint16_t lonBorderCol =  coordEditingLon ? TFT_SKYBLUE : TFT_DARKGREY;
@@ -374,11 +375,11 @@ void drawCoordInputScreen() {
 
     tft.setTextColor( TFT_GREEN );
     tft.drawRect( 2 * bw + 5, by, bw - 5, bh, TFT_GREEN );
-    tft.drawString( "SAVE", 2 * bw + 5 + ( bw - 5 ) / 2, by + 18 );
+    tft.drawString( "SALVAR", 2 * bw + 5 + ( bw - 5 ) / 2, by + 18 );
 
     tft.setTextColor( TFT_ORANGE );
     tft.drawRect( 3 * bw + 5, by, bw - 5, bh, TFT_ORANGE );
-    tft.drawString( "BACK", 3 * bw + 5 + ( bw - 5 ) / 2, by + 18 );
+    tft.drawString( "VOLTAR", 3 * bw + 5 + ( bw - 5 ) / 2, by + 18 );
 
     tft.setTextColor( isWhiteTheme ? TFT_BLACK : TFT_WHITE );
 }
@@ -387,48 +388,48 @@ void drawCountryLookupConfirm() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "COUNTRY FOUND", 160, 30, 4 );
+    tft.drawString( "PAIS ACHADO", 160, 30, 4 );
 
     tft.setTextDatum( ML_DATUM );
-    tft.drawString( "Country", 40, 80, 2 );
+    tft.drawString( "Pais", 40, 80, 2 );
     tft.setTextColor( TFT_SKYBLUE );
     tft.drawString( lookupCountry, 40, 100, 2 );
     tft.setTextColor( getTextColor() );
     tft.drawString( "Status", 40, 140, 2 );
     tft.setTextColor( TFT_GREEN );
-    tft.drawString( "CONFIRMED", 40, 160, 2 );
+    tft.drawString( "CONFIRMADO", 40, 160, 2 );
 
     tft.setTextDatum( MC_DATUM );
     tft.drawRoundRect( 40, 205, 105, 30, 6, TFT_GREEN );
-    tft.drawString( "NEXT", 92, 220, 2 );
+    tft.drawString( "PROX", 92, 220, 2 );
     tft.drawRoundRect( 155, 205, 105, 30, 6, TFT_RED );
-    tft.drawString( "Back", 207, 220, 2 );
+    tft.drawString( "Voltar", 207, 220, 2 );
 }
 
 void drawCityLookupConfirm() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "CITY FOUND", 160, 30, 4 );
+    tft.drawString( "CIDADE ACHADA", 160, 30, 4 );
 
     tft.setTextDatum( ML_DATUM );
-    tft.drawString( "City", 40, 80, 2 );
+    tft.drawString( "Cidade", 40, 80, 2 );
     tft.setTextColor( TFT_SKYBLUE );
     tft.drawString( lookupCity, 40, 100, 2 );
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Timezone", 40, 130, 2 );
+    tft.drawString( "Fuso", 40, 130, 2 );
     tft.setTextColor( TFT_SKYBLUE );
     tft.drawString( lookupTimezone, 40, 150, 2 );
     tft.setTextColor( getTextColor() );
     tft.drawString( "Status", 40, 180, 2 );
     tft.setTextColor( TFT_GREEN );
-    tft.drawString( "CONFIRMED", 40, 200, 2 );
+    tft.drawString( "CONFIRMADO", 40, 200, 2 );
 
     tft.setTextDatum( MC_DATUM );
     tft.drawRoundRect( 40, 205, 105, 30, 6, TFT_GREEN );
-    tft.drawString( "SAVE", 92, 220, 2 );
+    tft.drawString( "SALVAR", 92, 220, 2 );
     tft.drawRoundRect( 155, 205, 105, 30, 6, TFT_RED );
-    tft.drawString( "Back", 207, 220, 2 );
+    tft.drawString( "Voltar", 207, 220, 2 );
 }
 
 void drawCustomCountryInput() {
@@ -436,7 +437,7 @@ void drawCustomCountryInput() {
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
     tft.setFreeFont( &FreeSansBold12pt7b );
-    tft.drawString( "Enter Country Name", 160, 20 );
+    tft.drawString( "Nome do pais", 160, 20 );
 
     tft.drawRect( 10, 40, 300, 30, isWhiteTheme ? TFT_BLACK : TFT_WHITE );
     tft.setFreeFont( &FreeSans9pt7b );
@@ -469,7 +470,7 @@ void drawCustomCountryInput() {
 
     tft.drawRect( 2, 170, 316, 25, isWhiteTheme ? TFT_DARKGREY : TFT_WHITE );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Space", 160, 183 );
+    tft.drawString( "Espaco", 160, 183 );
 
     int bw = 64;
     int by = 198;
@@ -483,15 +484,15 @@ void drawCustomCountryInput() {
     tft.drawString( "123", 1 * bw + bw / 2, by + 18 );
 
     tft.drawRect( 2 * bw + 2, by, bw - 4, bh, isWhiteTheme ? TFT_DARKGREY : TFT_WHITE );
-    tft.drawString( "Del", 2 * bw + bw / 2, by + 18 );
+    tft.drawString( "Apaga", 2 * bw + bw / 2, by + 18 );
 
     tft.setTextColor( TFT_GREEN );
     tft.drawRect( 3 * bw + 2, by, bw - 4, bh, TFT_GREEN );
-    tft.drawString( "SRCH", 3 * bw + bw / 2, by + 18 );
+    tft.drawString( "BUSC", 3 * bw + bw / 2, by + 18 );
 
     tft.setTextColor( TFT_ORANGE );
     tft.drawRect( 4 * bw + 2, by, bw - 4, bh, TFT_ORANGE );
-    tft.drawString( "BACK", 4 * bw + bw / 2, by + 18 );
+    tft.drawString( "VOLTAR", 4 * bw + bw / 2, by + 18 );
 
     tft.setTextColor( isWhiteTheme ? TFT_BLACK : TFT_WHITE );
 }
@@ -511,9 +512,9 @@ void drawSettingsScreen() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "SETTINGS", 160, 30, 4 );
+    tft.drawString( "AJUSTES", 160, 30, 4 );
 
-    String menuItems[] = {"WiFi Setup", "Weather", "Regional", "Graphics", "Firmware", "Calibrate"};
+    String menuItems[] = {"Config. Wi-Fi", "Clima", "Regional", "Tela", "Firmware", "Calibrar"};
     uint16_t colors[]  = {TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_BLUE, TFT_ORANGE};
 
     int totalItems   = 6;
@@ -555,13 +556,13 @@ void drawWeatherScreen() {
     tft.setFreeFont( &FreeSans12pt7b );
     tft.setTextColor( TFT_ORANGE, bg );
     tft.setTextDatum( TC_DATUM );
-    tft.drawString( "Weather Settings", 160, 5 );
+    tft.drawString( "Ajustes do clima", 160, 5 );
 
     // ===== MĚSTO =====
     tft.setFreeFont( &FreeSans9pt7b );
     tft.setTextColor( TFT_SKYBLUE, bg );
     tft.setTextDatum( TC_DATUM );
-    String cityDisp = ( cityName == "" ) ? "Not set (Use Regional)" : cityName;
+    String cityDisp = ( cityName == "" ) ? "Nao definido (Regional)" : cityName;
     if ( cityDisp.length() > 22 ) {
         cityDisp = cityDisp.substring( 0, 19 ) + "...";
     }
@@ -572,9 +573,9 @@ void drawWeatherScreen() {
 
     // ===== 3 SLOUPCE JEDNOTEK - LABELS =====
     tft.setTextColor( txt, bg );
-    tft.drawString( "Temperature", 50, 68, 1 );
-    tft.drawString( "Wind speed", 160, 68, 1 );
-    tft.drawString( "Pressure", 270, 68, 1 );
+    tft.drawString( "Temperatura", 50, 68, 1 );
+    tft.drawString( "Vento", 160, 68, 1 );
+    tft.drawString( "Pressao", 270, 68, 1 );
 
     // ===== SLOUPEC 1: TEPLOTA =====
     int btnH = 20;
@@ -642,16 +643,16 @@ void drawWeatherScreen() {
     tft.drawRoundRect( 232, 110, 60, 16, 3, TFT_SKYBLUE );
     tft.setTextColor( TFT_SKYBLUE, bg );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "EDIT", 262, 118, 1 );
+    tft.drawString( "MUDAR", 262, 118, 1 );
 
     // ===== INFO =====
     tft.setTextColor( txt, bg );
-    tft.drawString( "Updates every 30 min", 160, 138, 1 );
+    tft.drawString( "Atualiza a cada 30 min", 160, 138, 1 );
 
     // ===== BACK BUTTON =====
     tft.fillRoundRect( 40, 152, 240, 16, 4, TFT_DARKGREY );
     tft.setTextColor( TFT_WHITE );
-    tft.drawString( "BACK TO SETTINGS", 160, 160, 1 );
+    tft.drawString( "VOLTAR AOS AJUSTES", 160, 160, 1 );
 }
 
 // Repaint only the DST toggle button — avoids a full fillScreen redraw
@@ -667,7 +668,7 @@ void drawRegionalDstButton() {
         tft.drawRoundRect( 195, 172, 72, 16, 3, getTextColor() );
         tft.setTextColor( getTextColor() );
     }
-    tft.drawString( manualDstActive ? "DST: ON" : "DST: OFF", 231, 180, 2 );
+    tft.drawString( manualDstActive ? "VERAO: S" : "VERAO: N", 231, 180, 2 );
 }
 
 void redrawAutoDimStart() {
@@ -698,7 +699,7 @@ void redrawAutoDimSection() {
 
     tft.setTextDatum( ML_DATUM );
     tft.setTextColor( txt );
-    tft.drawString( "Auto Dim", 10, 155, 2 );
+    tft.drawString( "Escurecer", 10, 155, 2 );
 
     // ON / OFF buttons
     const int onX = 10, onY = 175, offX = 10, offY = 195;
@@ -713,21 +714,21 @@ void redrawAutoDimSection() {
     }
     tft.setTextColor( TFT_WHITE );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "ON",  onX  + btnW / 2, onY  + btnH / 2, 1 );
-    tft.drawString( "OFF", offX + btnW / 2, offY + btnH / 2, 1 );
+    tft.drawString( "LIG",  onX  + btnW / 2, onY  + btnH / 2, 1 );
+    tft.drawString( "DESL", offX + btnW / 2, offY + btnH / 2, 1 );
 
     if ( autoDimEnabled ) {
         const int startX = 50, startY = 178, lineH = 16, timeX = 100;
         const int btnW16 = 16;
         tft.setTextDatum( ML_DATUM );
         tft.setTextColor( txt );
-        tft.drawString( "Start", startX, startY,        1 );
+        tft.drawString( "Inicio", startX, startY,        1 );
         tft.drawString( String( autoDimStart ) + "h", timeX, startY, 1 );
         int endY = startY + lineH;
-        tft.drawString( "End",   startX, endY,           1 );
+        tft.drawString( "Fim",   startX, endY,           1 );
         tft.drawString( String( autoDimEnd )   + "h", timeX, endY,   1 );
         int levelY = endY + lineH;
-        tft.drawString( "Level", startX, levelY,         1 );
+        tft.drawString( "Nivel", startX, levelY,         1 );
         tft.drawString( String( autoDimLevel ) + "%", timeX, levelY, 1 );
         // redraw the +/- buttons
         auto drawPlusBtn = [ & ]( int rx, int ry ) {
@@ -790,18 +791,18 @@ void clearSyncOverlay() {
     // The overlay covers the city and timezone label rows — redraw them
     tft.setTextDatum( ML_DATUM );
     tft.setTextColor( txt );
-    tft.drawString( "City", 40, 110, 2 );
+    tft.drawString( "Cidade", 40, 110, 2 );
     tft.setTextColor( TFT_SKYBLUE );
-    tft.drawString( cityName != "" ? cityName : "---", 40, 130, 2 );
+    tft.drawString( cityName != "" ? semAcentos( cityName ) : "---", 40, 130, 2 );
     tft.setTextColor( txt );
-    tft.drawString( "Timezone", 40, 160, 2 );
+    tft.drawString( "Fuso", 40, 160, 2 );
 }
 
 void drawRegionalScreen() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "REGIONAL SETUP", 160, 30, 4 );
+    tft.drawString( "AJUSTE REGIONAL", 160, 30, 4 );
 
     int toggleX = 160;
     int toggleY = 60;
@@ -825,12 +826,12 @@ void drawRegionalScreen() {
 
     tft.setTextDatum( ML_DATUM );
     tft.setTextColor( getTextColor() );
-    tft.drawString( "City", 40, 110, 2 );
+    tft.drawString( "Cidade", 40, 110, 2 );
     tft.setTextColor( TFT_SKYBLUE );
-    tft.drawString( cityName != "" ? cityName : "---", 40, 130, 2 );
+    tft.drawString( cityName != "" ? semAcentos( cityName ) : "---", 40, 130, 2 );
 
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Timezone", 40, 160, 2 );
+    tft.drawString( "Fuso", 40, 160, 2 );
     tft.setTextColor( TFT_SKYBLUE );
     int tzHours = gmtOffset_sec / 3600;
     String tzStr = ( tzHours >= 0 ? "+" : "" ) + String( tzHours ) + "h";
@@ -850,29 +851,29 @@ void drawRegionalScreen() {
             tft.drawRoundRect( 195, 172, 72, 16, 3, getTextColor() );
             tft.setTextColor( getTextColor() );
         }
-        tft.drawString( manualDstActive ? "DST: ON" : "DST: OFF", 231, 180, 2 );
+        tft.drawString( manualDstActive ? "VERAO: S" : "VERAO: N", 231, 180, 2 );
         tft.setTextDatum( ML_DATUM );
     }
 
     tft.setTextDatum( MC_DATUM );
     if ( regionAutoMode ) {
         tft.drawRoundRect( 40, 205, 105, 30, 6, TFT_GREEN );
-        tft.drawString( "SYNC", 92, 220, 2 );
+        tft.drawString( "SINC", 92, 220, 2 );
     }
     else {
         tft.drawRoundRect( 40, 205, 105, 30, 6, TFT_GREEN );
-        tft.drawString( "EDIT", 92, 220, 2 );
+        tft.drawString( "MUDAR", 92, 220, 2 );
     }
 
     tft.drawRoundRect( 155, 205, 105, 30, 6, TFT_RED );
-    tft.drawString( "Back", 207, 220, 2 );
+    tft.drawString( "Voltar", 207, 220, 2 );
 }
 
 void drawCountrySelection() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "SELECT COUNTRY", 160, 30, 4 );
+    tft.drawString( "ESCOLHA O PAIS", 160, 30, 4 );
 
     tft.setTextDatum( ML_DATUM );
 
@@ -889,7 +890,7 @@ void drawCountrySelection() {
     }
 
     tft.setTextColor( TFT_BLUE );
-    tft.drawString( "Custom lookup", 15, 70 + 5 * 30, 2 );
+    tft.drawString( "Buscar outro", 15, 70 + 5 * 30, 2 );
     tft.setTextColor( getTextColor() );
 
     if ( countryOffset > 0 ) {
@@ -906,7 +907,7 @@ void drawCitySelection() {
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
     tft.drawString( selectedCountry, 160, 15, 2 );
-    tft.drawString( "SELECT CITY", 160, 35, 4 );
+    tft.drawString( "ESCOLHA A CIDADE", 160, 35, 4 );
 
     String cities[ 20 ];
     int cityCount = 0;
@@ -926,7 +927,7 @@ void drawCitySelection() {
         tft.drawFastHLine( 10, yPos + 20, 240, TFT_DARKGREY );
     }
 
-    tft.drawString( "Custom lookup", 15, 70 + 5 * 30, 2 );
+    tft.drawString( "Buscar outro", 15, 70 + 5 * 30, 2 );
 
     if ( cityOffset > 0 ) {
         drawArrowUp( 265, 45, TFT_BLUE );
@@ -941,26 +942,26 @@ void drawLocationConfirm() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "CONFIRM LOCATION", 160, 30, 4 );
+    tft.drawString( "CONFIRMAR LOCAL", 160, 30, 4 );
 
     tft.setTextDatum( ML_DATUM );
-    tft.drawString( "City", 40, 80, 2 );
+    tft.drawString( "Cidade", 40, 80, 2 );
     tft.setTextColor( TFT_SKYBLUE );
     tft.drawString( selectedCity, 40, 100, 2 );
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Country", 40, 130, 2 );
+    tft.drawString( "Pais", 40, 130, 2 );
     tft.setTextColor( TFT_SKYBLUE );
     tft.drawString( selectedCountry, 40, 150, 2 );
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Timezone", 40, 180, 2 );
+    tft.drawString( "Fuso", 40, 180, 2 );
     tft.setTextColor( TFT_SKYBLUE );
     tft.drawString( selectedTimezone, 40, 200, 2 );
 
     tft.setTextDatum( MC_DATUM );
     tft.drawRoundRect( 40, 205, 105, 30, 6, TFT_GREEN );
-    tft.drawString( "SAVE", 92, 220, 2 );
+    tft.drawString( "SALVAR", 92, 220, 2 );
     tft.drawRoundRect( 155, 205, 105, 30, 6, TFT_RED );
-    tft.drawString( "Back", 207, 220, 2 );
+    tft.drawString( "Voltar", 207, 220, 2 );
 }
 
 void drawCustomCityInput() {
@@ -968,7 +969,7 @@ void drawCustomCityInput() {
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
     tft.setFreeFont( &FreeSansBold12pt7b );
-    tft.drawString( "Enter City Name", 160, 20 );
+    tft.drawString( "Nome da cidade", 160, 20 );
 
     // Input field - same design as WiFi keyboard
     tft.drawRect( 10, 40, 300, 30, isWhiteTheme ? TFT_BLACK : TFT_WHITE );
@@ -1005,7 +1006,7 @@ void drawCustomCityInput() {
     // Space bar
     tft.drawRect( 2, 170, 316, 25, isWhiteTheme ? TFT_DARKGREY : TFT_WHITE );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Space", 160, 183 );
+    tft.drawString( "Espaco", 160, 183 );
 
     // Function buttons
     int bw = 64;
@@ -1023,17 +1024,17 @@ void drawCustomCityInput() {
 
     // 3. Del
     tft.drawRect( 2 * bw + 2, by, bw - 4, bh, isWhiteTheme ? TFT_DARKGREY : TFT_WHITE );
-    tft.drawString( "Del", 2 * bw + bw / 2, by + 18 );
+    tft.drawString( "Apaga", 2 * bw + bw / 2, by + 18 );
 
     // 4. LOOKUP (Green - city-specific)
     tft.setTextColor( TFT_GREEN );
     tft.drawRect( 3 * bw + 2, by, bw - 4, bh, TFT_GREEN );
-    tft.drawString( "SRCH", 3 * bw + bw / 2, by + 18 );
+    tft.drawString( "BUSC", 3 * bw + bw / 2, by + 18 );
 
     // 5. BACK (Red/orange - city-specific)
     tft.setTextColor( TFT_ORANGE );
     tft.drawRect( 4 * bw + 2, by, bw - 4, bh, TFT_ORANGE );
-    tft.drawString( "BACK", 4 * bw + bw / 2, by + 18 );
+    tft.drawString( "VOLTAR", 4 * bw + bw / 2, by + 18 );
 
     tft.setTextColor( isWhiteTheme ? TFT_BLACK : TFT_WHITE ); // Reset colour
 }
@@ -1060,7 +1061,7 @@ void drawFirmwareScreen() {
 
     // Current version
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Current version:", 10, yPos, 2 );
+    tft.drawString( "Versao atual:", 10, yPos, 2 );
     tft.setTextColor( TFT_GREEN );
     tft.drawString( String( FIRMWARE_VERSION ), 160, yPos, 2 );
 
@@ -1068,7 +1069,7 @@ void drawFirmwareScreen() {
 
     // Available version
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Available:", 10, yPos, 2 );
+    tft.drawString( "Disponivel:", 10, yPos, 2 );
     if ( availableVersion == "" || !updateAvailable ) {
         tft.setTextColor( TFT_DARKGREY );
         tft.drawString( "-", 160, yPos, 2 );
@@ -1082,12 +1083,12 @@ void drawFirmwareScreen() {
 
     // Install mode nadpis
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Install mode:", 10, yPos, 2 );
+    tft.drawString( "Instalacao:", 10, yPos, 2 );
 
     yPos += 25;  // yPos is now 145
 
     // Radio buttons for install mode (Auto and By user only)
-    const char *modes[ 2 ] = {"Auto", "By user"};
+    const char *modes[ 2 ] = {"Auto", "Manual"};
     for ( int i = 0; i < 2; i++ ) {
         int btnY = yPos + ( i * 25 ); // 145, 170
 
@@ -1112,12 +1113,12 @@ void drawFirmwareScreen() {
     if ( updateAvailable ) {
         tft.fillRoundRect( 10, btnY, 140, 30, 5, TFT_GREEN );
         tft.setTextColor( TFT_BLACK );
-        tft.drawString( "INSTALL", 80, btnY + 15, 2 );
+        tft.drawString( "INSTALAR", 80, btnY + 15, 2 );
     }
     else {
         tft.fillRoundRect( 10, btnY, 140, 30, 5, TFT_BLUE );
         tft.setTextColor( TFT_WHITE );
-        tft.drawString( "CHECK NOW", 80, btnY + 15, 2 );
+        tft.drawString( "VERIFICAR", 80, btnY + 15, 2 );
     }
 
     // Back button (same style as other menus)
@@ -1129,17 +1130,17 @@ void drawGraphicsScreen() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "GRAPHICS", 160, 30, 4 );
+    tft.drawString( "TELA", 160, 30, 4 );
 
     // === THEMES ===
-    tft.drawString( "Themes", 135, 50, 2 );
+    tft.drawString( "Temas", 135, 50, 2 );
 
     // BLACK Theme
     tft.drawRoundRect( 20, 65, 50, 30, 4, TFT_BLACK );
     tft.drawRoundRect( 19, 64, 52, 32, 4, TFT_BLACK );
     tft.fillRoundRect( 21, 66, 48, 28, 3, themeMode == THEME_DARK ? TFT_WHITE : TFT_DARKGREY );
     tft.setTextColor( TFT_BLACK );
-    tft.drawString( "BLK", 45, 78, 1 );
+    tft.drawString( "PRE", 45, 78, 1 );
     tft.setTextColor( getTextColor() );
 
     // WHITE Theme
@@ -1147,7 +1148,7 @@ void drawGraphicsScreen() {
     tft.drawRoundRect( 79, 64, 52, 32, 4, TFT_WHITE );
     tft.fillRoundRect( 81, 66, 48, 28, 3, themeMode == THEME_WHITE ? TFT_WHITE : TFT_DARKGREY );
     tft.setTextColor( TFT_BLACK );
-    tft.drawString( "WHT", 105, 78, 1 );
+    tft.drawString( "BRA", 105, 78, 1 );
     tft.setTextColor( getTextColor() );
 
     // BLUE Theme
@@ -1155,7 +1156,7 @@ void drawGraphicsScreen() {
     tft.drawRoundRect( 139, 64, 52, 32, 4, 0x0010 );
     tft.fillRoundRect( 141, 66, 48, 28, 3, themeMode == THEME_BLUE ? 0x07FF : TFT_DARKGREY );
     tft.setTextColor( 0x0010 );
-    tft.drawString( "BLU", 165, 78, 1 );
+    tft.drawString( "AZU", 165, 78, 1 );
     tft.setTextColor( getTextColor() );
 
     // YELLOW Theme
@@ -1163,13 +1164,13 @@ void drawGraphicsScreen() {
     tft.drawRoundRect( 199, 64, 52, 32, 4, 0xCC00 );
     tft.fillRoundRect( 201, 66, 48, 28, 3, themeMode == THEME_YELLOW ? 0xFFE0 : TFT_DARKGREY );
     tft.setTextColor( TFT_BLACK );
-    tft.drawString( "YEL", 225, 78, 1 );
+    tft.drawString( "AMA", 225, 78, 1 );
     tft.setTextColor( getTextColor() );
 
     // === INVERT BUTTON ===
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Colours", 285, 50, 2 );
+    tft.drawString( "Cores", 285, 50, 2 );
 
     // Invert button - same style as themes
     uint16_t invertBorderColor = invertColors ? TFT_GREEN : TFT_DARKGREY;
@@ -1185,7 +1186,7 @@ void drawGraphicsScreen() {
     // === DISPLAY BRIGHTNESS SLIDER (compact) ===
     tft.setTextDatum( ML_DATUM );
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Brightness", 10, 108, 2 );
+    tft.drawString( "Brilho", 10, 108, 2 );
 
     int sliderX = 10;
     int sliderY = 125;
@@ -1253,7 +1254,7 @@ void drawGraphicsScreen() {
         tft.setTextColor( TFT_WHITE );
         tft.drawString( "NRM", rotX + ( rotW / 4 ), rotY + ( rotH / 2 ), 1 );
         tft.setTextColor( getTextColor() );
-        tft.drawString( "FLP", rotX + ( 3 * rotW / 4 ), rotY + ( rotH / 2 ), 1 );
+        tft.drawString( "180", rotX + ( 3 * rotW / 4 ), rotY + ( rotH / 2 ), 1 );
     }
     else {
         tft.fillRect( rotX + ( rotW / 2 ), rotY + 2, ( rotW / 2 ) - 2, rotH - 4, activeColor );
@@ -1261,13 +1262,13 @@ void drawGraphicsScreen() {
         tft.setTextColor( getTextColor() );
         tft.drawString( "NRM", rotX + ( rotW / 4 ), rotY + ( rotH / 2 ), 1 );
         tft.setTextColor( TFT_WHITE );
-        tft.drawString( "FLP", rotX + ( 3 * rotW / 4 ), rotY + ( rotH / 2 ), 1 );
+        tft.drawString( "180", rotX + ( 3 * rotW / 4 ), rotY + ( rotH / 2 ), 1 );
     }
 
     // === AUTO DIM SETTINGS ===
     tft.setTextDatum( ML_DATUM );
     tft.setTextColor( getTextColor() );
-    tft.drawString( "Auto Dim", 10, 155, 2 );
+    tft.drawString( "Escurecer", 10, 155, 2 );
 
     // ON/OFF BUTTONS
     int onX = 10;
@@ -1280,19 +1281,19 @@ void drawGraphicsScreen() {
         tft.fillRoundRect( onX, onY, btnWidth, btnHeight, 3, TFT_GREEN );
         tft.setTextColor( TFT_WHITE );
         tft.setTextDatum( MC_DATUM );
-        tft.drawString( "ON", onX + btnWidth / 2, onY + btnHeight / 2, 1 );
+        tft.drawString( "LIG", onX + btnWidth / 2, onY + btnHeight / 2, 1 );
         tft.fillRoundRect( offX, offY, btnWidth, btnHeight, 3, TFT_BLUE );
         tft.setTextColor( TFT_WHITE );
-        tft.drawString( "OFF", offX + btnWidth / 2, offY + btnHeight / 2, 1 );
+        tft.drawString( "DESL", offX + btnWidth / 2, offY + btnHeight / 2, 1 );
     }
     else {
         tft.fillRoundRect( onX, onY, btnWidth, btnHeight, 3, TFT_BLUE );
         tft.setTextColor( TFT_WHITE );
         tft.setTextDatum( MC_DATUM );
-        tft.drawString( "ON", onX + btnWidth / 2, onY + btnHeight / 2, 1 );
+        tft.drawString( "LIG", onX + btnWidth / 2, onY + btnHeight / 2, 1 );
         tft.fillRoundRect( offX, offY, btnWidth, btnHeight, 3, TFT_GREEN );
         tft.setTextColor( TFT_WHITE );
-        tft.drawString( "OFF", offX + btnWidth / 2, offY + btnHeight / 2, 1 );
+        tft.drawString( "DESL", offX + btnWidth / 2, offY + btnHeight / 2, 1 );
     }
 
     // SETTINGS TO THE RIGHT OF ON/OFF
@@ -1304,7 +1305,7 @@ void drawGraphicsScreen() {
         int startY = onY + 3;
         int lineHeight = 16;
         // === START TIME ===
-        tft.drawString( "Start", startX, startY, 1 );
+        tft.drawString( "Inicio", startX, startY, 1 );
         int startTimeX = startX + 50;
         tft.drawString( String( autoDimStart ) + "h", startTimeX, startY, 1 );
         int startPlusX = startTimeX + 50;
@@ -1334,7 +1335,7 @@ void drawGraphicsScreen() {
         // === END TIME ===
         int endY = startY + lineHeight;
         tft.setTextDatum( ML_DATUM );
-        tft.drawString( "End", startX, endY, 1 );
+        tft.drawString( "Fim", startX, endY, 1 );
         int endTimeX = startX + 50;
         tft.drawString( String( autoDimEnd ) + "h", endTimeX, endY, 1 );
         int endPlusX = endTimeX + 50;
@@ -1348,7 +1349,7 @@ void drawGraphicsScreen() {
         // === LEVEL - PROCENTA ===
         int levelY = endY + lineHeight;
         tft.setTextDatum( ML_DATUM );
-        tft.drawString( "Level", startX, levelY, 1 );
+        tft.drawString( "Nivel", startX, levelY, 1 );
         int levelTimeX = startX + 50;
         tft.drawString( String( autoDimLevel ) + "%", levelTimeX, levelY, 1 );
         int levelPlusX = levelTimeX + 50;
@@ -1418,14 +1419,14 @@ void drawInitialSetup() {
     tft.fillScreen( getBgColor() );
     tft.setTextColor( getTextColor() );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "WIFI SELECTION", 160, 15, 2 );
+    tft.drawString( "ESCOLHA O WI-FI", 160, 15, 2 );
     tft.setTextDatum( ML_DATUM );
 
     if ( wifiCount == 0 ) {
-        tft.drawString( "No networks found", 15, 45, 2 );
+        tft.drawString( "Nenhuma rede", 15, 45, 2 );
     }
     else {
-        // Show up to 5 rows — row 5 is reserved for the pinned "Other..." entry
+        // Show up to 5 rows — row 5 is reserved for the pinned "Outra..." entry
         for ( int i = wifiOffset; i < wifiOffset + 5 && i < wifiCount; i++ ) {
             int idx = i - wifiOffset;
             String txt = wifiSSIDs[ i ];
@@ -1437,9 +1438,9 @@ void drawInitialSetup() {
         }
     }
 
-    // "Other..." is always pinned at row 5 — visible regardless of scroll position
+    // "Outra..." is always pinned at row 5 — visible regardless of scroll position
     tft.setTextColor( TFT_BLUE );
-    tft.drawString( "Other...", 15, 45 + 5 * 30, 2 );
+    tft.drawString( "Outra...", 15, 45 + 5 * 30, 2 );
     tft.drawFastHLine( 10, 62 + 5 * 30, 240, TFT_DARKGREY );
     tft.setTextColor( getTextColor() );
 
@@ -1454,7 +1455,7 @@ void drawInitialSetup() {
         drawArrowUp( 265, 110, TFT_BLUE );
     }
 
-    // Down arrow — more networks exist above the pinned "Other..." row
+    // Down arrow — more networks exist above the pinned "Outra..." row
     if ( wifiOffset + 5 < wifiCount ) {
         drawArrowDown( 265, 170, TFT_BLUE );
     }
@@ -1466,15 +1467,15 @@ void drawKeyboardScreen() {
     tft.setTextDatum( MC_DATUM );
     tft.setFreeFont( &FreeSansBold12pt7b );
 
-    String title = "WiFi Password";
+    String title = "Senha do Wi-Fi";
     if ( currentState == SSID_INPUT ) {
-        title = "Enter SSID";
+        title = "Nome da rede";
     }
     else if ( currentState == CUSTOMCITYINPUT ) {
-        title = "Enter City Name";
+        title = "Nome da cidade";
     }
     else if ( currentState == CUSTOMCOUNTRYINPUT ) {
-        title = "Enter Country Name";
+        title = "Nome do pais";
     }
     tft.drawString( title, 160, 20 );
 
@@ -1498,7 +1499,7 @@ void drawKeyboardScreen() {
         tft.setTextDatum( MC_DATUM );
         tft.drawRect( 250, 140, 60, 25, isWhiteTheme ? TFT_DARKGREY : TFT_WHITE );
         tft.setFreeFont( &FreeSans9pt7b );
-        tft.drawString( showPassword ? "Hide" : "Show", 280, 153 );
+        tft.drawString( showPassword ? "Ocult" : "Ver", 280, 153 );
     }
 
     // Keyboard
@@ -1530,7 +1531,7 @@ void drawKeyboardScreen() {
     // Space bar and function buttons
     tft.drawRect( 2, 170, 316, 25, isWhiteTheme ? TFT_DARKGREY : TFT_WHITE );
     tft.setTextDatum( MC_DATUM );
-    tft.drawString( "Space", 160, 183 );
+    tft.drawString( "Espaco", 160, 183 );
 
     int bw = 64;
     int by = 198;
@@ -1541,10 +1542,10 @@ void drawKeyboardScreen() {
     tft.drawRect( 1 * bw + 2, by, bw - 4, bh, isWhiteTheme ? TFT_DARKGREY : TFT_WHITE );
     tft.drawString( "123", 1 * bw + bw / 2, by + 18 );
     tft.drawRect( 2 * bw + 2, by, bw - 4, bh, isWhiteTheme ? TFT_DARKGREY : TFT_WHITE );
-    tft.drawString( "Del", 2 * bw + bw / 2, by + 18 );
+    tft.drawString( "Apaga", 2 * bw + bw / 2, by + 18 );
     tft.setTextColor( TFT_RED );
     tft.drawRect( 3 * bw + 2, by, bw - 4, bh, TFT_RED );
-    tft.drawString( "Back", 3 * bw + bw / 2, by + 18 );
+    tft.drawString( "Voltar", 3 * bw + bw / 2, by + 18 );
     tft.setTextColor( TFT_GREEN );
     tft.drawRect( 4 * bw + 2, by, bw - 4, bh, TFT_GREEN );
     tft.drawString( "OK", 4 * bw + bw / 2, by + 18 );

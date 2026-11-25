@@ -18,11 +18,11 @@
 #define ST7789_DRIVER
 #define TFT_WIDTH  240
 #define TFT_HEIGHT 320
-#ifdef CYD_BGR                  // use se vermelho e azul aparecerem trocados
-#define TFT_RGB_ORDER TFT_BGR
+// Observado na placa: sem estes ajustes as cores saíam invertidas e com vermelho/azul trocados.
+#ifndef CYD_RGB                 // -D CYD_RGB volta para a ordem RGB, se o seu lote precisar
+#define TFT_RGB_ORDER 0         // 0 = BGR (TFT_BGR ainda não está definido neste ponto)
 #endif
-// O painel ST7789 vem invertido de fábrica: a "cor normal" é invertDisplay(true)
-#define CYD_PANEL_INVERTED 1
+#define CYD_PANEL_INVERTED 0    // invertDisplay(false) dá as cores corretas neste painel
 #else
 #define ILI9341_DRIVER     // Standard ILI9341 driver
 // No TFT_RGB_ORDER override - ILI9341 defaults to RGB

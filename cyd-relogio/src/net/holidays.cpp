@@ -7,6 +7,7 @@
 #include <time.h>
 
 #include "../util/constants.h"
+#include "../util/string_utils.h"
 #include "../net/location.h"
 
 // ── Globals defined here ───────────────────────────────────────────────────
@@ -198,7 +199,7 @@ void handleHolidayUpdate() {
     String name = fetchTodayHoliday( isoCode, offsetHours );
 
     if ( name != todayHoliday ) {
-        todayHoliday = name;
+        todayHoliday = semAcentos( name );
         holidayValid = !name.isEmpty();
         forceClockRedraw = true;
         log_d( "[HOLIDAY] Updated: '%s' (valid=%d)", todayHoliday.c_str(), holidayValid );

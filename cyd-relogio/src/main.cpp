@@ -120,8 +120,8 @@ bool initialWeatherFetched = false;
 
 ForecastData forecast[ 2 ];
 // Forecast day name variables
-String forecastDay1Name = "Monday";    // Tomorrow
-String forecastDay2Name = "Tuesday";   // The day after tomorrow
+String forecastDay1Name = "Segunda";    // Tomorrow
+String forecastDay2Name = "Terca";   // The day after tomorrow
 
 int moonPhaseVal = 0;
 
@@ -300,7 +300,7 @@ void setup() {
     // invertColors=false → normal display, invertColors=true → inverted display.
     // (The CYD2U/ST7789 version used !invertColors to compensate HW inversion.)
     delay( 50 );
-    tft.invertDisplay( invertColors != CYD_PANEL_INVERTED );  // ST7789 (CYD2USB) é invertido de fábrica
+    tft.invertDisplay( invertColors != CYD_PANEL_INVERTED );  // CYD_PANEL_INVERTED: ver include/User_Setup.h
     delay( 50 );
 
     tft.fillScreen( getBgColor() ); // Fill screen with theme colour while backlight is still off

@@ -19,7 +19,7 @@ O README original está em `README-original.md`.
 - Placa: ESP32-2432S028R de **duas entradas** (USB-C + micro-USB), com painel **ST7789**.
   É o ambiente padrão (`cyd2usb`) do `platformio.ini`.
   Para o modelo de uma entrada (ILI9341), use o ambiente `release`.
-  Se vermelho e azul saírem trocados, descomente `-D CYD_BGR` em `[env:cyd2usb]`.
+  Se vermelho e azul saírem trocados, descomente `-D CYD_RGB` em `[env:cyd2usb]`.
 - Alimentação: USB da própria placa (5 V). Não precisa de fiação para a tela.
 - Montagem de cabeça para baixo: em Configurações > Graphics, opção **FLP** (180°).
 
@@ -43,12 +43,15 @@ pelo toque.
 
 - `platformio.ini`: porta serial fixa do macOS comentada (detecção automática).
 - Suporte ao CYD de duas entradas USB (painel ST7789): ambiente `cyd2usb`, flag `CYD_2USB`
-  em `include/User_Setup.h` e inversão de cores compensada em `main.cpp` e `touch_handler.cpp`.
+  em `include/User_Setup.h` (ST7789, ordem BGR, sem inversão extra).
+- Interface em português do Brasil, sem acentos (as fontes não têm): textos das telas,
+  data por extenso, dias da semana, clima, fases da lua e direções do vento (L/O).
+- `semAcentos()` em `src/util/string_utils.cpp`: remove acentos de nomes de cidade e feriados
+  (antes "Brasília" aparecia como "Braslia").
+- Feriados no nome local (Nager.Date `localName`) e busca de cidades em português.
 
 ## Próximas adaptações planejadas
 
 - Desativar a atualização OTA que aponta para o repositório do autor
   (instalar uma atualização de lá apagaria as nossas mudanças).
-- Traduzir a interface para português (sem acentos: as fontes não têm).
-- Trocar o "dia do nome" tcheco pelos feriados do Brasil.
 - Controle da luz da luminária pela tela (GPIO 22 ou 27 + MOSFET).
